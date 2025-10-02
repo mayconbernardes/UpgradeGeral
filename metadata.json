@@ -1,0 +1,5 @@
+{
+  "name": "History Companion",
+  "description": "An interactive web application that provides detailed summaries, curiosities, and review questions for major historical and philosophical topics. Features include text-to-speech for summaries and a dark/light mode for comfortable reading.",
+  "requestFramePermissions": []
+}

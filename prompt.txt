@@ -1,0 +1,57 @@
+PS C:\Users\Maycon-Bernardes\Downloads\history-companion> git init
+Reinitialized existing Git repository in C:/Users/Maycon-Bernardes/Downloads/history-companion/.git/
+PS C:\Users\Maycon-Bernardes\Downloads\history-companion> git commit -m "first commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        App.tsx
+        components/
+        data/
+        index.html
+        index.tsx
+        metadata.json
+        package.json
+        prompt.txt
+        tsconfig.json
+        types.ts
+        vite.config.ts
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Maycon-Bernardes\Downloads\history-companion> git add .
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'App.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'components/ContentDisplay.tsx', LF will be replaced by CRLF the next time Git touches it      
+warning: in the working copy of 'components/Sidebar.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'components/ThemeToggle.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/historyData.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'metadata.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tsconfig.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'types.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vite.config.ts', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\Maycon-Bernardes\Downloads\history-companion> git branch -M main
+PS C:\Users\Maycon-Bernardes\Downloads\history-companion> git remote add origin https://github.com/mayconbernardes/UpgradeGeral.git
+error: remote origin already exists.
+PS C:\Users\Maycon-Bernardes\Downloads\history-companion> git push -u origin main
+To https://github.com/mayconbernardes/UpgradeGeral.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mayconbernardes/UpgradeGeral.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\Maycon-Bernardes\Downloads\history-companion> git push
+To https://github.com/mayconbernardes/UpgradeGeral.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/mayconbernardes/UpgradeGeral.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' 
