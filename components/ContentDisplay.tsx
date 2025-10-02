@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import type { Topic } from '../types';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
+import type { Topic, TopicGroup } from '../types';
 
 interface ContentDisplayProps {
   topic: Topic | null;
@@ -7,78 +7,17 @@ interface ContentDisplayProps {
   onNextTopic: () => void;
   hasPrevTopic: boolean;
   hasNextTopic: boolean;
+  groups: TopicGroup[];
+  onSelectTopic: (topic: Topic) => void;
 }
 
-const TimelineItem: React.FC<{ event: { date: string; description: string }; isLeft: boolean }> = ({ event, isLeft }) => {
-    const ref = useRef<HTMLDivElement>(null);
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                    observer.unobserve(entry.target);
-                }
-            },
-            {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.5,
-            }
-        );
-
-        if (ref.current) {
-            observer.observe(ref.current);
-        }
-
-        return () => {
-            if (ref.current) {
-                observer.unobserve(ref.current);
-            }
-        };
-    }, []);
-
-    const desktopClasses = isLeft
-        ? 'md:text-right md:pr-8'
-        : 'md:col-start-3 md:pl-8';
-
-    const animationClasses = isVisible
-        ? 'opacity-100 translate-y-0'
-        : 'opacity-0 translate-y-4';
-
-    const mobileAnimationClasses = isVisible
-        ? 'opacity-100 translate-x-0'
-        : 'opacity-0 -translate-x-4'
-
-    return (
-        <>
-            {/* Desktop view */}
-            <div ref={ref} className={`hidden md:block col-start-2 row-start-${event.date.replace(/\s/g, '-')}`}></div>
-            <div className={`hidden md:block ${desktopClasses} transition-all duration-700 ease-out ${animationClasses}`}>
-                 <div className="bg-white dark:bg-slate-700 p-4 rounded-lg shadow-md border border-gray-200 dark:border-slate-600">
-                    <p className="font-bold text-primary-600 dark:text-primary-400">{event.date}</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-300">{event.description}</p>
-                </div>
-            </div>
-
-            {/* Mobile view */}
-             <div ref={!ref.current ? ref : null} className={`md:hidden col-start-2 transition-all duration-700 ease-out ${mobileAnimationClasses}`}>
-                 <div className="bg-white dark:bg-slate-700 p-4 rounded-lg shadow-md border border-gray-200 dark:border-slate-600 ml-4">
-                    <p className="font-bold text-primary-600 dark:text-primary-400">{event.date}</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-300">{event.description}</p>
-                </div>
-            </div>
-        </>
-    );
-};
-
-
-const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onNextTopic, hasPrevTopic, hasNextTopic }) => {
+const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onNextTopic, hasPrevTopic, hasNextTopic, groups, onSelectTopic }) => {
     // TTS State
     const [isSpeaking, setIsSpeaking] = useState(false);
     const [isPaused, setIsPaused] = useState(false);
     const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
+    const [highlightedWord, setHighlightedWord] = useState<{ start: number, end: number } | null>(null);
+
 
     // Quiz State
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -91,6 +30,50 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
     const [currentCardIndex, setCurrentCardIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
     const [markedCards, setMarkedCards] = useState<Set<number>>(new Set());
+    
+    // Font State
+    const [selectedFont, setSelectedFont] = useState<string>(() => {
+        if (typeof window !== 'undefined' && window.localStorage) {
+            return localStorage.getItem('preferredFont') || 'font-sans';
+        }
+        return 'font-sans';
+    });
+
+    const fontOptions = [
+        { name: 'Inter', class: 'font-sans' },
+        { name: 'Roboto', class: 'font-roboto' },
+        { name: 'Open Sans', class: 'font-open-sans' },
+    ];
+
+    const fontSizes = [
+        { name: 'Pequena', class: 'text-sm' },
+        { name: 'Normal', class: 'text-base' },
+        { name: 'Grande', class: 'text-lg' },
+        { name: 'Extra Grande', class: 'text-xl' },
+    ];
+
+    const [fontSize, setFontSize] = useState<string>(() => {
+        if (typeof window !== 'undefined' && window.localStorage) {
+            return localStorage.getItem('preferredFontSize') || 'text-base';
+        }
+        return 'text-base';
+    });
+
+    // Pre-process summary text to get words and their indices for reliable highlighting
+    const words = useMemo(() => {
+        if (!topic?.summary) return [];
+        const wordList: { text: string; index: number }[] = [];
+        // This regex finds sequences of non-whitespace characters
+        const regex = /\S+/g;
+        let match;
+        while ((match = regex.exec(topic.summary)) !== null) {
+            wordList.push({
+                text: match[0],
+                index: match.index,
+            });
+        }
+        return wordList;
+    }, [topic?.summary]);
 
     const cleanupSpeech = () => {
         if (window.speechSynthesis) {
@@ -98,8 +81,32 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
         }
         setIsSpeaking(false);
         setIsPaused(false);
+        setHighlightedWord(null);
     };
+
+    // Effect to cleanup speech on component unmount
+    useEffect(() => {
+        return () => {
+            if (window.speechSynthesis) {
+                window.speechSynthesis.cancel();
+            }
+        };
+    }, []);
+
+    // Effect to save font choice
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.localStorage) {
+            localStorage.setItem('preferredFont', selectedFont);
+        }
+    }, [selectedFont]);
     
+    // Effect to save font size choice
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.localStorage) {
+            localStorage.setItem('preferredFontSize', fontSize);
+        }
+    }, [fontSize]);
+
     // Effect to reset TTS, Quiz, and Flashcards when topic changes
     useEffect(() => {
         cleanupSpeech();
@@ -139,13 +146,32 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
             cleanupSpeech();
             const newUtterance = new SpeechSynthesisUtterance(topic.summary);
             newUtterance.lang = 'pt-BR';
+            newUtterance.onboundary = (event) => {
+                if (!words.length) return;
+                
+                // Find the word that contains the current character index from the event.
+                const currentWord = words.find(word => 
+                    event.charIndex >= word.index && 
+                    event.charIndex < (word.index + word.text.length)
+                );
+
+                if (currentWord) {
+                    setHighlightedWord({
+                        start: currentWord.index,
+                        end: currentWord.index + currentWord.text.length,
+                    });
+                }
+            };
             newUtterance.onend = () => {
                 setIsSpeaking(false);
                 setIsPaused(false);
+                setHighlightedWord(null);
             };
-            newUtterance.onerror = () => {
+            newUtterance.onerror = (e) => {
+                console.error("Speech Synthesis Error:", e);
                 setIsSpeaking(false);
                 setIsPaused(false);
+                setHighlightedWord(null);
             };
             utteranceRef.current = newUtterance;
             window.speechSynthesis.speak(newUtterance);
@@ -216,17 +242,26 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
     const getButtonClass = (option: string) => {
         if (!topic) return '';
         if (!selectedAnswer) {
-            return 'bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700';
+            return 'bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300';
         }
         const correctAnswer = topic.questions[currentQuestionIndex].correctAnswer;
         if (option === correctAnswer) {
-            return 'bg-green-500 cursor-not-allowed';
+            return 'bg-green-500 border-green-500 text-white cursor-not-allowed';
         }
         if (option === selectedAnswer && option !== correctAnswer) {
-            return 'bg-red-500 cursor-not-allowed';
+            return 'bg-red-500 border-red-500 text-white cursor-not-allowed';
         }
-        return 'bg-gray-400 dark:bg-slate-600 cursor-not-allowed';
+        return 'bg-slate-200 dark:bg-slate-700 border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 cursor-not-allowed';
     };
+
+     const relatedTopics = useMemo(() => {
+        if (!topic || !groups) return [];
+        
+        const currentGroup = groups.find(group => group.topics.some(t => t.id === topic.id));
+        if (!currentGroup) return [];
+
+        return currentGroup.topics.filter(t => t.id !== topic.id);
+    }, [topic, groups]);
 
     if (!topic) {
         return (
@@ -235,6 +270,19 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
             </div>
         );
     }
+    
+    const currentFontSizeIndex = fontSizes.findIndex(s => s.class === fontSize);
+    const handleDecreaseFontSize = () => {
+        if (currentFontSizeIndex > 0) {
+            setFontSize(fontSizes[currentFontSizeIndex - 1].class);
+        }
+    };
+    const handleIncreaseFontSize = () => {
+        if (currentFontSizeIndex < fontSizes.length - 1) {
+            setFontSize(fontSizes[currentFontSizeIndex + 1].class);
+        }
+    };
+
 
     const getButtonIcon = () => {
         if (!isSpeaking) return 'fa-play';
@@ -243,58 +291,111 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
     };
 
     const getButtonLabel = () => {
-        if (!isSpeaking) return 'Ouvir Resumo';
+        if (!isSpeaking) return 'Ouvir';
         if (isPaused) return 'Continuar';
         return 'Pausar';
     }
 
     return (
-        <div className="space-y-8 animate-fade-in">
-            <div className="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6">
-                <h2 className="text-3xl font-bold mb-4 text-primary-600 dark:text-primary-400">{topic.title}</h2>
-                <div className="prose prose-slate dark:prose-invert max-w-none">
-                    <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-3 dark:text-white">Resumo</h3>
-                    <p className="text-justify whitespace-pre-line text-slate-700 dark:text-slate-300">{topic.summary}</p>
-                </div>
-                <div className="mt-6 flex items-center gap-4">
-                    <button
-                        onClick={handleSpeak}
-                        className="flex items-center gap-2 px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
-                    >
-                        <i className={`fas ${getButtonIcon()}`}></i>
-                        <span>{getButtonLabel()}</span>
-                    </button>
-                    {isSpeaking && (
-                        <button
-                            onClick={handleStop}
-                            className="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800"
-                        >
-                            <i className="fas fa-stop"></i>
-                            <span>Parar</span>
-                        </button>
-                    )}
-                </div>
-            </div>
+        <div className="space-y-6 animate-fade-in">
+            <article className="bg-white dark:bg-slate-900 shadow-sm rounded-xl p-6 md:p-8 border border-slate-200 dark:border-slate-800">
+                <h2 className="text-3xl font-extrabold mb-4 text-slate-900 dark:text-white tracking-tight">{topic.title}</h2>
+                <div className={`prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-400 ${selectedFont}`}>
+                    <div className="flex flex-wrap justify-between items-center gap-y-4 border-b border-slate-200 dark:border-slate-700 pb-2 mb-4">
+                       <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 !mb-0">Resumo</h3>
+                       <div className="flex items-center gap-3">
+                            <div className="relative">
+                                <select 
+                                    id="font-selector"
+                                    value={selectedFont} 
+                                    onChange={(e) => setSelectedFont(e.target.value)}
+                                    className="text-sm rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 py-1 pl-2 pr-8 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 appearance-none"
+                                    aria-label="Selecionar fonte do resumo"
+                                >
+                                    {fontOptions.map(font => (
+                                        <option key={font.class} value={font.class}>{font.name}</option>
+                                    ))}
+                                </select>
+                                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-500 dark:text-slate-400">
+                                    <i className="fas fa-chevron-down text-xs"></i>
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-1 rounded-md border border-slate-300 dark:border-slate-600 p-0.5">
+                                <button
+                                    onClick={handleDecreaseFontSize}
+                                    disabled={currentFontSizeIndex === 0}
+                                    className="px-2 py-0.5 rounded disabled:opacity-50 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300"
+                                    aria-label="Diminuir tamanho da fonte"
+                                >
+                                    <span className="text-xs font-bold">A-</span>
+                                </button>
+                                <div className="w-px h-4 bg-slate-300 dark:bg-slate-600"></div>
+                                <button
+                                    onClick={handleIncreaseFontSize}
+                                    disabled={currentFontSizeIndex === fontSizes.length - 1}
+                                    className="px-2 py-0.5 rounded disabled:opacity-50 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300"
+                                    aria-label="Aumentar tamanho da fonte"
+                                >
+                                    <span className="text-base font-bold">A+</span>
+                                </button>
+                            </div>
+                       </div>
+                    </div>
 
-            <div className="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6">
+                    <div className="flex items-center gap-2 mb-4">
+                        <button
+                            onClick={handleSpeak}
+                            className="flex items-center gap-2 px-3 py-1.5 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-all focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900 text-sm font-semibold"
+                        >
+                            <i className={`fas ${getButtonIcon()}`}></i>
+                            <span>{getButtonLabel()}</span>
+                        </button>
+                        {isSpeaking && (
+                            <button
+                                onClick={handleStop}
+                                className="flex items-center gap-2 px-3 py-1.5 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-all focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900 text-sm font-semibold"
+                            >
+                                <i className="fas fa-stop"></i>
+                                <span>Parar</span>
+                            </button>
+                        )}
+                    </div>
+
+                    <p className={`text-justify whitespace-pre-line leading-relaxed ${fontSize}`}>
+                        {!highlightedWord ? topic.summary : (
+                            <>
+                                {topic.summary.substring(0, highlightedWord.start)}
+                                <mark className="bg-primary-200 dark:bg-primary-700/50 rounded transition-all duration-100">
+                                    {topic.summary.substring(highlightedWord.start, highlightedWord.end)}
+                                </mark>
+                                {topic.summary.substring(highlightedWord.end)}
+                            </>
+                        )}
+                    </p>
+                </div>
+            </article>
+
+            <div className="bg-white dark:bg-slate-900 shadow-sm rounded-xl p-6 md:p-8 border border-slate-200 dark:border-slate-800">
                 <div className="prose prose-slate dark:prose-invert max-w-none">
-                    <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-3 dark:text-white">💡 Curiosidade</h3>
-                    <p className="italic text-slate-700 dark:text-slate-300">{topic.curiosity}</p>
+                    <h3 className="text-xl font-bold border-b border-slate-200 dark:border-slate-700 pb-2 mb-4 text-slate-800 dark:text-slate-200">💡 Curiosidade</h3>
+                    <blockquote className="italic text-slate-600 dark:text-slate-400 border-l-4 border-primary-400 pl-4">
+                        <p>{topic.curiosity}</p>
+                    </blockquote>
                 </div>
             </div>
             
             {topic.timeline && topic.timeline.length > 0 && (
-                 <div className="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6">
+                 <div className="bg-white dark:bg-slate-900 shadow-sm rounded-xl p-6 md:p-8 border border-slate-200 dark:border-slate-800">
                      <div className="prose prose-slate dark:prose-invert max-w-none">
-                        <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-6 dark:text-white">🗓️ Linha do Tempo</h3>
+                        <h3 className="text-xl font-bold border-b border-slate-200 dark:border-slate-700 pb-2 mb-8 text-slate-800 dark:text-slate-200">🗓️ Linha do Tempo</h3>
                         <div className="relative">
                              {/* The vertical line */}
-                            <div className="absolute left-0 md:left-1/2 w-0.5 h-full bg-gray-200 dark:bg-slate-700 -translate-x-1/2"></div>
+                            <div className="absolute left-0 md:left-1/2 w-0.5 h-full bg-slate-200 dark:bg-slate-700 -translate-x-1/2"></div>
                             
                             {topic.timeline.map((event, index) => (
                                 <div key={index} className="relative mb-8 last:mb-0">
                                      {/* The circle on the line */}
-                                    <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary-500 rounded-full -translate-x-1/2 mt-1 border-4 border-white dark:border-slate-800"></div>
+                                    <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary-500 rounded-full -translate-x-1/2 mt-1 border-4 border-white dark:border-slate-900"></div>
                                     
                                     {/* The content card */}
                                     <div className={`
@@ -302,7 +403,7 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
                                         md:w-1/2 
                                         ${index % 2 === 0 ? 'md:pr-8 md:text-right md:ml-0' : 'md:pl-8 md:ml-[50%] md:text-left'}
                                     `}>
-                                        <div className="bg-gray-50 dark:bg-slate-700 p-4 rounded-lg shadow-md border border-gray-200 dark:border-slate-600 inline-block w-full">
+                                        <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700 inline-block w-full">
                                             <p className="font-bold text-primary-600 dark:text-primary-400">{event.date}</p>
                                             <p className="text-sm text-slate-600 dark:text-slate-300">{event.description}</p>
                                         </div>
@@ -314,9 +415,9 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
                 </div>
             )}
 
-            <div className="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6">
+            <div className="bg-white dark:bg-slate-900 shadow-sm rounded-xl p-6 md:p-8 border border-slate-200 dark:border-slate-800">
                 <div className="prose prose-slate dark:prose-invert max-w-none">
-                    <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-4 dark:text-white">🃏 Flashcards de Estudo</h3>
+                    <h3 className="text-xl font-bold border-b border-slate-200 dark:border-slate-700 pb-2 mb-4 text-slate-800 dark:text-slate-200">🃏 Flashcards de Estudo</h3>
                     {flashcards.length > 0 ? (
                         <div>
                              <div 
@@ -330,18 +431,18 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
                                     className={`relative w-full h-full text-center transition-transform duration-700 [transform-style:preserve-3d] ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
                                 >
                                     {/* Front Side */}
-                                    <div className="absolute w-full h-full p-4 rounded-lg flex items-center justify-center bg-primary-100 dark:bg-slate-700 [backface-visibility:hidden]">
+                                    <div className="absolute w-full h-full p-4 rounded-lg flex items-center justify-center bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 [backface-visibility:hidden]">
                                         <div>
-                                            <p className="text-sm font-semibold text-primary-500 dark:text-primary-400 mb-2">Pergunta</p>
+                                            <p className="text-sm font-semibold text-primary-500 dark:text-primary-400 mb-2 uppercase tracking-wider">Pergunta</p>
                                             <p className="text-lg font-medium text-slate-800 dark:text-slate-200">
                                                 {flashcards[currentCardIndex].question}
                                             </p>
                                         </div>
                                     </div>
                                     {/* Back Side */}
-                                    <div className="absolute w-full h-full p-4 rounded-lg flex items-center justify-center bg-green-100 dark:bg-slate-600 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                                    <div className="absolute w-full h-full p-4 rounded-lg flex items-center justify-center bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 [transform:rotateY(180deg)] [backface-visibility:hidden]">
                                          <div>
-                                            <p className="text-sm font-semibold text-green-500 dark:text-green-400 mb-2">Resposta</p>
+                                            <p className="text-sm font-semibold text-green-500 dark:text-green-400 mb-2 uppercase tracking-wider">Resposta</p>
                                             <p className="text-lg font-medium text-slate-800 dark:text-slate-200">
                                                 {flashcards[currentCardIndex].answer}
                                             </p>
@@ -350,34 +451,34 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
                                 </div>
                             </div>
                             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-4">
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-2">
                                     <button
                                         onClick={handlePrevCard}
                                         disabled={currentCardIndex === 0}
-                                        className="p-2 rounded-full text-slate-500 dark:text-slate-400 hover:bg-gray-200 dark:hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                                        className="p-2 w-10 h-10 rounded-full text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                                         aria-label="Card anterior"
                                     >
-                                        <i className="fas fa-chevron-left w-5 h-5"></i>
+                                        <i className="fas fa-chevron-left"></i>
                                     </button>
-                                    <span className="font-semibold text-slate-700 dark:text-slate-300">
+                                    <span className="font-semibold text-slate-700 dark:text-slate-300 tabular-nums">
                                         {currentCardIndex + 1} / {flashcards.length}
                                     </span>
                                     <button
                                         onClick={handleNextCard}
                                         disabled={currentCardIndex >= flashcards.length - 1}
-                                        className="p-2 rounded-full text-slate-500 dark:text-slate-400 hover:bg-gray-200 dark:hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                                        className="p-2 w-10 h-10 rounded-full text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                                         aria-label="Próximo card"
                                     >
-                                        <i className="fas fa-chevron-right w-5 h-5"></i>
+                                        <i className="fas fa-chevron-right"></i>
                                     </button>
                                 </div>
 
                                 <button
                                     onClick={handleMarkCard}
-                                    className="flex items-center gap-2 px-4 py-2 bg-transparent text-amber-500 border border-amber-500 rounded-md hover:bg-amber-500 hover:text-white dark:hover:text-slate-900 transition-colors"
+                                    className={`flex items-center gap-2 px-4 py-2 border rounded-lg transition-colors ${markedCards.has(currentCardIndex) ? 'bg-amber-400 border-amber-400 text-white dark:text-slate-900' : 'bg-transparent text-slate-600 dark:text-slate-300 border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
                                 >
                                     <i className={`${markedCards.has(currentCardIndex) ? 'fas' : 'far'} fa-star`}></i>
-                                    <span>{markedCards.has(currentCardIndex) ? 'Marcado' : 'Marcar'}</span>
+                                    <span className="font-semibold">{markedCards.has(currentCardIndex) ? 'Marcado' : 'Marcar'}</span>
                                 </button>
                             </div>
                         </div>
@@ -387,16 +488,16 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
                 </div>
             </div>
 
-            <div className="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6">
+            <div className="bg-white dark:bg-slate-900 shadow-sm rounded-xl p-6 md:p-8 border border-slate-200 dark:border-slate-800">
                 <div className="prose prose-slate dark:prose-invert max-w-none">
-                    <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-4 dark:text-white">📝 Quiz de Revisão</h3>
+                    <h3 className="text-xl font-bold border-b border-slate-200 dark:border-slate-700 pb-2 mb-4 text-slate-800 dark:text-slate-200">📝 Quiz de Revisão</h3>
                     {showScore ? (
-                        <div className="text-center">
-                            <h4 className="text-2xl font-bold mb-4 text-slate-800 dark:text-slate-200">Quiz Finalizado!</h4>
-                            <p className="text-lg mb-6 text-slate-700 dark:text-slate-300">Você acertou {score} de {topic.questions.length} perguntas.</p>
+                        <div className="text-center py-8">
+                            <h4 className="text-2xl font-bold mb-2 text-slate-800 dark:text-slate-200">Quiz Finalizado!</h4>
+                            <p className="text-lg mb-6 text-slate-600 dark:text-slate-300">Você acertou <span className="font-bold text-primary-600 dark:text-primary-400">{score}</span> de <span className="font-bold">{topic.questions.length}</span> perguntas.</p>
                             <button
                                 onClick={restartQuiz}
-                                className="px-6 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors"
+                                className="px-6 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 font-semibold transition-colors"
                             >
                                 Tentar Novamente
                             </button>
@@ -405,15 +506,15 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
                         <div>
                             <div className="mb-6">
                                 <h4 className="text-lg font-semibold mb-2 text-slate-800 dark:text-slate-200">Pergunta {currentQuestionIndex + 1}/{topic.questions.length}</h4>
-                                <p className="text-slate-700 dark:text-slate-300">{topic.questions[currentQuestionIndex].question}</p>
+                                <p className="text-slate-600 dark:text-slate-300 text-xl">{topic.questions[currentQuestionIndex].question}</p>
                             </div>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                 {topic.questions[currentQuestionIndex].options.map((option, index) => (
                                     <button
                                         key={index}
                                         onClick={() => handleAnswerOptionClick(option)}
                                         disabled={!!selectedAnswer}
-                                        className={`w-full text-left p-4 rounded-lg text-white transition-colors duration-300 ${getButtonClass(option)}`}
+                                        className={`w-full text-left p-4 rounded-lg border-2 font-semibold transition-all duration-300 ${getButtonClass(option)}`}
                                     >
                                         {option}
                                     </button>
@@ -424,22 +525,44 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
                 </div>
             </div>
 
+             {relatedTopics.length > 0 && (
+                <div className="bg-white dark:bg-slate-900 shadow-sm rounded-xl p-6 md:p-8 border border-slate-200 dark:border-slate-800">
+                    <div className="prose prose-slate dark:prose-invert max-w-none">
+                        <h3 className="text-xl font-bold border-b border-slate-200 dark:border-slate-700 pb-2 mb-4 text-slate-800 dark:text-slate-200">
+                           <i className="fas fa-stream mr-2 text-slate-400"></i>Tópicos Relacionados
+                        </h3>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+                            {relatedTopics.map(relatedTopic => (
+                                <button
+                                    key={relatedTopic.id}
+                                    onClick={() => onSelectTopic(relatedTopic)}
+                                    className="w-full text-left p-4 rounded-lg bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-all duration-200 hover:shadow-md hover:border-primary-400/50 dark:hover:border-primary-500/40 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900"
+                                >
+                                    <span className="font-semibold text-primary-700 dark:text-primary-400">{relatedTopic.title}</span>
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            )}
+
+
             {/* Topic Navigation */}
-            <div className="flex flex-col sm:flex-row justify-between items-center mt-8 pt-6 border-t border-gray-200 dark:border-slate-700">
+            <div className="flex flex-col sm:flex-row justify-between items-center mt-6 pt-6 border-t border-slate-200 dark:border-slate-800">
                 <button
                     onClick={onPrevTopic}
                     disabled={!hasPrevTopic}
-                    className="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-2 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-md hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed mb-4 sm:mb-0"
+                    className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-2.5 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed mb-3 sm:mb-0 border border-slate-300 dark:border-slate-700 font-semibold"
                 >
                     <i className="fas fa-arrow-left"></i>
-                    <span>Tópico Anterior</span>
+                    <span>Anterior</span>
                 </button>
                 <button
                     onClick={onNextTopic}
                     disabled={!hasNextTopic}
-                    className="w-full sm:w-auto flex items-center justify-center gap-2 px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-2.5 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-semibold"
                 >
-                    <span>Tópico Seguinte</span>
+                    <span>Próximo</span>
                     <i className="fas fa-arrow-right"></i>
                 </button>
             </div>

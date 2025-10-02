@@ -68,7 +68,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex h-screen font-sans">
+    <div className="flex h-screen font-sans bg-slate-50 dark:bg-slate-950">
       <Sidebar
         groups={historyTopicGroups}
         activeTopicId={selectedTopic.id}
@@ -76,22 +76,18 @@ const App: React.FC = () => {
         isOpen={isSidebarOpen}
         setIsOpen={setIsSidebarOpen}
       />
-      <main className="flex-1 overflow-y-auto p-4 md:p-8 lg:p-12 bg-gray-100 dark:bg-slate-900">
-        <div className="max-w-4xl mx-auto">
+      <main className="flex-1 overflow-y-auto">
+        <div className="max-w-4xl mx-auto p-4 md:p-8">
           <div className="flex justify-between items-center mb-8">
             <div className="flex items-center gap-4">
                <button 
                 onClick={() => setIsSidebarOpen(!isSidebarOpen)} 
-                className="p-2 rounded-md text-slate-500 dark:text-slate-400 hover:bg-gray-200 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-primary-500"
                 aria-label="Toggle sidebar"
               >
-                {isSidebarOpen ? (
-                  <i className="fas fa-times w-6 h-6"></i>
-                ) : (
-                  <i className="fas fa-bars w-6 h-6"></i>
-                )}
+                <i className={`fas ${isSidebarOpen ? 'fa-times' : 'fa-bars'} w-6 h-6 transition-transform duration-300`}></i>
               </button>
-              <h1 className="text-2xl md:text-3xl font-bold text-slate-800 dark:text-white">
+              <h1 className="text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-white tracking-tight">
                 History Companion
               </h1>
             </div>
@@ -103,6 +99,8 @@ const App: React.FC = () => {
             onNextTopic={handleNextTopic}
             hasPrevTopic={hasPrevTopic}
             hasNextTopic={hasNextTopic}
+            groups={historyTopicGroups}
+            onSelectTopic={handleSelectTopic}
           />
         </div>
       </main>
