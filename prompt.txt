@@ -1,9 +1,7 @@
 .dark\:border-slate-700:is(.dark *) {
     --tw-border-opacity: 1;
     border-color: rgb(255 255 255);
-    color: white;
+    color: #ffff;
 }
 
-o texto em dark mode deve ficar branco onde esta escrito resumo tambem
-
-faça isso e atualize no github por favor 
+o Resumo quando em dark mode fica em escuro, entao colocar em branco como esta acima 

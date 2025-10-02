@@ -253,7 +253,7 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
             <div className="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6">
                 <h2 className="text-3xl font-bold mb-4 text-primary-600 dark:text-primary-400">{topic.title}</h2>
                 <div className="prose prose-slate dark:prose-invert max-w-none">
-                    <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-3">Resumo</h3>
+                    <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-3 dark:text-white">Resumo</h3>
                     <p className="text-justify whitespace-pre-line text-slate-700 dark:text-slate-300">{topic.summary}</p>
                 </div>
                 <div className="mt-6 flex items-center gap-4">
@@ -278,7 +278,7 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
 
             <div className="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6">
                 <div className="prose prose-slate dark:prose-invert max-w-none">
-                    <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-3">💡 Curiosidade</h3>
+                    <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-3 dark:text-white">💡 Curiosidade</h3>
                     <p className="italic text-slate-700 dark:text-slate-300">{topic.curiosity}</p>
                 </div>
             </div>
@@ -286,7 +286,7 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
             {topic.timeline && topic.timeline.length > 0 && (
                  <div className="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6">
                      <div className="prose prose-slate dark:prose-invert max-w-none">
-                        <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-6">🗓️ Linha do Tempo</h3>
+                        <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-6 dark:text-white">🗓️ Linha do Tempo</h3>
                         <div className="relative">
                              {/* The vertical line */}
                             <div className="absolute left-0 md:left-1/2 w-0.5 h-full bg-gray-200 dark:bg-slate-700 -translate-x-1/2"></div>
@@ -316,7 +316,7 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
 
             <div className="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6">
                 <div className="prose prose-slate dark:prose-invert max-w-none">
-                    <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-4">🃏 Flashcards de Estudo</h3>
+                    <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-4 dark:text-white">🃏 Flashcards de Estudo</h3>
                     {flashcards.length > 0 ? (
                         <div>
                              <div 
@@ -389,7 +389,7 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
 
             <div className="bg-white dark:bg-slate-800 shadow-lg rounded-lg p-6">
                 <div className="prose prose-slate dark:prose-invert max-w-none">
-                    <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-4">📝 Quiz de Revisão</h3>
+                    <h3 className="text-xl font-semibold border-b border-gray-200 dark:border-slate-700 pb-2 mb-4 dark:text-white">📝 Quiz de Revisão</h3>
                     {showScore ? (
                         <div className="text-center">
                             <h4 className="text-2xl font-bold mb-4 text-slate-800 dark:text-slate-200">Quiz Finalizado!</h4>
