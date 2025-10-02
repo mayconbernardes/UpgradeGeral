@@ -51,6 +51,11 @@ Na Europa e no oeste da Ásia, evoluiu o Homo neanderthalensis, ou Neandertais, 
             options: ["Uma linha reta de uma espécie para a outra", "Uma árvore com muitos ramos, com várias espécies coexistindo", "Um processo que ocorreu apenas na Europa", "Um desenvolvimento rápido que durou poucos séculos"],
             correctAnswer: "Uma árvore com muitos ramos, com várias espécies coexistindo"
           }
+        ],
+        sources: [
+          { name: 'Smithsonian National Museum of Natural History', url: 'https://humanorigins.si.edu/evidence/human-fossils/species' },
+          { name: 'Brasil Escola - Evolução Humana', url: 'https://brasilescola.uol.com.br/historiag/evolucao-homem.htm' },
+          { name: 'Wikipedia - Evolução Humana', url: 'https://pt.wikipedia.org/wiki/Evolu%C3%A7%C3%A3o_humana' }
         ]
       },
       {
@@ -97,6 +102,11 @@ O Período Neolítico ('Idade da Pedra Nova' ou 'Pedra Polida'), iniciado por vo
             options: ["Paleolítico Inferior", "Paleolítico Superior", "Neolítico", "Idade do Ferro"],
             correctAnswer: "Neolítico"
           }
+        ],
+        sources: [
+          { name: 'World History Encyclopedia - Stone Age', url: 'https://www.worldhistory.org/Stone_Age/' },
+          { name: 'Britannica - Paleolithic Period', url: 'https://www.britannica.com/event/Paleolithic-Period' },
+          { name: 'Britannica - Neolithic Period', url: 'https://www.britannica.com/event/Neolithic' }
         ]
       },
       {
@@ -145,6 +155,11 @@ A Idade do Ferro (iniciada por volta de 1.200 a.C. na Anatólia) representou out
             options: ["Egípcio e Sumério", "Grego e Romano", "Hitita e Assírio", "Chinês e Persa"],
             correctAnswer: "Hitita e Assírio"
           }
+        ],
+        sources: [
+          { name: 'World History Encyclopedia - Bronze Age', url: 'https://www.worldhistory.org/Bronze_Age/' },
+          { name: 'World History Encyclopedia - Iron Age', url: 'https://www.worldhistory.org/Iron_Age/' },
+          { name: 'Mundo Educação - Idade dos Metais', url: 'https://mundoeducacao.uol.com.br/historiageral/idade-dos-metais.htm' }
         ]
       },
     ]
@@ -172,6 +187,11 @@ Ao longo dos milênios, a região foi dominada por diferentes povos. Os acádios
           { question: 'A base da economia mesopotâmica era:', options: ['O comércio marítimo', 'A mineração de ouro', 'A agricultura irrigada', 'A caça e a coleta'], correctAnswer: 'A agricultura irrigada' },
           { question: 'A Mesopotâmia estava localizada entre quais dois rios?', options: ['Nilo e Jordão', 'Tigre e Eufrates', 'Indo e Ganges', 'Amarelo e Azul'], correctAnswer: 'Tigre e Eufrates' },
           { question: 'O sistema numérico de base 60, usado até hoje para medir o tempo, foi uma contribuição de qual civilização?', options: ['Egípcia', 'Grega', 'Romana', 'Mesopotâmica'], correctAnswer: 'Mesopotâmica' }
+        ],
+        sources: [
+          { name: 'World History Encyclopedia - Mesopotamia', url: 'https://www.worldhistory.org/mesopotamia/' },
+          { name: 'Britannica - Mesopotamia', url: 'https://www.britannica.com/place/Mesopotamia-historical-region-Asia' },
+          { name: 'InfoEscola - Mesopotâmia', url: 'https://www.infoescola.com/historia/mesopotamia/' }
         ]
       },
       {
@@ -194,6 +214,11 @@ A sociedade era rigidamente estratificada. Abaixo do faraó e sua família, havi
           { question: 'As pirâmides de Gizé foram construídas com qual propósito principal?', options: ['Templos para adoração', 'Palácios para a nobreza', 'Tumbas para os faraós', 'Fortalezas militares'], correctAnswer: 'Tumbas para os faraós' },
           { question: 'O complexo sistema de escrita egípcio era chamado de:', options: ['Cuneiforme', 'Hieróglifos', 'Alfabeto', 'Sânscrito'], correctAnswer: 'Hieróglifos' },
           { question: 'A prática da mumificação estava ligada à crença egípcia em:', options: ['Reencarnação', 'Vida após a morte', 'Sacrifícios humanos', 'Panteão de deuses animais'], correctAnswer: 'Vida após a morte' }
+        ],
+        sources: [
+          { name: 'World History Encyclopedia - Ancient Egypt', url: 'https://www.worldhistory.org/egypt/' },
+          { name: 'Britannica - Ancient Egypt', url: 'https://www.britannica.com/place/ancient-Egypt' },
+          { name: 'National Geographic - Ancient Egypt', url: 'https://www.nationalgeographic.com/history/article/ancient-egypt' }
         ]
       },
       {
@@ -216,6 +241,11 @@ A história grega foi marcada por conflitos decisivos. Nas Guerras Médicas (sé
           { question: 'A Guerra do Peloponeso foi um conflito travado entre quais duas cidades-Estado?', options: ['Atenas e Pérsia', 'Esparta e Tebas', 'Atenas e Esparta', 'Grécia e Roma'], correctAnswer: 'Atenas e Esparta' },
           { question: 'Os Jogos Olímpicos na Grécia Antiga eram realizados em homenagem a qual deus?', options: ['Apolo', 'Poseidon', 'Zeus', 'Hades'], correctAnswer: 'Zeus' },
           { question: 'Como era chamado o sistema de treinamento militar espartano?', options: ['Hoplita', 'Falange', 'Agogê', 'Pólis'], correctAnswer: 'Agogê' }
+        ],
+        sources: [
+          { name: 'World History Encyclopedia - Ancient Greece', url: 'https://www.worldhistory.org/greece/' },
+          { name: 'Britannica - Ancient Greece', url: 'https://www.britannica.com/place/ancient-Greece' },
+          { name: 'Toda Matéria - Grécia Antiga', url: 'https://www.todamateria.com.br/grecia-antiga/' }
         ]
       },
       {
@@ -238,6 +268,11 @@ O assassinato de César levou a uma nova guerra civil, da qual seu sobrinho-neto
           { question: 'O que foi a "Pax Romana"?', options: ['Um tratado de paz com os bárbaros', 'Um longo período de paz e prosperidade no Império', 'A lei que proibia guerras civis', 'A religião oficial do Estado Romano'], correctAnswer: 'Um longo período de paz e prosperidade no Império' },
           { question: 'O primeiro imperador romano foi:', options: ['Júlio César', 'Nero', 'Augusto', 'Constantino'], correctAnswer: 'Augusto' },
           { question: 'O Coliseu era usado principalmente para:', options: ['Reuniões do Senado', 'Peças de teatro', 'Corridas de bigas', 'Combates de gladiadores e espetáculos públicos'], correctAnswer: 'Combates de gladiadores e espetáculos públicos' }
+        ],
+        sources: [
+          { name: 'World History Encyclopedia - Roman Empire', url: 'https://www.worldhistory.org/Roman_Empire/' },
+          { name: 'Britannica - Ancient Rome', url: 'https://www.britannica.com/place/ancient-Rome' },
+          { name: 'Brasil Escola - Roma Antiga', url: 'https://brasilescola.uol.com.br/historiag/roma-antiga.htm' }
         ]
       },
        {
@@ -262,6 +297,11 @@ Mais ao sul, ao longo da Cordilheira dos Andes, os Incas construíram o maior im
             { question: "O Império Inca se desenvolveu em qual grande cadeia de montanhas da América do Sul?", options: ["Montanhas Rochosas", "Apalaches", "Cordilheira dos Andes", "Serra Madre"], correctAnswer: "Cordilheira dos Andes" },
             { question: "O que eram as 'chinampas' astecas?", options: ["Templos religiosos", "Armas de guerra", "Ilhas agrícolas artificiais", "Um tipo de calendário"], correctAnswer: "Ilhas agrícolas artificiais" },
             { question: "Qual foi um dos principais fatores que levaram à queda dos impérios pré-colombianos?", options: ["Mudanças climáticas", "Uma revolta de escravos", "A chegada dos conquistadores espanhóis", "Uma crise econômica interna"], correctAnswer: "A chegada dos conquistadores espanhóis" }
+        ],
+        sources: [
+          { name: 'World History Encyclopedia - Maya Civilization', url: 'https://www.worldhistory.org/Maya_Civilization/' },
+          { name: 'World History Encyclopedia - Aztec Civilization', url: 'https://www.worldhistory.org/Aztec_Civilization/' },
+          { name: 'World History Encyclopedia - Inca Civilization', url: 'https://www.worldhistory.org/Inca_Civilization/' }
         ]
     },
     ]
@@ -294,6 +334,11 @@ A economia era agrária, de subsistência e praticamente amonetária, com o feud
             { question: "O que era a 'corveia' no sistema feudal?", options: ["Um imposto pago em moeda ao senhor", "O serviço militar obrigatório para os servos", "A doação de parte da colheita para a Igreja", "O trabalho gratuito dos servos nas terras do senhor"], correctAnswer: "O trabalho gratuito dos servos nas terras do senhor" },
             { question: "Qual dos seguintes fatores NÃO contribuiu para o declínio do Feudalismo?", options: ["O renascimento comercial e urbano", "O fortalecimento do poder dos senhores feudais", "A centralização do poder nas mãos dos reis", "A Peste Negra, que dizimou parte da população"], correctAnswer: "O fortalecimento do poder dos senhores feudais" }
         ],
+        sources: [
+          { name: 'World History Encyclopedia - Feudalism', url: 'https://www.worldhistory.org/Feudalism/' },
+          { name: 'Britannica - Feudalism', url: 'https://www.britannica.com/topic/feudalism' },
+          { name: 'Brasil Escola - Feudalismo', url: 'https://brasilescola.uol.com.br/historiag/feudalismo.htm' }
+        ]
       },
       {
         id: 'cruzadas',
@@ -320,6 +365,11 @@ As Cruzadas subsequentes tiveram menos sucesso em seus objetivos religiosos. A T
             { question: "Qual foi uma consequência de longo prazo das Cruzadas para a Europa?", options: ["O fortalecimento definitivo do sistema feudal", "O isolamento completo da Europa em relação ao Oriente", "O renascimento do comércio no Mar Mediterrâneo", "A conversão em massa de muçulmanos ao cristianismo"], correctAnswer: "O renascimento do comércio no Mar Mediterrâneo" },
             { question: "A controversa Quarta Cruzada ficou marcada por ter desviado seu caminho e saqueado qual cidade?", options: ["Jerusalém", "Cairo", "Damasco", "Constantinopla"], correctAnswer: "Constantinopla" }
         ],
+        sources: [
+          { name: 'World History Encyclopedia - Crusades', url: 'https://www.worldhistory.org/Crusades/' },
+          { name: 'Britannica - Crusades', url: 'https://www.britannica.com/event/Crusades' },
+          { name: 'History.com - Crusades', url: 'https://www.history.com/topics/middle-ages/crusades' }
+        ]
       },
         {
         id: 'islam_medieval',
@@ -343,6 +393,11 @@ Essa explosão de conhecimento e cultura também se refletiu em uma rica literat
             { question: "Como os estudiosos islâmicos contribuíram para a preservação do conhecimento clássico?", options: ["Eles queimaram todos os livros antigos", "Eles esconderam as obras em mosteiros", "Eles traduziram as obras de filósofos gregos para o árabe", "Eles proibiram o estudo de filosofia"], correctAnswer: "Eles traduziram as obras de filósofos gregos para o árabe" },
             { question: "Avicena foi um renomado estudioso islâmico em qual campo?", options: ["Guerra", "Poesia", "Medicina", "Agricultura"], correctAnswer: "Medicina" },
             { question: "Onde o Islã se originou no século VII?", options: ["No Império Persa", "No Império Bizantino", "Na Península Arábica", "No Norte da África"], correctAnswer: "Na Península Arábica" }
+        ],
+        sources: [
+          { name: 'Britannica - Islamic world', url: 'https://www.britannica.com/topic/Islamic-world' },
+          { name: 'National Geographic - The Islamic World', url: 'https://education.nationalgeographic.org/resource/islamic-world/' },
+          { name: 'Wikipedia - Idade de Ouro Islâmica', url: 'https://pt.wikipedia.org/wiki/Idade_de_Ouro_Isl%C3%A2mica' }
         ]
     },
     {
@@ -367,6 +422,11 @@ A arte bizantina, com seus impressionantes mosaicos dourados e ícones sagrados,
             { question: "O que foi o Grande Cisma de 1054?", options: ["Uma guerra civil em Constantinopla", "A separação entre a Igreja Católica Romana e a Igreja Ortodoxa", "A coroação do imperador Justiniano", "A queda do Império Bizantino"], correctAnswer: "A separação entre a Igreja Católica Romana e a Igreja Ortodoxa" },
             { question: "O Império Bizantino caiu em 1453 após ser conquistado por qual povo?", options: ["Persas", "Mongóis", "Cruzados", "Turcos Otomanos"], correctAnswer: "Turcos Otomanos" },
             { question: "Qual era a principal característica da arte bizantina?", options: ["Pinturas realistas de paisagens", "Esculturas de mármore em tamanho real", "Mosaicos dourados e ícones religiosos", "Arte abstrata e minimalista"], correctAnswer: "Mosaicos dourados e ícones religiosos" }
+        ],
+        sources: [
+          { name: 'World History Encyclopedia - Byzantine Empire', url: 'https://www.worldhistory.org/Byzantine_Empire/' },
+          { name: 'Britannica - Byzantine Empire', url: 'https://www.britannica.com/place/Byzantine-Empire' },
+          { name: 'Toda Matéria - Império Bizantino', url: 'https://www.todamateria.com.br/imperio-bizantino/' }
         ]
     },
     ]
@@ -396,9 +456,14 @@ As consequências das Grandes Navegações foram revolucionárias e de alcance g
             { question: "Qual foi o principal objetivo econômico das Grandes Navegações?", options: ["Encontrar uma nova rota marítima para as Índias", "Provar que a Terra era redonda", "Descobrir o continente americano", "Estabelecer colônias na África"], correctAnswer: "Encontrar uma nova rota marítima para as Índias" },
             { question: "Qual nação europeia foi pioneira nas Grandes Navegações?", options: ["Inglaterra", "França", "Espanha", "Portugal"], correctAnswer: "Portugal" },
             { question: "Qual inovação tecnológica foi crucial para viabilizar as viagens oceânicas?", options: ["O motor a vapor", "O submarino", "A caravela", "O telégrafo"], correctAnswer: "A caravela" },
-            { question: "A chegada de Vasco da Gama às Índias em 1498 representou:", options: ["O descobrimento de um novo continente", "A conquista do objetivo português de chegar ao Oriente por mar", "O início da colonização do Brasil", "A primeira viagem de circunavegação do globo"], correctAnswer: "A primeira viagem de circunavegação do globo" },
+            { question: "A chegada de Vasco da Gama às Índias em 1498 representou:", options: ["O descobrimento de um novo continente", "A conquista do objetivo português de chegar ao Oriente por mar", "O início da colonização do Brasil", "A primeira viagem de circunavegação do globo"], correctAnswer: "A conquista do objetivo português de chegar ao Oriente por mar" },
             { question: "Uma das principais consequências das Grandes Navegações foi:", options: ["O fortalecimento do feudalismo", "O declínio do comércio europeu", "O deslocamento do eixo econômico do Mediterrâneo para o Atlântico", "O isolamento da Europa do resto do mundo"], correctAnswer: "O deslocamento do eixo econômico do Mediterrâneo para o Atlântico" }
         ],
+        sources: [
+          { name: 'World History Encyclopedia - Age of Discovery', url: 'https://www.worldhistory.org/Age_of_Discovery/' },
+          { name: 'Britannica - European exploration', url: 'https://www.britannica.com/topic/European-exploration' },
+          { name: 'Brasil Escola - Grandes Navegações', url: 'https://brasilescola.uol.com.br/historiag/grandes-navegacoes.htm' }
+        ]
       },
       {
         id: 'renascimento',
@@ -425,6 +490,11 @@ Nas artes, mestres como Leonardo da Vinci ("Mona Lisa", "A Última Ceia"), um ve
             { question: "A teoria heliocêntrica, um dos grandes avanços científicos do Renascimento, foi proposta por quem?", options: ["Galileu Galilei", "Isaac Newton", "Nicolau Copérnico", "Leonardo da Vinci"], correctAnswer: "Nicolau Copérnico" },
             { question: "Qual invenção tecnológica foi fundamental para a disseminação das ideias renascentistas pela Europa?", options: ["O telescópio", "A bússola", "A caravela", "A prensa de tipos móveis"], correctAnswer: "A prensa de tipos móveis" }
         ],
+        sources: [
+          { name: 'World History Encyclopedia - Renaissance', url: 'https://www.worldhistory.org/Renaissance/' },
+          { name: 'Britannica - Renaissance', url: 'https://www.britannica.com/event/Renaissance' },
+          { name: 'History.com - Renaissance', url: 'https://www.history.com/topics/renaissance/renaissance' }
+        ]
       },
       {
         id: 'reforma_protestante',
@@ -451,6 +521,11 @@ Outros reformadores importantes surgiram em outras partes da Europa. João Calvi
             { question: "Qual foi a resposta da Igreja Católica ao avanço do protestantismo?", options: ["A Reforma Luterana", "O Anglicanismo", "A Contrarreforma", "O Cisma do Oriente"], correctAnswer: "A Contrarreforma" },
             { question: "A criação da Igreja Anglicana na Inglaterra pelo rei Henrique VIII foi motivada principalmente por:", options: ["Questões teológicas profundas", "Uma revolta popular contra o Papa", "Razões políticas e o desejo do rei de anular seu casamento", "A influência direta de Martinho Lutero na corte inglesa"], correctAnswer: "Razões políticas e o desejo do rei de anular seu casamento" }
         ],
+        sources: [
+          { name: 'Britannica - Reformation', url: 'https://www.britannica.com/event/Reformation' },
+          { name: 'World History Encyclopedia - Protestant Reformation', url: 'https://www.worldhistory.org/Protestant_Reformation/' },
+          { name: 'Toda Matéria - Reforma Protestante', url: 'https://www.todamateria.com.br/reforma-protestante/' }
+        ]
       },
       {
         id: 'absolutismo_iluminismo',
@@ -475,6 +550,11 @@ Em oposição a esse sistema, surgiu no século XVIII o Iluminismo, ou "Século 
             { question: "Luís XIV, o 'Rei Sol', é o maior exemplo de qual sistema político?", options: ["Democracia", "República", "Monarquia Constitucional", "Absolutismo"], correctAnswer: "Absolutismo" },
             { question: "As ideias iluministas influenciaram diretamente quais importantes eventos históricos?", options: ["As Cruzadas e a Reforma Protestante", "A Revolução Americana e a Revolução Francesa", "A formação do Feudalismo e o Renascimento", "A Primeira e a Segunda Guerra Mundial"], correctAnswer: "A Revolução Americana e a Revolução Francesa" }
         ],
+        sources: [
+          { name: 'Britannica - Absolutism', url: 'https://www.britannica.com/topic/absolutism-political-system' },
+          { name: 'Britannica - Enlightenment', url: 'https://www.britannica.com/event/Enlightenment-European-history' },
+          { name: 'Brasil Escola - Iluminismo', url: 'https://brasilescola.uol.com.br/historiag/iluminismo.htm' }
+        ]
       },
     ]
   },
@@ -506,6 +586,11 @@ A Segunda Revolução Industrial (final do século XIX e início do XX) viu a in
             { question: "A Segunda Revolução Industrial foi caracterizada pelo uso de quais novas fontes de energia?", options: ["Carvão e lenha", "Energia eólica e solar", "Petróleo e eletricidade", "Energia nuclear e hidráulica"], correctAnswer: "Petróleo e eletricidade" },
             { question: "Qual foi uma das principais consequências sociais da Revolução Industrial?", options: ["O fortalecimento do sistema feudal", "A diminuição das cidades e o retorno ao campo", "A melhoria imediata das condições de vida para todos", "O crescimento urbano desordenado e a formação da classe operária"], correctAnswer: "O crescimento urbano desordenado e a formação da classe operária" }
         ],
+        sources: [
+          { name: 'Britannica - Industrial Revolution', url: 'https://www.britannica.com/event/Industrial-Revolution' },
+          { name: 'History.com - Industrial Revolution', url: 'https://www.history.com/topics/industrial-revolution/industrial-revolution' },
+          { name: 'Mundo Educação - Revolução Industrial', url: 'https://mundoeducacao.uol.com.br/historiageral/revolucao-industrial.htm' }
+        ]
       },
       {
         id: 'revolucao_francesa',
@@ -532,6 +617,11 @@ Após a queda dos jacobinos (a Reação Termidoriana), seguiu-se o Diretório (1
             { question: "O 'Período do Terror', a fase mais radical da revolução, foi liderado por qual grupo político?", options: ["Os Girondinos", "Os Monarquistas", "Os Jacobinos", "Os Fisiocratas"], correctAnswer: "Os Jacobinos" },
             { question: "A Revolução Francesa chegou ao fim com qual evento?", options: ["A restauração da monarquia", "Uma invasão estrangeira", "O Golpe de 18 de Brumário, liderado por Napoleão Bonaparte", "A morte de Robespierre"], correctAnswer: "A morte de Robespierre" }
         ],
+        sources: [
+          { name: 'Britannica - French Revolution', url: 'https://www.britannica.com/event/French-Revolution' },
+          { name: 'World History Encyclopedia - French Revolution', url: 'https://www.worldhistory.org/French_Revolution/' },
+          { name: 'Brasil Escola - Revolução Francesa', url: 'https://brasilescola.uol.com.br/historiag/revolucao-francesa.htm' }
+        ]
       },
       {
         id: 'independencia_americas',
@@ -558,6 +648,11 @@ O processo de independência do Brasil foi único e comparativamente menos viole
             { question: "Qual foi a principal diferença entre o processo de independência do Brasil e o da América Espanhola?", options: ["O Brasil se tornou uma república democrática imediatamente", "O processo brasileiro foi liderado por escravos libertos", "A independência do Brasil foi um processo mais pacífico e levou a uma monarquia", "O Brasil contou com forte apoio militar da França"], correctAnswer: "A independência do Brasil foi um processo mais pacífico e levou a uma monarquia" },
             { question: "Qual movimento serviu de inspiração e precursor para as independências em todo o continente americano?", options: ["A Revolução Gloriosa na Inglaterra", "A Independência dos Estados Unidos", "A Unificação Italiana", "A Revolução Russa"], correctAnswer: "A Independência dos Estados Unidos" }
         ],
+        sources: [
+          { name: 'Britannica - Latin American Independence', url: 'https://www.britannica.com/topic/Latin-American-Independence-Wars-of' },
+          { name: 'Wikipedia - Independência da América Espanhola', url: 'https://pt.wikipedia.org/wiki/Independ%C3%AAncia_da_Am%C3%A9rica_Espanhola' },
+          { name: 'Wikipedia - Independência do Brasil', url: 'https://pt.wikipedia.org/wiki/Independ%C3%AAncia_do_Brasil' }
+        ]
       },
       {
         id: 'guerras_napoleonicas',
@@ -584,6 +679,11 @@ O ponto de virada na sorte de Napoleão foi a catastrófica invasão da Rússia 
             { question: "Qual foi a batalha que marcou a derrota final de Napoleão Bonaparte?", options: ["Batalha de Leipzig", "Batalha de Trafalgar", "Batalha de Waterloo", "Batalha de Borodino"], correctAnswer: "Batalha de Waterloo" },
             { question: "Após a queda de Napoleão, qual foi o objetivo do Congresso de Viena?", options: ["Espalhar os ideais da Revolução Francesa", "Criar uma república unificada na Europa", "Restaurar as monarquias absolutistas e o equilíbrio de poder", "Dividir a França entre os países vitoriosos"], correctAnswer: "Restaurar as monarquias absolutistas e o equilíbrio de poder" }
         ],
+        sources: [
+          { name: 'Britannica - Napoleonic Wars', url: 'https://www.britannica.com/event/Napoleonic-Wars' },
+          { name: 'Wikipedia - Guerras Napoleônicas', url: 'https://pt.wikipedia.org/wiki/Guerras_Napole%C3%B4nicas' },
+          { name: 'Mundo Educação - Era Napoleônica', url: 'https://mundoeducacao.uol.com.br/historiageral/era-napoleonica.htm' }
+        ]
       },
       {
         id: 'primeira_guerra_mundial',
@@ -610,6 +710,11 @@ Dois eventos em 1917 mudaram o curso da guerra. A Revolução Russa levou à asc
             { question: "Qual tratado, imposto à Alemanha após a guerra, é considerado uma das causas da Segunda Guerra Mundial?", options: ["Tratado de Tordesilhas", "Tratado de Versalhes", "Acordo de Munique", "Pacto de Não Agressão Germano-Soviético"], correctAnswer: "Tratado de Versalhes" },
             { question: "Qual grande império se desintegrou como resultado da Revolução de 1917, retirando-se da guerra no mesmo ano?", options: ["Império Britânico", "Império Austro-Húngaro", "Império Otomano", "Império Russo"], correctAnswer: "Império Russo" }
         ],
+        sources: [
+          { name: 'Britannica - World War I', url: 'https://www.britannica.com/event/World-War-I' },
+          { name: 'History.com - World War I', url: 'https://www.history.com/topics/world-war-i/world-war-i-history' },
+          { name: 'Brasil Escola - Primeira Guerra Mundial', url: 'https://brasilescola.uol.com.br/historiag/primeira-guerra-mundial.htm' }
+        ]
       },
       {
         id: 'segunda_guerra_mundial',
@@ -636,6 +741,11 @@ O curso da guerra mudou drasticamente em 1941 com dois eventos cruciais. Em junh
             { question: "Qual evento levou à entrada dos Estados Unidos na Segunda Guerra Mundial?", options: ["A invasão da França", "O início da Batalha de Stalingrado", "O ataque japonês a Pearl Harbor", "A descoberta dos campos de concentração"], correctAnswer: "O ataque japonês a Pearl Harbor" },
             { question: "A Segunda Guerra Mundial terminou no Pacífico após qual acontecimento?", options: ["A rendição da Alemanha", "A Batalha de Midway", "O suicídio de Hitler", "O lançamento das bombas atômicas em Hiroshima e Nagasaki"], correctAnswer: "O lançamento das bombas atômicas em Hiroshima e Nagasaki" }
         ],
+        sources: [
+          { name: 'Britannica - World War II', url: 'https://www.britannica.com/event/World-War-II' },
+          { name: 'History.com - World War II', url: 'https://www.history.com/topics/world-war-ii/world-war-ii-history' },
+          { name: 'Brasil Escola - Segunda Guerra Mundial', url: 'https://brasilescola.uol.com.br/historiag/segunda-guerra-mundial.htm' }
+        ]
       },
       {
         id: 'guerra_fria',
@@ -662,6 +772,11 @@ A rivalidade também alimentou "guerras por procuração" em várias partes do m
             { question: "A OTAN e o Pacto de Varsóvia eram exemplos de:", options: ["Acordos comerciais", "Alianças militares", "Organizações culturais", "Tratados de paz"], correctAnswer: "Alianças militares" },
             { question: "Qual evento é considerado o marco simbólico do fim da Guerra Fria?", options: ["A chegada do homem à Lua", "O fim da Guerra do Vietnã", "A Queda do Muro de Berlim", "A criação da União Europeia"], correctAnswer: "A Queda do Muro de Berlim" }
         ],
+        sources: [
+          { name: 'Britannica - Cold War', url: 'https://www.britannica.com/event/Cold-War' },
+          { name: 'History.com - Cold War', url: 'https://www.history.com/topics/cold-war/cold-war-history' },
+          { name: 'Brasil Escola - Guerra Fria', url: 'https://brasilescola.uol.com.br/historiag/guerra-fria.htm' }
+        ]
       },
       {
         id: 'descolonizacao_afro_asiatica',
@@ -688,6 +803,11 @@ O processo de independência assumiu formas diversas, variando de negociações 
             { question: "Qual foi um dos principais legados negativos da colonização para os novos países?", options: ["A criação de democracias estáveis", "O rápido desenvolvimento industrial", "O estabelecimento de fronteiras artificiais que geraram conflitos étnicos", "A erradicação de todas as doenças tropicais"], correctAnswer: "O estabelecimento de fronteiras artificiais que geraram conflitos étnicos" },
             { question: "O Movimento dos Países Não-Alinhados, surgido na Conferência de Bandung, representava nações que buscavam:", options: ["Aliar-se militarmente com a China", "Manter uma posição de neutralidade na Guerra Fria", "Restaurar o poder dos antigos impérios coloniais", "Criar um novo bloco comunista"], correctAnswer: "Manter uma posição de neutralidade na Guerra Fria" }
         ],
+        sources: [
+          { name: 'Britannica - Decolonization', url: 'https://www.britannica.com/topic/decolonization' },
+          { name: 'Wikipedia - Descolonização', url: 'https://pt.wikipedia.org/wiki/Descoloniza%C3%A7%C3%A3o' },
+          { name: 'Mundo Educação - Descolonização da África e da Ásia', url: 'https://mundoeducacao.uol.com.br/historiageral/a-descolonizacao-afro-asiatica.htm' }
+        ]
       },
       {
         id: 'ditaduras_seculo_xx',
@@ -712,6 +832,11 @@ Durante a Guerra Fria, a rivalidade entre EUA e URSS fomentou a instalação de 
             { question: "A 'Operação Condor' foi uma aliança entre ditaduras do Cone Sul para qual finalidade?", options: ["Promover a integração econômica da região", "Desenvolver um programa espacial conjunto", "Perseguir e eliminar opositores políticos além das fronteiras", "Organizar eventos esportivos"], correctAnswer: "Perseguir e eliminar opositores políticos além das fronteiras" },
             { question: "Na União Soviética, o regime totalitário liderado por Josef Stálin foi marcado por:", options: ["Liberdade religiosa e econômica", "Expurgos políticos, campos de trabalho forçado e culto à personalidade", "Uma transição pacífica para a democracia", "Aliança com os países capitalistas"], correctAnswer: "Expurgos políticos, campos de trabalho forçado e culto à personalidade" }
         ],
+        sources: [
+          { name: 'Wikipedia - Ditadura Militar no Brasil (1964-1985)', url: 'https://pt.wikipedia.org/wiki/Ditadura_militar_no_Brasil_(1964%E2%80%931985)' },
+          { name: 'Wikipedia - Ditadura Militar no Chile (1973-1990)', url: 'https://pt.wikipedia.org/wiki/Ditadura_Militar_no_Chile_(1973%E2%80%931990)' },
+          { name: 'Britannica - Totalitarianism', url: 'https://www.britannica.com/topic/totalitarianism' }
+        ]
       },
       {
         id: 'queda_muro_berlim',
@@ -738,6 +863,11 @@ Durante uma confusa conferência de imprensa em 9 de novembro, um porta-voz do g
             { question: "Qual foi a consequência política mais imediata da Queda do Muro de Berlim para a Alemanha?", options: ["A divisão do país em quatro zonas de ocupação", "A construção de um novo muro", "A reunificação da Alemanha Ocidental e Oriental", "A adesão da Alemanha Oriental ao Pacto de Varsóvia"], correctAnswer: "A reunificação da Alemanha Ocidental e Oriental" },
             { question: "Como a população de Berlim reagiu à notícia da abertura das fronteiras em 9 de novembro de 1989?", options: ["Com indiferença e medo", "Correndo para o muro e celebrando sua queda", "Organizando um protesto contra a medida", "Fugindo da cidade"], correctAnswer: "Correndo para o muro e celebrando sua queda" }
         ],
+        sources: [
+          { name: 'History.com - Berlin Wall', url: 'https://www.history.com/topics/cold-war/berlin-wall' },
+          { name: 'Britannica - Berlin Wall', url: 'https://www.britannica.com/topic/Berlin-Wall' },
+          { name: 'Brasil Escola - Queda do Muro de Berlim', url: 'https://brasilescola.uol.com.br/historiag/queda-muro-berlim.htm' }
+        ]
       },
       {
         id: 'globalizacao',
@@ -764,6 +894,11 @@ Na dimensão econômica, a globalização é marcada pela atuação de empresas 
             { question: "Qual evento político foi fundamental para a expansão da globalização após 1990?", options: ["A Revolução Francesa", "A Primeira Guerra Mundial", "A Crise de 1929", "O fim da Guerra Fria"], correctAnswer: "O fim da Guerra Fria" },
             { question: "Qual das seguintes opções é frequentemente apontada como uma consequência negativa da globalização?", options: ["O aumento da diversidade cultural local", "A diminuição das trocas comerciais", "O aumento da desigualdade social entre e dentro dos países", "O isolamento completo das nações"], correctAnswer: "O aumento da desigualdade social entre e dentro dos países" }
         ],
+        sources: [
+          { name: 'Stanford Encyclopedia of Philosophy - Globalization', url: 'https://plato.stanford.edu/entries/globalization/' },
+          { name: 'Brasil Escola - Globalização', url: 'https://brasilescola.uol.com.br/geografia/globalizacao.htm' },
+          { name: 'Wikipedia - Globalização', url: 'https://pt.wikipedia.org/wiki/Globaliza%C3%A7%C3%A3o' }
+        ]
       },
     ]
   },
@@ -792,6 +927,11 @@ A escrita foi uma ferramenta revolucionária com consequências profundas. Ela p
             { question: "A invenção da escrita marca a transição entre quais dois períodos históricos?", options: ["Paleolítico e Neolítico", "Idade da Pedra e Idade dos Metais", "Pré-História e História", "Idade Média e Idade Moderna"], correctAnswer: "Pré-História e História" },
             { question: "Qual artefato foi crucial para a decifração dos hieróglifos egípcios?", options: ["O Código de Hamurabi", "A Pedra de Roseta", "Os Manuscritos do Mar Morto", "A Tábua de Esmeralda"], correctAnswer: "A Pedra de Roseta" },
             { question: "Os hieróglifos foram o sistema de escrita de qual civilização antiga?", options: ["Romana", "Grega", "Mesopotâmica", "Egípcia"], correctAnswer: "Egípcia" }
+        ],
+        sources: [
+          { name: 'World History Encyclopedia - Writing', url: 'https://www.worldhistory.org/writing/' },
+          { name: 'Britannica - Writing', url: 'https://www.britannica.com/topic/writing' },
+          { name: 'Mundo Educação - Invenção da Escrita', url: 'https://mundoeducacao.uol.com.br/historiageral/invencao-escrita.htm' }
         ]
     },
     {
@@ -816,6 +956,11 @@ Com o tempo, a roda foi sendo aperfeiçoada, com a introdução de raios para to
             { question: "Qual foi o principal impacto da roda no transporte?", options: ["Tornou as viagens mais lentas", "Permitiu o transporte de cargas pesadas por longas distâncias", "Limitou o comércio a áreas próximas", "Só era útil em terrenos montanhosos"], correctAnswer: "Permitiu o transporte de cargas pesadas por longas distâncias" },
             { question: "A combinação de qual elemento com a roda foi o verdadeiro avanço tecnológico para o transporte?", options: ["O freio", "O pneu", "O eixo", "A madeira"], correctAnswer: "O eixo" },
             { question: "Que civilizações notáveis não usaram a roda para transporte, apesar de a conhecerem?", options: ["Romanos e Gregos", "Egípcios e Persas", "Astecas e Incas", "Chineses e Indianos"], correctAnswer: "Astecas e Incas" }
+        ],
+        sources: [
+          { name: 'World History Encyclopedia - Wheel', url: 'https://www.worldhistory.org/wheel/' },
+          { name: 'Live Science - History of the Wheel', url: 'https://www.livescience.com/18808-invention-wheel.html' },
+          { name: 'Wikipedia - Roda', url: 'https://pt.wikipedia.org/wiki/Roda' }
         ]
     },
     {
@@ -825,7 +970,7 @@ Com o tempo, a roda foi sendo aperfeiçoada, com a introdução de raios para to
 
 A inovação de Johannes Gutenberg, um ourives de Mainz, na Alemanha, foi combinar várias tecnologias existentes em um sistema eficiente. Ele desenvolveu uma liga de metal que permitia a fundição precisa de tipos (letras) móveis e reutilizáveis, uma tinta à base de óleo que aderia bem ao metal e uma prensa de parafuso adaptada das prensas usadas para espremer uvas na produção de vinho. Esse sistema permitia que uma página fosse composta com os tipos, entintada e impressa em papel de forma rápida e uniforme, podendo ser replicada centenas de vezes. A primeira grande obra impressa foi a Bíblia de Gutenberg, em latim.
 
-O impacto da imprensa foi imenso e imediato. Ela reduziu drasticamente o custo dos livros e permitiu sua produção em massa, levando a uma "explosão da informação" na Europa. O conhecimento, antes restrito a poucos, tornou-se muito mais acessível, estimulando a alfabetização e o pensamento crítico. A imprensa foi um motor fundamental para os grandes movimentos que definiram a Idade Moderna. Ela permitiu que as ideias humanistas do Renascimento se espalhassem rapidamente por todo o continente. Foi crucial para a Reforma Protestante, pois as "95 Teses" de Martinho Lutero e suas outras obras puderam ser impressas e distribuídas em milhares de cópias, levando suas críticas à Igreja Católica a um público vasto e incendiando o movimento. Além disso, a imprensa permitiu que os novos conhecimentos da Revolução Científica, como as descobertas de Copérnico e Galileu, fossem compartilhados e debatidos pela comunidade acadêmica, acelerando o avanço da ciência e pavimentando o caminho para o Iluminismo e a era moderna.`,
+O impacto da imprensa foi imenso e imediato. Ela reduziu drasticamente o custo dos livros e permitiu sua produção em massa, levando a uma "explosão da informação" na Europa. O conhecimento, antes restrito a poucos, tornou-se muito mais acessível, estimulando a alfabetização e o pensamento crítico. A imprensa foi um motor fundamental para os grandes movimentos que definiram a Idade Moderna. Ela permitiu que as ideias humanistas do Renascimento se espalhassem rapidamente por todo o continente. Foi crucial para a Reforma Protestante, pois as "95 Teses" de Martinho Lutero e outras obras puderam ser impressas e distribuídas em milhares de cópias, levando suas críticas à Igreja Católica a um público vasto e incendiando o movimento. Além disso, a imprensa permitiu que os novos conhecimentos da Revolução Científica, como as descobertas de Copérnico e Galileu, fossem compartilhados e debatidos pela comunidade acadêmica, acelerando o avanço da ciência e pavimentando o caminho para o Iluminismo e a era moderna.`,
         curiosity: 'Gutenberg faliu antes que pudesse lucrar com sua invenção. Seu sócio, Johann Fust, processou-o pela devolução do dinheiro que havia investido e assumiu a oficina de impressão, incluindo os equipamentos e as Bíblias já impressas.',
         timeline: [
             { date: 'Cerca de 105 d.C.', description: 'Invenção do papel por Cai Lun na China.' },
@@ -840,6 +985,11 @@ O impacto da imprensa foi imenso e imediato. Ela reduziu drasticamente o custo d
             { question: "Qual foi a primeira grande obra impressa por Gutenberg?", options: ["'O Príncipe' de Maquiavel", "As '95 Teses' de Lutero", "A Bíblia", "Os 'Elementos' de Euclides"], correctAnswer: "A Bíblia" },
             { question: "A invenção da imprensa foi um fator crucial para a disseminação de quais movimentos históricos?", options: ["O Feudalismo e as Cruzadas", "A Reforma Protestante e o Renascimento", "O Império Romano e a Pax Romana", "A Revolução Industrial e o Imperialismo"], correctAnswer: "A Reforma Protestante e o Renascimento" },
             { question: "Em qual país o papel foi inventado, séculos antes da prensa de Gutenberg?", options: ["Egito", "Alemanha", "Itália", "China"], correctAnswer: "China" }
+        ],
+        sources: [
+          { name: 'Britannica - Printing press', url: 'https://www.britannica.com/technology/printing-press' },
+          { name: 'History.com - Printing Press', url: 'https://www.history.com/topics/inventions/printing-press' },
+          { name: 'Mundo Educação - A Invenção da Imprensa', url: 'https://mundoeducacao.uol.com.br/historiageral/invencao-imprensa.htm' }
         ]
     },
       {
@@ -866,6 +1016,11 @@ A iluminação elétrica transformou radicalmente a sociedade. Ela estendeu o di
           { question: "Qual foi uma das principais consequências sociais da popularização da lâmpada elétrica?", options: ["A redução da jornada de trabalho nas fábricas", "O fim da vida noturna nas cidades", "A possibilidade de estender as atividades humanas para o período da noite", "O aumento do uso de velas e lamparinas a gás"], correctAnswer: "A possibilidade de estender as atividades humanas para o período da noite" },
           { question: "O primeiro filamento de sucesso comercial de Edison, que durava centenas de horas, foi feito de:", options: ["Tungstênio", "Grafite", "Bambu carbonizado", "Platina"], correctAnswer: "Bambu carbonizado" },
           { question: "A primeira estação de energia comercial de Edison foi inaugurada em qual cidade?", options: ["Londres", "Paris", "Boston", "Nova York"], correctAnswer: "Nova York" }
+        ],
+        sources: [
+          { name: 'Wikipedia - Lâmpada incandescente', url: 'https://pt.wikipedia.org/wiki/L%C3%A2mpada_incandescente' },
+          { name: 'Energy.gov - The History of the Light Bulb', url: 'https://www.energy.gov/articles/history-light-bulb' },
+          { name: 'Brasil Escola - A História da Lâmpada', url: 'https://brasilescola.uol.com.br/fisica/a-historia-lampada.htm' }
         ]
       },
        {
@@ -892,6 +1047,11 @@ Na década de 1890, outro engenheiro alemão, Rudolf Diesel, desenvolveu um tipo
           { question: "Qual é a função da vela de ignição em um motor a gasolina de quatro tempos?", options: ["Injetar o combustível no cilindro", "Comprimir a mistura de ar e combustível", "Inflamar a mistura de ar e combustível para gerar a explosão", "Expelir os gases da queima"], correctAnswer: "Inflamar a mistura de ar e combustível para gerar a explosão" },
           { question: "A principal diferença do motor a diesel em relação ao motor a gasolina é que:", options: ["Ele não precisa de ar para funcionar", "Ele usa uma vela de ignição para queimar o combustível", "A ignição ocorre pela alta temperatura do ar comprimido, sem necessidade de vela", "Ele tem apenas um tempo em seu ciclo"], correctAnswer: "A ignição ocorre pela alta temperatura do ar comprimido, sem necessidade de vela" },
           { question: "O desenvolvimento do motor de combustão interna foi essencial para a invenção e popularização de qual meio de transporte?", options: ["A bicicleta", "O navio a vapor", "O automóvel", "O trem elétrico"], correctAnswer: "O automóvel" }
+        ],
+        sources: [
+          { name: 'Wikipedia - Motor de combustão interna', url: 'https://pt.wikipedia.org/wiki/Motor_de_combust%C3%A3o_interna' },
+          { name: 'Energy Education - Internal combustion engine', url: 'https://energyeducation.ca/encyclopedia/Internal_combustion_engine' },
+          { name: 'How a Car Works - The internal combustion engine', url: 'https://www.howacarworks.com/basics/the-internal-combustion-engine-an-introduction' }
         ]
       },
       {
@@ -918,6 +1078,11 @@ O impacto do automóvel na sociedade do século XX foi profundo e multifacetado.
           { question: "Uma das principais consequências sociais da popularização do automóvel foi:", options: ["O crescimento das cidades verticais", "O declínio da indústria do petróleo", "O desenvolvimento dos subúrbios e a expansão urbana", "A redução da mobilidade pessoal"], correctAnswer: "O desenvolvimento dos subúrbios e a expansão urbana" },
           { question: "Por que Henry Ford aumentou o salário de seus trabalhadores para 5 dólares por dia, em uma jogada de mestre?", options: ["Para cumprir uma nova lei governamental", "Para que eles pudessem se tornar consumidores e comprar os carros que fabricavam", "Para incentivar a imigração para os EUA", "Para competir com a indústria europeia"], correctAnswer: "Para que eles pudessem se tornar consumidores e comprar os carros que fabricavam" },
           { question: "O Ford Modelo T foi projetado para ser:", options: ["Um carro de corrida de alta velocidade", "Um veículo de luxo para a elite", "Um carro durável, simples e barato para as massas", "Um veículo militar para a guerra"], correctAnswer: "Um carro durável, simples e barato para as massas" }
+        ],
+        sources: [
+          { name: 'Wikipedia - History of the automobile', url: 'https://en.wikipedia.org/wiki/History_of_the_automobile' },
+          { name: 'History.com - Automobile', url: 'https://www.history.com/topics/inventions/automobiles' },
+          { name: 'Mundo Educação - A História do Automóvel', url: 'https://mundoeducacao.uol.com.br/curiosidades/a-historia-automovel.htm' }
         ]
       },
        {
@@ -942,6 +1107,11 @@ O microprocessador tornou possível a revolução do computador pessoal (PC) nas
             { question: "Charles Babbage, no século XIX, projetou qual máquina, considerada um precursor conceitual do computador moderno?", options: ["O Transistor", "O ENIAC", "A Máquina Diferencial", "A Máquina Analítica"], correctAnswer: "A Máquina Analítica" },
             { question: "Quais empresas foram pioneiras na popularização dos computadores pessoais nos anos 70 e 80?", options: ["Google e Facebook", "Amazon e Netflix", "Apple e IBM/Microsoft", "Sony e Nintendo"], correctAnswer: "Apple e IBM/Microsoft" },
             { question: "Qual tecnologia foi substituída pelo transistor, permitindo computadores menores, mais confiáveis e mais eficientes?", options: ["Engrenagens mecânicas", "Cartões perfurados", "Válvulas a vácuo", "Fitas magnéticas"], correctAnswer: "Válvulas a vácuo" }
+        ],
+        sources: [
+          { name: 'Computer History Museum', url: 'https://www.computerhistory.org/timeline/computers/' },
+          { name: 'Britannica - Computer', url: 'https://www.britannica.com/technology/computer' },
+          { name: 'Brasil Escola - A História dos Computadores', url: 'https://brasilescola.uol.com.br/informatica/a-historia-dos-computadores.htm' }
         ]
     },
     {
@@ -966,6 +1136,11 @@ A partir de meados da década de 1990, com a combinação da Web e dos navegador
             { question: "Qual era o objetivo de design original da ARPANET?", options: ["Criar uma rede comercial global", "Ser uma rede de comunicação descentralizada e resistente a falhas", "Desenvolver o primeiro videogame online", "Conectar bibliotecas universitárias"], correctAnswer: "Ser uma rede de comunicação descentralizada e resistente a falhas" },
             { question: "O que tornou a internet acessível e popular para o público em geral nos anos 90?", options: ["A invenção do e-mail", "A criação da World Wide Web e dos navegadores gráficos", "O lançamento do primeiro satélite", "O desenvolvimento do telefone"], correctAnswer: "A criação da World Wide Web e dos navegadores gráficos" },
             { question: "O símbolo '@' foi escolhido para uso em endereços de e-mail por qual motivo?", options: ["Era o único símbolo disponível", "Para separar o nome do usuário do nome do host (computador)", "Significava 'endereço' em latim", "Foi escolhido aleatoriamente"], correctAnswer: "Para separar o nome do usuário do nome do host (computador)" }
+        ],
+        sources: [
+          { name: 'History.com - History of the Internet', url: 'https://www.history.com/topics/inventions/invention-of-the-internet' },
+          { name: 'Internet Society - A Brief History of the Internet', url: 'https://www.internetsociety.org/internet/history-internet/brief-history-internet/' },
+          { name: 'Wikipedia - História da Internet', url: 'https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_Internet' }
         ]
     },
      {
@@ -990,6 +1165,11 @@ Um subcampo particularmente poderoso do machine learning é o aprendizado profun
             { question: "O que é 'machine learning'?", options: ["Um tipo de hardware de computador", "Uma abordagem da IA onde os sistemas aprendem a partir de dados em vez de serem explicitamente programados", "Uma linguagem de programação para robôs", "Um sistema operacional para robôs"], correctAnswer: "Uma abordagem da IA onde os sistemas aprendem a partir de dados em vez de serem explicitamente programados" },
             { question: "Deep Blue, o computador que venceu o campeão mundial de xadrez Garry Kasparov, foi um marco importante para qual campo?", options: ["Computação quântica", "Realidade virtual", "Inteligência Artificial", "Internet das Coisas"], correctAnswer: "Inteligência Artificial" },
             { question: "Qual das seguintes aplicações NÃO é um exemplo comum de IA hoje?", options: ["Assistentes virtuais como Siri e Alexa", "Sistemas de recomendação da Netflix", "Calculadoras de bolso básicas", "Carros autônomos"], correctAnswer: "Calculadoras de bolso básicas" }
+        ],
+        sources: [
+          { name: 'Stanford Encyclopedia of Philosophy - Artificial Intelligence', url: 'https://plato.stanford.edu/entries/artificial-intelligence/' },
+          { name: 'Britannica - Artificial intelligence', url: 'https://www.britannica.com/technology/artificial-intelligence' },
+          { name: 'Wikipedia - Inteligência Artificial', url: 'https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_artificial' }
         ]
     }
     ]
@@ -1022,6 +1202,11 @@ Seu discípulo mais famoso, Platão, sistematizou e aprofundou as ideias socrát
             { question: "A Teoria das Ideias, que postula a existência de um mundo inteligível de formas perfeitas, foi desenvolvida por:", options: ["Aristóteles", "Platão", "Diógenes", "Epicuro"], correctAnswer: "Platão" },
             { question: "As escolas do período helenístico, como o Estoicismo e o Epicurismo, tinham como foco principal:", options: ["A investigação da natureza", "A organização da cidade-Estado", "A busca pela felicidade individual e a paz de espírito", "A criação de sistemas lógicos complexos"], correctAnswer: "A busca pela felicidade individual e a paz de espírito" }
         ],
+        sources: [
+          { name: 'Stanford Encyclopedia of Philosophy - Ancient Philosophy', url: 'https://plato.stanford.edu/entries/ancient-philosophy/' },
+          { name: 'World History Encyclopedia - Greek Philosophy', url: 'https://www.worldhistory.org/Greek_Philosophy/' },
+          { name: 'Brasil Escola - Filosofia Grega', url: 'https://brasilescola.uol.com.br/filosofia/filosofia-grega.htm' }
+        ]
       },
       {
         id: 'filosofia_medieval',
@@ -1045,6 +1230,11 @@ A segunda e mais influente corrente foi a Escolástica, que floresceu nas univer
             { question: "São Tomás de Aquino baseou grande parte de sua filosofia na obra de qual pensador grego?", options: ["Sócrates", "Platão", "Aristóteles", "Epicuro"], correctAnswer: "Aristóteles" },
             { question: "O que são as 'Cinco Vias' de Tomás de Aquino?", options: ["Cinco caminhos para a felicidade", "Cinco tipos de pecado", "Cinco argumentos racionais para a existência de Deus", "Cinco livros que escreveu"], correctAnswer: "Cinco argumentos racionais para a existência de Deus" },
             { question: "A filosofia medieval esteve intimamente ligada a qual instituição?", options: ["O Império Romano", "As universidades seculares", "A Igreja Católica", "As monarquias absolutistas"], correctAnswer: "A Igreja Católica" }
+        ],
+        sources: [
+          { name: 'Stanford Encyclopedia of Philosophy - Medieval Philosophy', url: 'https://plato.stanford.edu/entries/medieval-philosophy/' },
+          { name: 'Britannica - Medieval philosophy', url: 'https://www.britannica.com/topic/Western-philosophy/Medieval-philosophy' },
+          { name: 'Brasil Escola - Filosofia Medieval', url: 'https://brasilescola.uol.com.br/filosofia/filosofia-medieval.htm' }
         ]
     },
       {
@@ -1074,6 +1264,11 @@ No século XVIII, o filósofo alemão Immanuel Kant procurou superar essa dicoto
             { question: "Qual filósofo tentou criar uma síntese entre o racionalismo e o empirismo?", options: ["Thomas Hobbes", "Jean-Jacques Rousseau", "Baruch Spinoza", "Immanuel Kant"], correctAnswer: "Immanuel Kant" },
             { question: "Hobbes, Locke e Rousseau são conhecidos como filósofos 'contratualistas' porque eles discutiram:", options: ["A natureza da arte e do belo", "A origem do Estado e da sociedade civil a partir de um pacto ou contrato", "A estrutura da matéria e do universo", "As regras da lógica formal"], correctAnswer: "A origem do Estado e da sociedade civil a partir de um pacto ou contrato" }
         ],
+        sources: [
+          { name: 'Stanford Encyclopedia of Philosophy - Rationalism vs. Empiricism', url: 'https://plato.stanford.edu/entries/rationalism-empiricism/' },
+          { name: 'Wikipedia - Filosofia moderna', url: 'https://pt.wikipedia.org/wiki/Filosofia_moderna' },
+          { name: 'Brasil Escola - Filosofia Moderna', url: 'https://brasilescola.uol.com.br/filosofia/filosofia-moderna.htm' }
+        ]
       },
       {
         id: 'filosofia_contemporanea',
@@ -1100,6 +1295,11 @@ Outra vertente importante foi a Escola de Frankfurt, com pensadores como Theodor
             { question: "Qual filósofa analisou o totalitarismo e cunhou o termo 'a banalidade do mal'?", options: ["Simone de Beauvoir", "Hannah Arendt", "Judith Butler", "Angela Davis"], correctAnswer: "Hannah Arendt" },
             { question: "O que significa a máxima existencialista 'a existência precede a essência'?", options: ["Que a natureza humana já nasce definida", "Que o homem primeiro existe e depois se define por suas ações e escolhas", "Que a essência divina determina a existência humana", "Que a sociedade define completamente o indivíduo"], correctAnswer: "Que o homem primeiro existe e depois se define por suas ações e escolhas" }
         ],
+        sources: [
+          { name: 'Stanford Encyclopedia of Philosophy - Existentialism', url: 'https://plato.stanford.edu/entries/existentialism/' },
+          { name: 'Wikipedia - Filosofia contemporânea', url: 'https://pt.wikipedia.org/wiki/Filosofia_contempor%C3%A2nea' },
+          { name: 'Brasil Escola - Filosofia Contemporânea', url: 'https://brasilescola.uol.com.br/filosofia/filosofia-contemporanea.htm' }
+        ]
       },
     ]
   }

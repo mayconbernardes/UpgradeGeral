@@ -167,8 +167,8 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
                 setIsPaused(false);
                 setHighlightedWord(null);
             };
-            newUtterance.onerror = (e) => {
-                console.error("Speech Synthesis Error:", e);
+            newUtterance.onerror = (e: SpeechSynthesisErrorEvent) => {
+                console.error("Speech Synthesis Error:", e.error);
                 setIsSpeaking(false);
                 setIsPaused(false);
                 setHighlightedWord(null);
@@ -472,18 +472,17 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
                                         <i className="fas fa-chevron-right"></i>
                                     </button>
                                 </div>
-
                                 <button
                                     onClick={handleMarkCard}
-                                    className={`flex items-center gap-2 px-4 py-2 border rounded-lg transition-colors ${markedCards.has(currentCardIndex) ? 'bg-amber-400 border-amber-400 text-white dark:text-slate-900' : 'bg-transparent text-slate-600 dark:text-slate-300 border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
+                                    className={`p-2 w-10 h-10 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors ${markedCards.has(currentCardIndex) ? 'text-yellow-500' : 'text-slate-400 dark:text-slate-500'}`}
+                                    aria-label="Marcar card para revisão"
                                 >
-                                    <i className={`${markedCards.has(currentCardIndex) ? 'fas' : 'far'} fa-star`}></i>
-                                    <span className="font-semibold">{markedCards.has(currentCardIndex) ? 'Marcado' : 'Marcar'}</span>
+                                    <i className={`fas fa-star ${markedCards.has(currentCardIndex) ? 'text-yellow-400' : ''}`}></i>
                                 </button>
                             </div>
                         </div>
                     ) : (
-                        <p className="text-slate-600 dark:text-slate-400">Este tópico não possui perguntas para flashcards.</p>
+                        <p className="text-slate-500 dark:text-slate-400">Este tópico não possui flashcards.</p>
                     )}
                 </div>
             </div>
@@ -492,29 +491,35 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
                 <div className="prose prose-slate dark:prose-invert max-w-none">
                     <h3 className="text-xl font-bold border-b border-slate-200 dark:border-slate-700 pb-2 mb-4 text-slate-800 dark:text-slate-200">📝 Quiz de Revisão</h3>
                     {showScore ? (
-                        <div className="text-center py-8">
-                            <h4 className="text-2xl font-bold mb-2 text-slate-800 dark:text-slate-200">Quiz Finalizado!</h4>
-                            <p className="text-lg mb-6 text-slate-600 dark:text-slate-300">Você acertou <span className="font-bold text-primary-600 dark:text-primary-400">{score}</span> de <span className="font-bold">{topic.questions.length}</span> perguntas.</p>
+                        <div className="text-center">
+                            <p className="text-lg text-slate-700 dark:text-slate-300 mb-2">
+                                Sua pontuação final:
+                            </p>
+                            <p className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-6">
+                                {score} de {topic.questions.length}
+                            </p>
                             <button
                                 onClick={restartQuiz}
-                                className="px-6 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 font-semibold transition-colors"
+                                className="px-6 py-2 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors"
                             >
                                 Tentar Novamente
                             </button>
                         </div>
                     ) : (
                         <div>
-                            <div className="mb-6">
-                                <h4 className="text-lg font-semibold mb-2 text-slate-800 dark:text-slate-200">Pergunta {currentQuestionIndex + 1}/{topic.questions.length}</h4>
-                                <p className="text-slate-600 dark:text-slate-300 text-xl">{topic.questions[currentQuestionIndex].question}</p>
-                            </div>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                {topic.questions[currentQuestionIndex].options.map((option, index) => (
+                            <h4 className="font-semibold text-lg text-slate-800 dark:text-slate-200 mb-1">
+                                Pergunta {currentQuestionIndex + 1}/{topic.questions.length}
+                            </h4>
+                            <p className="text-slate-600 dark:text-slate-400 mb-6">
+                                {topic.questions[currentQuestionIndex].question}
+                            </p>
+                            <div className="space-y-3">
+                                {topic.questions[currentQuestionIndex].options.map((option) => (
                                     <button
-                                        key={index}
+                                        key={option}
                                         onClick={() => handleAnswerOptionClick(option)}
                                         disabled={!!selectedAnswer}
-                                        className={`w-full text-left p-4 rounded-lg border-2 font-semibold transition-all duration-300 ${getButtonClass(option)}`}
+                                        className={`w-full text-left p-4 rounded-lg border-2 transition-all duration-300 font-medium ${getButtonClass(option)}`}
                                     >
                                         {option}
                                     </button>
@@ -524,21 +529,41 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
                     )}
                 </div>
             </div>
-
-             {relatedTopics.length > 0 && (
+            
+            {topic.sources && topic.sources.length > 0 && (
                 <div className="bg-white dark:bg-slate-900 shadow-sm rounded-xl p-6 md:p-8 border border-slate-200 dark:border-slate-800">
                     <div className="prose prose-slate dark:prose-invert max-w-none">
-                        <h3 className="text-xl font-bold border-b border-slate-200 dark:border-slate-700 pb-2 mb-4 text-slate-800 dark:text-slate-200">
-                           <i className="fas fa-stream mr-2 text-slate-400"></i>Tópicos Relacionados
-                        </h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 not-prose">
+                        <h3 className="text-xl font-bold border-b border-slate-200 dark:border-slate-700 pb-2 mb-4 text-slate-800 dark:text-slate-200">📚 Fontes e Referências</h3>
+                        <ul className="list-disc pl-5 space-y-2">
+                            {topic.sources.map((source, index) => (
+                                <li key={index}>
+                                    <a 
+                                        href={source.url} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="text-primary-600 dark:text-primary-400 hover:underline"
+                                    >
+                                        {source.name}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            )}
+
+            {relatedTopics.length > 0 && (
+                <div className="bg-white dark:bg-slate-900 shadow-sm rounded-xl p-6 md:p-8 border border-slate-200 dark:border-slate-800">
+                    <div className="prose prose-slate dark:prose-invert max-w-none">
+                        <h3 className="text-xl font-bold border-b border-slate-200 dark:border-slate-700 pb-2 mb-4 text-slate-800 dark:text-slate-200">Tópicos Relacionados</h3>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {relatedTopics.map(relatedTopic => (
                                 <button
                                     key={relatedTopic.id}
                                     onClick={() => onSelectTopic(relatedTopic)}
-                                    className="w-full text-left p-4 rounded-lg bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-all duration-200 hover:shadow-md hover:border-primary-400/50 dark:hover:border-primary-500/40 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900"
+                                    className="w-full text-left p-4 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-primary-500 dark:hover:border-primary-500 transition-all"
                                 >
-                                    <span className="font-semibold text-primary-700 dark:text-primary-400">{relatedTopic.title}</span>
+                                    <span className="font-semibold text-slate-700 dark:text-slate-300">{relatedTopic.title}</span>
                                 </button>
                             ))}
                         </div>
@@ -546,27 +571,24 @@ const ContentDisplay: React.FC<ContentDisplayProps> = ({ topic, onPrevTopic, onN
                 </div>
             )}
 
-
-            {/* Topic Navigation */}
-            <div className="flex flex-col sm:flex-row justify-between items-center mt-6 pt-6 border-t border-slate-200 dark:border-slate-800">
+            <div className="flex justify-between items-center mt-8">
                 <button
                     onClick={onPrevTopic}
                     disabled={!hasPrevTopic}
-                    className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-2.5 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed mb-3 sm:mb-0 border border-slate-300 dark:border-slate-700 font-semibold"
+                    className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-600 font-semibold rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                 >
                     <i className="fas fa-arrow-left"></i>
-                    <span>Anterior</span>
+                    Anterior
                 </button>
                 <button
                     onClick={onNextTopic}
                     disabled={!hasNextTopic}
-                    className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-2.5 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-semibold"
+                    className="flex items-center gap-2 px-4 py-2 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                 >
-                    <span>Próximo</span>
+                    Próximo
                     <i className="fas fa-arrow-right"></i>
                 </button>
             </div>
-
         </div>
     );
 };

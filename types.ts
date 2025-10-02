@@ -1,3 +1,8 @@
+export interface Source {
+  name: string;
+  url: string;
+}
+
 export interface Question {
   question: string;
   options: string[];
@@ -16,6 +21,7 @@ export interface Topic {
   curiosity: string;
   questions: Question[];
   timeline?: TimelineEvent[];
+  sources?: Source[];
 }
 
 export interface TopicGroup {
