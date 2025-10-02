@@ -1,5 +1,5 @@
 
-# 📚 History Learning App  
+# 📚 UpgradeGeral - History Learning App  
 
 Um aplicativo educacional interativo para **aprender e revisar História**, com design moderno, responsivo e acessível.  
 O app foi pensado para estudantes, curiosos e qualquer pessoa que queira **revisitar os principais períodos e acontecimentos históricos da humanidade**, desde a Pré-História até a Era Digital.  
