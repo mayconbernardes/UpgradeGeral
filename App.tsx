@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { historyTopicGroups } from './data/historyData';
 import type { Topic } from './types';
 import Sidebar from './components/Sidebar';
@@ -21,6 +21,30 @@ const App: React.FC = () => {
     return 'light';
   });
 
+  const flatTopics = useMemo(() => historyTopicGroups.flatMap(group => group.topics), []);
+
+  const currentTopicIndex = useMemo(() => flatTopics.findIndex(topic => topic.id === selectedTopic.id), [flatTopics, selectedTopic]);
+
+  const hasPrevTopic = currentTopicIndex > 0;
+  const hasNextTopic = currentTopicIndex < flatTopics.length - 1;
+
+  const handleNextTopic = () => {
+    if (hasNextTopic) {
+      const nextTopic = flatTopics[currentTopicIndex + 1];
+      setSelectedTopic(nextTopic);
+      window.scrollTo(0, 0);
+    }
+  };
+
+  const handlePrevTopic = () => {
+    if (hasPrevTopic) {
+      const prevTopic = flatTopics[currentTopicIndex - 1];
+      setSelectedTopic(prevTopic);
+      window.scrollTo(0, 0);
+    }
+  };
+
+
   useEffect(() => {
     const root = window.document.documentElement;
     if (theme === 'dark') {
@@ -37,6 +61,7 @@ const App: React.FC = () => {
 
   const handleSelectTopic = (topic: Topic) => {
     setSelectedTopic(topic);
+    window.scrollTo(0, 0);
     if (window.innerWidth < 768) {
       setIsSidebarOpen(false);
     }
@@ -72,7 +97,13 @@ const App: React.FC = () => {
             </div>
             <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
           </div>
-          <ContentDisplay topic={selectedTopic} />
+          <ContentDisplay 
+            topic={selectedTopic}
+            onPrevTopic={handlePrevTopic}
+            onNextTopic={handleNextTopic}
+            hasPrevTopic={hasPrevTopic}
+            hasNextTopic={hasNextTopic}
+          />
         </div>
       </main>
     </div>

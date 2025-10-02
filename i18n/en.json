@@ -1,0 +1,16 @@
+{
+  "app_title": "History Companion",
+  "select_topic": "Select a topic to start.",
+  "summary": "Summary",
+  "curiosity": "Curiosity",
+  "review_quiz": "Review Quiz",
+  "listen_summary": "Listen to Summary",
+  "continue": "Continue",
+  "pause": "Pause",
+  "stop": "Stop",
+  "quiz_finished": "Quiz Finished!",
+  "correct_answers": "You got {{score}} out of {{total}} questions right.",
+  "try_again": "Try Again",
+  "question": "Question {{current}} of {{total}}",
+  "history_topics": "History Topics"
+}

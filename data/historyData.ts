@@ -17,6 +17,14 @@ O gênero Homo, ao qual pertencemos, surgiu há cerca de 2.5 milhões de anos co
 Na Europa e no oeste da Ásia, evoluiu o Homo neanderthalensis, ou Neandertais, há cerca de 400.000 anos. Eles eram robustos, adaptados a climas frios, caçadores habilidosos de grandes animais e possuíam uma cultura complexa que incluía o sepultamento de seus mortos com rituais, o uso de adornos e pigmentos, e o cuidado com os doentes e idosos, o que sugere uma forte coesão social e pensamento simbólico. Enquanto isso, na África, surgia a nossa própria espécie, o Homo sapiens, há aproximadamente 300.000 anos. O Homo sapiens se distingue por um cérebro ainda maior, um esqueleto mais leve, uma testa alta, queixo proeminente e uma capacidade sem precedentes para o pensamento abstrato, a linguagem complexa e a arte. Essa 'revolução cognitiva' permitiu uma cooperação em larga escala, a criação de culturas ricas e diversas e a inovação tecnológica acelerada, como o desenvolvimento de arpões, arcos e flechas. O Homo sapiens também migrou para fora da África em ondas, e eventualmente encontrou e coexistiu com outras espécies humanas, como os Neandertais. A razão exata para o desaparecimento dos Neandertais há cerca de 40.000 anos ainda é debatida, mas provavelmente envolveu uma combinação de competição por recursos com o Homo sapiens (que era mais numeroso e tecnologicamente diverso), mudanças climáticas e, possivelmente, assimilação por meio de cruzamentos. No final, apenas a nossa espécie sobreviveu, povoando todos os continentes e dando início a uma nova fase da história do planeta.`,
         curiosity:
           'Estudos de DNA mostram que a maioria dos humanos modernos fora da África possui uma pequena porcentagem (cerca de 1-4%) de DNA neandertal, um legado dos encontros e cruzamentos entre as duas espécies há dezenas de milhares de anos.',
+        timeline: [
+          { date: 'Cerca de 4 milhões a.C.', description: 'Surgimento dos Australopithecus, como "Lucy", marcados pelo bipedalismo.' },
+          { date: 'Cerca de 2.5 milhões a.C.', description: 'Aparição do Homo habilis, o primeiro a fabricar ferramentas de pedra sistematicamente.' },
+          { date: 'Cerca de 1.9 milhões a.C.', description: 'Evolução do Homo erectus, que dominou o fogo e foi o primeiro a migrar para fora da África.' },
+          { date: 'Cerca de 400.000 a.C.', description: 'Surgimento dos Neandertais na Europa e Ásia, com cultura complexa e pensamento simbólico.' },
+          { date: 'Cerca de 300.000 a.C.', description: 'Aparição do Homo sapiens na África, nossa espécie, com capacidade para linguagem complexa e arte.' },
+          { date: 'Cerca de 40.000 a.C.', description: 'Desaparecimento dos Neandertais.' },
+        ],
         questions: [
           {
             question: "Qual foi a característica fundamental dos Australopithecus, como 'Lucy', que os diferenciou de outros primatas?",
@@ -56,6 +64,13 @@ O Período Paleolítico ('Idade da Pedra Antiga' ou 'Pedra Lascada'), que vai de
 O Período Neolítico ('Idade da Pedra Nova' ou 'Pedra Polida'), iniciado por volta de 10.000 a.C. no Crescente Fértil (Oriente Médio) e de forma independente em outras partes do mundo, representa uma mudança tão radical que é chamada de Revolução Neolítica (ou Revolução Agrícola). A grande inovação foi o desenvolvimento da agricultura e da domesticação de animais. Pela primeira vez, os seres humanos aprenderam a plantar sementes (trigo, cevada) e a criar rebanhos (ovelhas, cabras, gado), o que lhes deu um controle sem precedentes sobre sua fonte de alimentos. Essa mudança permitiu o sedentarismo, ou seja, a fixação dos grupos em um mesmo local, levando ao surgimento das primeiras aldeias e, posteriormente, das cidades. A vida sedentária e a produção de excedentes agrícolas (mais comida do que o necessário para o consumo imediato) permitiram o crescimento populacional e a especialização do trabalho: nem todos precisavam se dedicar à busca por comida, então surgiram artesãos, sacerdotes, guerreiros e líderes. Essa nova estrutura social deu origem à hierarquização, à propriedade privada e a formas mais complexas de organização política. As ferramentas de pedra tornaram-se mais sofisticadas, produzidas por polimento, o que as tornava mais eficientes e duráveis. Outras tecnologias importantes do Neolítico incluem a invenção da cerâmica (para armazenar grãos e líquidos), da tecelagem (para produzir tecidos a partir de fibras vegetais e animais) e a construção de monumentos megalíticos, como Stonehenge, cujo propósito ainda é debatido. Essa revolução estabeleceu as bases para o surgimento das primeiras civilizações, com estruturas sociais mais complexas, governos, religiões organizadas e, eventualmente, a escrita.`,
         curiosity:
           'A "Vênus de Willendorf", uma pequena estatueta de cerca de 25.000 anos encontrada na Áustria, é uma das mais famosas obras de arte do Paleolítico. Com formas femininas exageradas, acredita-se que ela seja um símbolo de fertilidade.',
+        timeline: [
+            { date: 'Cerca de 2.5 milhões a.C.', description: 'Início do Período Paleolítico, com a fabricação das primeiras ferramentas de pedra.' },
+            { date: 'Cerca de 500.000 a.C.', description: 'Domínio do fogo pelo Homo erectus, uma tecnologia transformadora.' },
+            { date: 'Cerca de 40.000 a.C.', description: 'Auge da arte rupestre em cavernas como Lascaux e Altamira.' },
+            { date: 'Cerca de 10.000 a.C.', description: 'Início da Revolução Neolítica no Crescente Fértil, com o desenvolvimento da agricultura.' },
+            { date: 'Cerca de 8.000 a.C.', description: 'Surgimento das primeiras aldeias sedentárias, como Jericó.' },
+        ],
         questions: [
           {
             question: "Qual era o modo de vida predominante dos grupos humanos durante o Período Paleolítico?",
@@ -97,6 +112,13 @@ A grande revolução veio com a Idade do Bronze (iniciada por volta de 3.300 a.C
 A Idade do Ferro (iniciada por volta de 1.200 a.C. na Anatólia) representou outro salto tecnológico. O ferro é muito mais abundante na natureza do que o cobre e o estanho, mas sua metalurgia é mais difícil, pois exige temperaturas muito mais altas para a fundição. Uma vez que a técnica foi dominada pelos hititas, o ferro permitiu a produção de ferramentas e armas em uma escala muito maior e a um custo menor. Ferramentas agrícolas de ferro, como arados mais resistentes, permitiram aumentar a produção de alimentos, suportando populações maiores. A disseminação de armas de ferro 'democratizou' a guerra, permitindo que exércitos maiores fossem equipados, o que levou à ascensão e queda de grandes impérios, como o dos Hititas (pioneiros na metalurgia do ferro) e dos Assírios, que usaram o ferro para criar um império formidável. O domínio do ferro marca o fim definitivo da Pré-história em muitas regiões, coincidindo com o desenvolvimento da escrita e o início do registro histórico.`,
         curiosity:
           'Muitos artefatos de ferro dos primórdios da Idade do Ferro, incluindo um punhal encontrado no túmulo do faraó Tutancâmon, foram feitos de ferro meteórico. Antes de dominarem a fundição do minério terrestre, os humanos usavam o metal raro que, literalmente, caía do céu.',
+        timeline: [
+            { date: 'Cerca de 6.000 a.C.', description: 'Início da Idade do Cobre (Calcolítico) no Oriente Médio, com a primeira utilização de metais.' },
+            { date: 'Cerca de 3.300 a.C.', description: 'Início da Idade do Bronze, com a descoberta da liga de cobre e estanho, revolucionando armas e ferramentas.' },
+            { date: 'Cerca de 3.000 a.C.', description: 'Auge das civilizações da Idade do Bronze no Egito e Mesopotâmia.' },
+            { date: 'Cerca de 1.200 a.C.', description: 'Início da Idade do Ferro na Anatólia, com os hititas dominando a metalurgia do ferro.' },
+            { date: 'Cerca de 800 a.C.', description: 'Disseminação da tecnologia do ferro pela Europa, marcando o fim da Pré-história em muitas regiões.' },
+        ],
         questions: [
           {
             question: "Qual foi o primeiro metal a ser amplamente utilizado pelos humanos, marcando a transição da Idade da Pedra?",
@@ -137,6 +159,13 @@ A Idade do Ferro (iniciada por volta de 1.200 a.C. na Anatólia) representou out
 
 Ao longo dos milênios, a região foi dominada por diferentes povos. Os acádios, liderados por Sargão, o Grande, criaram o primeiro império da história, unificando as cidades-Estado sumérias. Mais tarde, os babilônios ascenderam, e seu rei Hamurabi ficou famoso por compilar um dos primeiros e mais completos códigos de leis escritas, o Código de Hamurabi. Gravado em um grande pilar de pedra, este código estabelecia leis para uma variedade de questões sociais e econômicas e era baseado no princípio de "olho por olho, dente por dente" (Lei de Talião), embora as punições variassem drasticamente de acordo com a classe social do infrator e da vítima, refletindo uma sociedade rigidamente estratificada. Os assírios, um povo guerreiro do norte da Mesopotâmia, formaram um império vasto e temido, conhecido por suas táticas militares brutais e pelo uso de armas de ferro. Por fim, os caldeus (ou neobabilônios) restauraram o poder da Babilônia, sob o reinado de Nabucodonosor II, que ficou famoso pela construção dos Jardins Suspensos da Babilônia (uma das Sete Maravilhas do Mundo Antigo) e pela conquista de Jerusalém, que levou ao Cativeiro Babilônico dos judeus. A rica herança mesopotâmica em direito, ciência, tecnologia e organização social influenciou profundamente as civilizações subsequentes.`,
         curiosity: 'O épico de Gilgamesh, uma das primeiras obras literárias da humanidade, originou-se na Mesopotâmia. A história narra as aventuras de um rei em busca da imortalidade e contém um relato de um grande dilúvio, semelhante ao encontrado em outras tradições, incluindo a Bíblia.',
+        timeline: [
+            { date: 'Cerca de 4.000 a.C.', description: 'Surgimento das primeiras cidades-Estado sumérias e invenção da escrita cuneiforme.' },
+            { date: 'Cerca de 3.500 a.C.', description: 'Invenção da roda, inicialmente utilizada para a olaria.' },
+            { date: 'Cerca de 2.334 a.C.', description: 'Sargão da Acádia cria o primeiro império da história, unificando a Mesopotâmia.' },
+            { date: 'Cerca de 1.792 a.C.', description: 'O rei Hamurabi da Babilônia compila seu famoso código de leis.' },
+            { date: 'Cerca de 605 a.C.', description: 'Reinado de Nabucodonosor II, que constrói os Jardins Suspensos da Babilônia.' },
+        ],
         questions: [
           { question: 'Qual invenção dos sumérios revolucionou a comunicação e o registro de informações?', options: ['A roda', 'A escrita cuneiforme', 'O arado de ferro', 'A pólvora'], correctAnswer: 'A escrita cuneiforme' },
           { question: 'O Código de Hamurabi, um dos primeiros conjuntos de leis escritas, foi criado por qual povo mesopotâmico?', options: ['Sumérios', 'Assírios', 'Acádios', 'Babilônios'], correctAnswer: 'Babilônios' },
@@ -152,6 +181,13 @@ Ao longo dos milênios, a região foi dominada por diferentes povos. Os acádios
 
 A sociedade era rigidamente estratificada. Abaixo do faraó e sua família, havia uma classe de nobres e altos funcionários, como o vizir, e uma poderosa classe de sacerdotes, que administravam os vastos templos e a riqueza da nação. Os escribas, que dominavam a complexa escrita hieroglífica, formavam a burocracia estatal, registrando impostos, leis e a história. Abaixo deles estavam os soldados, os artesãos (que produziam os belos artefatos encontrados nas tumbas) e, na base da pirâmide, a vasta maioria da população, os camponeses, que trabalhavam nas terras do faraó e dos templos. Os escravos, geralmente prisioneiros de guerra, também existiam. Os egípcios deixaram um legado duradouro em diversas áreas. Na engenharia e arquitetura, seus templos e pirâmides ainda hoje impressionam. Na matemática, desenvolveram um sistema decimal e conhecimentos de geometria para demarcar terras após as cheias do Nilo. Na astronomia, criaram um calendário solar de 365 dias, notavelmente preciso para a época. E na medicina, seus conhecimentos de anatomia, derivados da mumificação, e suas práticas de cirurgia e farmacologia eram bastante avançados.`,
         curiosity: 'Os antigos egípcios tinham uma paixão por gatos, que eram considerados animais sagrados e associados à deusa Bastet. Matar um gato, mesmo que acidentalmente, era um crime punível com a morte.',
+        timeline: [
+            { date: 'Cerca de 3.100 a.C.', description: 'Unificação do Alto e Baixo Egito sob o primeiro faraó, Menés, dando início ao Antigo Império.' },
+            { date: 'Cerca de 2.580 a.C.', description: 'Construção da Grande Pirâmide de Gizé para o faraó Quéops.' },
+            { date: 'Cerca de 1.550 a.C.', description: 'Início do Novo Império, período de máxima expansão territorial e poder do Egito.' },
+            { date: 'Cerca de 1.336 a.C.', description: 'Reinado de Tutancâmon, cujo túmulo quase intacto foi descoberto em 1922.' },
+            { date: '30 a.C.', description: 'Morte de Cleópatra VII; Egito torna-se uma província romana, marcando o fim da era faraônica.' },
+        ],
         questions: [
           { question: 'Qual rio foi fundamental para o desenvolvimento da civilização egípcia?', options: ['Tigre', 'Eufrates', 'Nilo', 'Amazonas'], correctAnswer: 'Nilo' },
           { question: 'O governante do Egito Antigo, considerado um deus vivo, era chamado de:', options: ['Rei', 'Imperador', 'Faraó', 'Czar'], correctAnswer: 'Faraó' },
@@ -167,6 +203,13 @@ A sociedade era rigidamente estratificada. Abaixo do faraó e sua família, havi
 
 A história grega foi marcada por conflitos decisivos. Nas Guerras Médicas (século V a.C.), uma aliança de cidades gregas, liderada por Atenas e Esparta, conseguiu repelir as invasões do vasto Império Persa, garantindo a sobrevivência de sua cultura e sistema político. A vitória fortaleceu Atenas, que liderou a Liga de Delos e viveu seu "Século de Ouro" sob o governo de Péricles, período em que foram construídos monumentos como o Partenon. No entanto, a rivalidade entre as duas principais cidades levou à Guerra do Peloponeso (431-404 a.C.), um conflito longo e destrutivo entre Atenas e Esparta que envolveu quase toda a Grécia e resultou na derrota ateniense. A guerra enfraqueceu todas as pólis, abrindo caminho para a conquista da Grécia por Filipe II da Macedônia e, posteriormente, por seu filho, Alexandre, o Grande, que espalhou a cultura grega por todo o Oriente, dando início ao Período Helenístico. O legado grego é imenso e fundamental para o Ocidente, abrangendo o teatro (com as tragédias de Ésquilo, Sófocles e Eurípides, e as comédias de Aristófanes), a arquitetura (com suas ordens dórica, jônica e coríntia), a matemática (Pitágoras, Euclides), a medicina (Hipócrates) e, claro, os conceitos de democracia e filosofia.`,
         curiosity: 'Em Esparta, os meninos eram retirados de suas famílias aos sete anos para iniciar um treinamento militar brutal chamado "agogê", projetado para transformá-los nos soldados mais temidos do mundo antigo.',
+        timeline: [
+            { date: '776 a.C.', description: 'Primeiros Jogos Olímpicos registrados, um evento que unia culturalmente as cidades-Estado.' },
+            { date: 'Século VI a.C.', description: 'Surgimento da filosofia na Jônia e desenvolvimento da democracia em Atenas.' },
+            { date: '490-479 a.C.', description: 'Guerras Médicas, onde as cidades gregas se unem para repelir as invasões do Império Persa.' },
+            { date: '431-404 a.C.', description: 'Guerra do Peloponeso, o conflito devastador entre Atenas e Esparta.' },
+            { date: '336 a.C.', description: 'Alexandre, o Grande, torna-se rei da Macedônia e inicia a conquista que espalhará a cultura helenística.' },
+        ],
         questions: [
           { question: 'Qual cidade-Estado grega é considerada o berço da democracia?', options: ['Esparta', 'Corinto', 'Tebas', 'Atenas'], correctAnswer: 'Atenas' },
           { question: 'Sócrates, Platão e Aristóteles são os principais nomes de qual área do conhecimento grego?', options: ['Medicina', 'Teatro', 'Filosofia', 'Arquitetura'], correctAnswer: 'Filosofia' },
@@ -182,6 +225,13 @@ A história grega foi marcada por conflitos decisivos. Nas Guerras Médicas (sé
 
 O assassinato de César levou a uma nova guerra civil, da qual seu sobrinho-neto, Otaviano, emergiu como o vencedor final. Em 27 a.C., ele recebeu o título de Augusto ("o venerado") do Senado, tornando-se o primeiro imperador e inaugurando o Império. O auge do Império foi marcado pela Pax Romana, um período de cerca de 200 anos de relativa paz, estabilidade e prosperidade, que facilitou o comércio e a disseminação da cultura romana por um território que ia da Bretanha ao Egito. Os romanos foram mestres da engenharia e arquitetura, construindo uma vasta rede de estradas ("todos os caminhos levam a Roma"), aquedutos para levar água às cidades, pontes e edifícios monumentais como o Coliseu e o Panteão. Seus maiores legados para o Ocidente foram o Direito Romano, que ainda influencia os sistemas jurídicos modernos com seus conceitos de justiça e cidadania, e a língua latina, que deu origem a várias línguas, incluindo o português. A partir do século III d.C., o Império entrou em um longo declínio devido a uma combinação de fatores: crises econômicas, instabilidade política (com dezenas de imperadores assassinados), pressões militares crescentes nas fronteiras (as "invasões bárbaras") e a ascensão do Cristianismo, que se tornou a religião oficial do império, mas que também desafiou os valores tradicionais romanos. Em 395 d.C., o império foi dividido em Ocidente e Oriente, e a parte ocidental finalmente sucumbiu em 476 d.C., marcando o fim da Antiguidade.`,
         curiosity: 'O Coliseu de Roma podia ser inundado para realizar batalhas navais simuladas, conhecidas como "naumaquias", um espetáculo grandioso e tecnicamente complexo para a época.',
+        timeline: [
+            { date: '509 a.C.', description: 'Fim da Monarquia e estabelecimento da República Romana.' },
+            { date: '264-146 a.C.', description: 'Guerras Púnicas contra Cartago, resultando no domínio romano do Mediterrâneo.' },
+            { date: '73-71 a.C.', description: 'Revolta de escravos liderada por Espártaco, a maior da história romana.' },
+            { date: '27 a.C.', description: 'Otaviano recebe o título de Augusto, tornando-se o primeiro imperador e iniciando a Pax Romana.' },
+            { date: '476 d.C.', description: 'Queda do Império Romano do Ocidente, marcando o fim da Antiguidade.' },
+        ],
         questions: [
           { question: 'Qual foi o principal legado de Roma para os sistemas jurídicos modernos?', options: ['A Democracia', 'O Direito Romano', 'A Filosofia', 'O Teatro'], correctAnswer: 'O Direito Romano' },
           { question: 'As Guerras Púnicas foram travadas entre Roma e qual outra grande potência?', options: ['Grécia', 'Egito', 'Pérsia', 'Cartago'], correctAnswer: 'Cartago' },
@@ -199,6 +249,13 @@ Os Astecas estabeleceram um vasto império no centro do México, com sua magníf
 
 Mais ao sul, ao longo da Cordilheira dos Andes, os Incas construíram o maior império da América pré-colombiana, o Tawantinsuyu ("o império das quatro partes"). Com capital em Cusco, eram mestres em administração e engenharia. Para governar seu vasto e diverso território, que se estendia por milhares de quilômetros, construíram uma extensa e sofisticada rede de estradas (o Qhapaq Ñan), implementaram um sistema de trabalho obrigatório e rotativo (a mita), que era usado para construir obras públicas, e usavam os "quipus", um intrincado sistema de cordas com nós, para contabilidade e registros. A agricultura inca era adaptada ao terreno montanhoso, com o uso de terraços para o cultivo de batata e milho. A chegada dos conquistadores espanhóis no século XVI, liderados por figuras como Hernán Cortés (contra os Astecas) e Francisco Pizarro (contra os Incas), marcou o fim trágico desses impérios. A superioridade militar espanhola (armas de fogo, cavalos, armaduras de aço), a disseminação de doenças europeias devastadoras como a varíola (para as quais os nativos não tinham imunidade) e a exploração de rivalidades internas entre os povos nativos levaram ao seu rápido colapso.`,
         curiosity: 'Os Incas não tinham um sistema de escrita, mas usavam os "quipus", um complexo arranjo de cordas coloridas e nós, para registrar informações numéricas, como impostos e censos populacionais.',
+        timeline: [
+            { date: 'Cerca de 250-900 d.C.', description: 'Período Clássico da civilização Maia, com o auge de cidades como Tikal e Palenque.' },
+            { date: 'Cerca de 1325', description: 'Fundação da cidade de Tenochtitlán, a capital do Império Asteca.' },
+            { date: 'Cerca de 1438', description: 'Pachacuti se torna o imperador Inca, iniciando a grande expansão do Império.' },
+            { date: '1521', description: 'Hernán Cortés conquista o Império Asteca.' },
+            { date: '1533', description: 'Francisco Pizarro conquista o Império Inca.' },
+        ],
         questions: [
             { question: "Qual civilização pré-colombiana é famosa por seu calendário preciso e conhecimento do conceito de zero?", options: ["Incas", "Astecas", "Maias", "Tupis"], correctAnswer: "Maias" },
             { question: "Tenochtitlán, uma cidade construída sobre um lago, era a capital de qual império?", options: ["Império Inca", "Império Asteca", "Império Maia", "Império Olmeca"], correctAnswer: "Império Asteca" },
@@ -223,6 +280,13 @@ A sociedade era estamental, ou seja, dividida em ordens ou estados com pouquíss
 A economia era agrária, de subsistência e praticamente amonetária, com o feudo sendo a unidade de produção autossuficiente. O comércio era limitado e as cidades perderam importância, em um processo conhecido como ruralização. A Igreja Católica exercia um poder imenso, sendo a maior proprietária de terras, a principal instituição cultural e a força que unificava espiritualmente a Europa, ditando a moral, o conhecimento e a visão de mundo da época. O declínio do feudalismo começou a partir do século XI, com o renascimento comercial e urbano, o surgimento da burguesia, a centralização do poder nas mãos dos reis e a crise do século XIV, marcada pela fome, pela Peste Negra e por revoltas camponesas.`,
         curiosity:
           'Os torneios medievais não eram apenas esportes, mas também uma forma de treinamento militar e uma oportunidade para cavaleiros ganharem fama e fortuna. No início, eram batalhas simuladas caóticas, mas com o tempo, tornaram-se eventos mais regulamentados e ritualizados, com justas individuais sendo o evento principal.',
+        timeline: [
+            { date: 'Século IX', description: 'Consolidação do Feudalismo após a desintegração do Império Carolíngio.' },
+            { date: 'Século XI', description: 'Início do Renascimento Comercial e Urbano, que começa a transformar a economia feudal.' },
+            { date: '1315-1317', description: 'A Grande Fome devasta a Europa, enfraquecendo a população.' },
+            { date: '1347-1351', description: 'A Peste Negra dizima cerca de um terço da população europeia, acelerando a crise do sistema feudal.' },
+            { date: 'Século XV', description: 'O Feudalismo entra em seu declínio final, dando lugar à centralização monárquica e ao início da Idade Moderna.' },
+        ],
         questions: [
             { question: "A relação central que definia a hierarquia da nobreza feudal era baseada em:", options: ["Contratos comerciais", "Laços de suserania e vassalagem", "Eleições democráticas", "Herança de títulos reais"], correctAnswer: "Laços de suserania e vassalagem" },
             { question: "A sociedade feudal era dividida em três ordens. Quais eram elas e suas respectivas funções?", options: ["Burguesia (comércio), Proletariado (trabalho) e Monarquia (governo)", "Patrícios (política), Plebeus (trabalho) e Escravos (servidão)", "Clero (orar), Nobreza (guerrear) e Servos (trabalhar)", "Reis (governar), Cavaleiros (proteger) e Artesãos (produzir)"], correctAnswer: "Clero (orar), Nobreza (guerrear) e Servos (trabalhar)" },
@@ -242,6 +306,13 @@ No entanto, as motivações por trás das Cruzadas eram muito mais complexas e v
 As Cruzadas subsequentes tiveram menos sucesso em seus objetivos religiosos. A Terceira Cruzada, conhecida como a "Cruzada dos Reis", envolveu figuras icônicas como Ricardo Coração de Leão da Inglaterra e o sultão Saladino, terminando em um acordo que permitia a peregrinação cristã a Jerusalém, mas mantinha a cidade sob controle muçululmano. A Quarta Cruzada (1202-1204) foi um desastre completo do ponto de vista religioso: desviada por interesses comerciais venezianos, culminou no saque da cidade cristã de Constantinopla, capital do Império Bizantino, aprofundando o cisma entre as igrejas do Ocidente e do Oriente e enfraquecendo fatalmente o império oriental. Embora tenham fracassado em manter o controle cristão sobre a Terra Santa, as Cruzadas tiveram consequências profundas para a Europa. Elas reabriram o Mediterrâneo ao comércio, enfraqueceram o poder dos senhores feudais (muitos morreram ou se endividaram), intensificaram o contato cultural e comercial com o Oriente (trazendo novos produtos, como especiarias e açúcar, e conhecimentos), e contribuíram para o Renascimento Comercial e Urbano que marcou o fim da Idade Média.`,
         curiosity:
           'A "Cruzada das Crianças" de 1212 é um dos episódios mais trágicos e misteriosos. Milhares de jovens, liderados por pastores que afirmavam ter visões divinas, marcharam em direção à Terra Santa acreditando que o mar se abriria para eles. Muitos morreram de fome no caminho ou foram vendidos como escravos.',
+        timeline: [
+            { date: '1095', description: 'O Papa Urbano II convoca a Primeira Cruzada no Concílio de Clermont.' },
+            { date: '1099', description: 'Os cruzados conquistam Jerusalém, estabelecendo os Estados Cruzados.' },
+            { date: '1187', description: 'Saladino, sultão do Egito e da Síria, reconquista Jerusalém para os muçulmanos.' },
+            { date: '1204', description: 'A Quarta Cruzada é desviada e saqueia a cidade cristã de Constantinopla.' },
+            { date: '1291', description: 'Queda de Acre, o último reduto cristão na Terra Santa, marcando o fim das Cruzadas no Levante.' },
+        ],
         questions: [
             { question: "Qual era o principal objetivo declarado das Cruzadas?", options: ["Estabelecer novas rotas comerciais para a Índia", "Conquistar Jerusalém e a Terra Santa dos muçulmanos", "Unificar a Europa sob um único império", "Deter o avanço do Império Otomano"], correctAnswer: "Conquistar Jerusalém e a Terra Santa dos muçulmanos" },
             { question: "Além da motivação religiosa, qual foi um importante interesse econômico nas Cruzadas?", options: ["A busca por novas terras para a agricultura", "A abertura de rotas comerciais com o Oriente", "A exploração de minas de ouro na África", "A criação de um sistema bancário europeu"], correctAnswer: "A abertura de rotas comerciais com o Oriente" },
@@ -259,6 +330,13 @@ O califado abássida, em particular, patrocinou um grande movimento de traduçã
 
 Essa explosão de conhecimento e cultura também se refletiu em uma rica literatura, com obras como "As Mil e Uma Noites", e em uma arquitetura sofisticada, com suas mesquitas, palácios e jardins. O mundo islâmico medieval era uma encruzilhada de culturas, um centro dinâmico de comércio e inovação. O conhecimento gerado e preservado durante esta Era de Ouro teve um impacto profundo e duradouro, sendo reintroduzido na Europa através da Península Ibérica e das Cruzadas, e influenciando diretamente o Renascimento europeu.`,
         curiosity: 'A primeira universidade do mundo a conceder diplomas, a Universidade de Al-Karaouine, foi fundada em 859 d.C. em Fez, Marrocos, por uma mulher muçulmana chamada Fatima al-Fihri.',
+        timeline: [
+            { date: '610', description: 'O profeta Maomé recebe suas primeiras revelações, dando início ao Islã.' },
+            { date: '632-750', description: 'Período de rápida expansão islâmica sob os primeiros califas, criando um vasto império.' },
+            { date: '750-1258', description: 'Califado Abássida e a Era de Ouro Islâmica, com Bagdá como centro cultural e científico.' },
+            { date: 'Século IX', description: 'Al-Khwarizmi desenvolve a álgebra; a Casa da Sabedoria em Bagdá floresce.' },
+            { date: '1258', description: 'Os mongóis saqueiam Bagdá, marcando um declínio da Era de Ouro.' },
+        ],
         questions: [
             { question: "Qual cidade NÃO era um grande centro cultural e científico do mundo islâmico medieval?", options: ["Bagdá", "Córdoba", "Paris", "Cairo"], correctAnswer: "Paris" },
             { question: "Qual foi uma das principais contribuições dos estudiosos muçulmanos para a matemática?", options: ["A invenção da geometria", "O desenvolvimento da álgebra", "A criação do número pi", "A prova do teorema de Pitágoras"], correctAnswer: "O desenvolvimento da álgebra" },
@@ -276,6 +354,13 @@ O auge do poder bizantino ocorreu durante o reinado do Imperador Justiniano I (s
 
 A arte bizantina, com seus impressionantes mosaicos dourados e ícones sagrados, teve uma influência duradoura na arte religiosa ortodoxa. Apesar de sua longevidade e sofisticação, o império enfrentou constantes pressões externas de persas, árabes, eslavos, cruzados (que saquearam Constantinopla em 1204) e, finalmente, dos turcos otomanos. Após um longo declínio, o império, reduzido a pouco mais que a própria cidade de Constantinopla, foi conquistado pelo sultão otomano Mehmed II em 1453. A queda de Constantinopla é frequentemente citada como um dos eventos que marcam o fim da Idade Média.`,
         curiosity: 'Os bizantinos possuíam uma arma secreta aterrorizante chamada "Fogo Grego", uma substância incendiária que podia queimar na água e era usada em batalhas navais para destruir navios inimigos. A fórmula exata se perdeu na história.',
+        timeline: [
+            { date: '330', description: 'O imperador Constantino renomeia Bizâncio para Constantinopla, tornando-a a nova capital do Império Romano.' },
+            { date: '527-565', description: 'Reinado do imperador Justiniano, o auge do poder bizantino, com a compilação do Corpus Juris Civilis.' },
+            { date: '1054', description: 'O Grande Cisma divide a cristandade entre a Igreja Católica Romana e a Igreja Ortodoxa Oriental.' },
+            { date: '1204', description: 'A Quarta Cruzada saqueia Constantinopla, enfraquecendo gravemente o império.' },
+            { date: '1453', description: 'Queda de Constantinopla para os turcos otomanos, marcando o fim do Império Bizantino.' },
+        ],
         questions: [
             { question: "Qual era a capital do Império Bizantino?", options: ["Roma", "Atenas", "Constantinopla", "Alexandria"], correctAnswer: "Constantinopla" },
             { question: "O imperador Justiniano é famoso por qual grande realização no campo do direito?", options: ["A criação da democracia", "A abolição de todas as leis", "A compilação do 'Corpus Juris Civilis'", "A Declaração dos Direitos do Homem"], correctAnswer: "A compilação do 'Corpus Juris Civilis'" },
@@ -300,6 +385,13 @@ Esse empreendimento foi possível graças a uma série de inovações tecnológi
 As consequências das Grandes Navegações foram revolucionárias e de alcance global. Elas levaram ao estabelecimento de vastos impérios coloniais europeus na América, África e Ásia, e ao início de um intenso comércio global (o chamado comércio triangular), que incluía o brutal tráfico de milhões de escravos africanos para as Américas. O eixo econômico mundial se deslocou do Mar Mediterrâneo para o Oceano Atlântico. O fluxo de metais preciosos da América para a Europa causou uma "revolução dos preços" (inflação), mas também impulsionou o capitalismo comercial. Ocorreu um profundo intercâmbio cultural e biológico (o "Intercâmbio Colombiano") entre o Velho Mundo (Europa, África, Ásia) e o Novo Mundo (Américas), que mudou para sempre a dieta, a cultura e a demografia de ambos os hemisférios, com a troca de plantas (batata, milho, tomate, cacau para a Europa; trigo, cana-de-açúcar, café para as Américas) e animais, mas também a devastadora disseminação de doenças europeias que dizimaram as populações nativas americanas.`,
         curiosity:
           'O escorbuto, uma doença causada pela falta de vitamina C, matava mais marinheiros do que batalhas navais e naufrágios. A cura só foi descoberta séculos depois, com a introdução de frutas cítricas na dieta dos navegadores.',
+        timeline: [
+            { date: '1453', description: 'Queda de Constantinopla para os turcos otomanos, incentivando a busca por novas rotas para o Oriente.' },
+            { date: '1492', description: 'Cristóvão Colombo, a serviço da Espanha, chega à América.' },
+            { date: '1498', description: 'Vasco da Gama, de Portugal, completa o périplo africano e chega à Índia, estabelecendo a rota marítima.' },
+            { date: '1500', description: 'Pedro Álvares Cabral chega ao Brasil.' },
+            { date: '1519-1522', description: 'A expedição de Fernão de Magalhães realiza a primeira circunavegação do globo.' },
+        ],
         questions: [
             { question: "Qual foi o principal objetivo econômico das Grandes Navegações?", options: ["Encontrar uma nova rota marítima para as Índias", "Provar que a Terra era redonda", "Descobrir o continente americano", "Estabelecer colônias na África"], correctAnswer: "Encontrar uma nova rota marítima para as Índias" },
             { question: "Qual nação europeia foi pioneira nas Grandes Navegações?", options: ["Inglaterra", "França", "Espanha", "Portugal"], correctAnswer: "Portugal" },
@@ -319,6 +411,13 @@ Isso se refletiu em uma mudança de mentalidade fundamental: do teocentrismo med
 Nas artes, mestres como Leonardo da Vinci ("Mona Lisa", "A Última Ceia"), um verdadeiro "homem renascentista" que atuou como pintor, escultor, cientista e inventor; Michelangelo ("Davi", o teto da Capela Sistina); Rafael ("A Escola de Atenas"); e Donatello (escultor) buscaram representar o mundo e a figura humana com realismo, harmonia e perfeição, utilizando novas técnicas como a perspectiva para criar a ilusão de profundidade, e o 'sfumato' e 'chiaroscuro' para dar volume e realismo. Na ciência, o período foi revolucionário, com figuras como Nicolau Copérnico desafiando a visão geocêntrica da Igreja ao propor o modelo heliocêntrico (a Terra gira em torno do Sol), e mais tarde Galileu Galilei confirmando essa teoria com o uso do telescópio. Na literatura, escritores como Dante Alighieri ("A Divina Comédia"), Petrarca e Boccaccio inovaram ao usar as línguas vernáculas (as línguas locais, como o italiano) em vez do latim, tornando a literatura mais acessível. Na política, Nicolau Maquiavel ("O Príncipe") fundou a ciência política moderna ao analisar o poder de forma secular e pragmática, separando a política da moral religiosa. A invenção da prensa de tipos móveis por Gutenberg foi um catalisador, permitindo a rápida disseminação dessas novas ideias por toda a Europa.`,
         curiosity:
           'Leonardo da Vinci escreveu seus cadernos usando a "escrita espelhada", da direita para a esquerda. Acredita-se que ele fez isso para dificultar a leitura de suas anotações por outras pessoas, protegendo suas ideias.',
+        timeline: [
+            { date: 'Século XIV', description: 'Início do Renascimento na Itália, com precursores como Petrarca e Giotto.' },
+            { date: 'Cerca de 1450', description: 'Invenção da prensa de tipos móveis por Gutenberg, acelerando a disseminação de ideias.' },
+            { date: '1503-1506', description: 'Leonardo da Vinci pinta a "Mona Lisa", um ícone da arte renascentista.' },
+            { date: '1508-1512', description: 'Michelangelo pinta o teto da Capela Sistina no Vaticano.' },
+            { date: '1543', description: 'Nicolau Copérnico publica "Das revoluções das esferas celestes", propondo o modelo heliocêntrico.' },
+        ],
         questions: [
             { question: "Qual foi a principal mudança de mentalidade promovida pelo Renascimento, em oposição à visão medieval?", options: ["Do teocentrismo para o antropocentrismo", "Do politeísmo para o monoteísmo", "Do racionalismo para o misticismo", "Do individualismo para o coletivismo"], correctAnswer: "Do teocentrismo para o antropocentrismo" },
             { question: "Em qual região da Europa o movimento renascentista teve seu início e apogeu?", options: ["Na Inglaterra", "Na Península Ibérica", "Nas cidades-Estado italianas", "Na França"], correctAnswer: "Nas cidades-Estado italianas" },
@@ -338,6 +437,13 @@ O marco inicial da Reforma foi em 31 de outubro de 1517, quando o monge e teólo
 Outros reformadores importantes surgiram em outras partes da Europa. João Calvino, em Genebra (Suíça), desenvolveu uma teologia ainda mais radical, baseada na doutrina da predestinação, que afirmava que Deus já havia escolhido quem seria salvo e quem seria condenado. O Calvinismo, com sua forte ética de trabalho e valorização do sucesso material como um sinal da graça divina, influenciou fortemente o desenvolvimento do capitalismo, especialmente em países como Holanda, Escócia e nas colônias da Nova Inglaterra. Na Inglaterra, a Reforma teve um caráter mais político. O rei Henrique VIII rompeu com Roma não por questões teológicas, mas porque o Papa se recusou a anular seu casamento com Catarina de Aragão. Em resposta, o rei criou a Igreja Anglicana através do Ato de Supremacia (1534), tornando-se o chefe da igreja em seu país. Em resposta ao avanço do protestantismo, a Igreja Católica promoveu a Contrarreforma ou Reforma Católica. No Concílio de Trento, reafirmou seus dogmas, mas tomou medidas para moralizar o clero. Além disso, criou a Companhia de Jesus (Jesuítas), uma ordem religiosa dedicada à educação e à missionação para fortalecer e expandir o catolicismo, e reativou a Inquisição para perseguir hereges. A Reforma mergulhou a Europa em mais de um século de sangrentas guerras religiosas, como a Guerra dos Trinta Anos.`,
         curiosity:
           'Para garantir que todos pudessem ler a Bíblia, Martinho Lutero a traduziu para o alemão. Sua tradução ajudou a padronizar a língua alemã moderna.',
+        timeline: [
+            { date: '1517', description: 'Martinho Lutero publica suas "95 Teses", criticando a venda de indulgências e dando início à Reforma.' },
+            { date: '1521', description: 'Lutero é excomungado e se recusa a retratar-se na Dieta de Worms.' },
+            { date: '1534', description: 'O rei Henrique VIII da Inglaterra promulga o Ato de Supremacia, criando a Igreja Anglicana.' },
+            { date: '1536', description: 'João Calvino publica a "Instituição da Religião Cristã", base do Calvinismo.' },
+            { date: '1545-1563', description: 'O Concílio de Trento se reúne, marcando o início da Contrarreforma Católica.' },
+        ],
         questions: [
             { question: "Qual prática da Igreja Católica foi o principal alvo das críticas de Martinho Lutero em suas 95 Teses?", options: ["A celebração da missa em latim", "O celibato dos padres", "A venda de indulgências", "A veneração de imagens de santos"], correctAnswer: "A venda de indulgências" },
             { question: "Segundo a doutrina de Lutero, como um cristão alcança a salvação?", options: ["Através de boas obras e caridade", "Comprando o perdão da Igreja", "Unicamente pela fé", "Por meio da obediência ao Papa"], correctAnswer: "Unicamente pela fé" },
@@ -355,6 +461,13 @@ Outros reformadores importantes surgiram em outras partes da Europa. João Calvi
 Em oposição a esse sistema, surgiu no século XVIII o Iluminismo, ou "Século das Luzes", um movimento intelectual que defendia a razão ("as luzes") como o guia para o progresso humano e a superação da ignorância e do autoritarismo ("as trevas") do Antigo Regime (absolutismo, mercantilismo e poder da Igreja). Os filósofos iluministas propuseram uma nova organização da sociedade baseada na liberdade, na igualdade perante a lei e nos direitos naturais do indivíduo. John Locke, considerado o "pai do Iluminismo", defendeu os direitos à vida, à liberdade e à propriedade como inalienáveis. Montesquieu, em "O Espírito das Leis", propôs a divisão dos poderes em Executivo, Legislativo e Judiciário como forma de evitar a tirania e garantir o equilíbrio. Voltaire foi um fervoroso defensor da liberdade de expressão ("Posso não concordar com o que dizes, mas defenderei até a morte o teu direito de o dizeres") e da tolerância religiosa. Jean-Jacques Rousseau, em "O Contrato Social", argumentou que o poder emana do povo (soberania popular) e que o governo é apenas um executor da "vontade geral". Na economia, os fisiocratas e, principalmente, Adam Smith criticaram o mercantilismo e a intervenção do Estado, defendendo o liberalismo econômico e o livre mercado ("laissez-faire"). As ideias iluministas não ficaram restritas aos livros; elas se espalharam por salões, cafés e pela "Enciclopédia" de Diderot e d'Alembert, e inspiraram movimentos revolucionários que derrubaram o Antigo Regime, como a Independência dos Estados Unidos e, principalmente, a Revolução Francesa.`,
         curiosity:
           'Voltaire, um dos mais famosos filósofos iluministas, foi preso duas vezes na Bastilha e exilado por suas críticas à monarquia e à Igreja. Apesar da perseguição, suas ideias se espalharam por toda a Europa.',
+        timeline: [
+            { date: '1643-1715', description: 'Reinado de Luís XIV, o "Rei Sol", na França, o auge do absolutismo.' },
+            { date: '1651', description: 'Thomas Hobbes publica "Leviatã", defendendo o absolutismo secular.' },
+            { date: '1689', description: 'John Locke publica "Dois Tratados sobre o Governo", base do liberalismo político.' },
+            { date: '1748', description: 'Montesquieu publica "O Espírito das Leis", propondo a separação dos três poderes.' },
+            { date: '1789', description: 'Início da Revolução Francesa, inspirada pelos ideais iluministas.' },
+        ],
         questions: [
             { question: "Qual teoria justificava o poder absoluto dos reis, afirmando que sua autoridade vinha de Deus?", options: ["A Teoria do Contrato Social", "A Teoria do Direito Divino dos Reis", "A Teoria da Soberania Popular", "A Teoria dos Três Poderes"], correctAnswer: "A Teoria do Direito Divino dos Reis" },
             { question: "Qual filósofo iluminista propôs a divisão do poder estatal em Executivo, Legislativo e Judiciário?", options: ["John Locke", "Voltaire", "Jean-Jacques Rousseau", "Montesquieu"], correctAnswer: "Montesquieu" },
@@ -379,6 +492,13 @@ A Primeira Revolução Industrial (c. 1760-1840) foi impulsionada pela invençã
 A Segunda Revolução Industrial (final do século XIX e início do XX) viu a industrialização se expandir para outros países, como Alemanha, Estados Unidos e Japão. Ela foi marcada por novas tecnologias e fontes de energia, como o uso do petróleo e da eletricidade. A invenção do motor a combustão interna possibilitou o surgimento do automóvel, e a eletricidade permitiu a iluminação das cidades e o funcionamento de novos motores. O desenvolvimento de novas indústrias, como a de aço (que substituiu o ferro), a química (com fertilizantes, plásticos e produtos farmacêuticos) e a automobilística, acelerou ainda mais as transformações. Esse período também viu o surgimento de grandes corporações, trustes e cartéis, e a intensificação do imperialismo, com as potências industriais buscando novos mercados e fontes de matéria-prima na África e na Ásia.`,
         curiosity:
           'Os "Luddites" eram trabalhadores que, no início do século XIX, protestavam contra a substituição de sua mão de obra por máquinas quebrando os equipamentos das fábricas. O nome vem de um suposto líder, Ned Ludd.',
+        timeline: [
+            { date: 'Cerca de 1760', description: 'Início da Primeira Revolução Industrial na Inglaterra, com foco na indústria têxtil.' },
+            { date: '1769', description: 'James Watt aprimora a máquina a vapor, tornando-a o motor da revolução.' },
+            { date: '1825', description: 'Inauguração da primeira ferrovia a vapor para passageiros.' },
+            { date: 'Cerca de 1870', description: 'Início da Segunda Revolução Industrial, marcada pelo uso do aço, eletricidade e petróleo.' },
+            { date: '1908', description: 'Henry Ford lança o Modelo T, popularizando o automóvel através da linha de montagem.' },
+        ],
         questions: [
             { question: "Em qual país a Revolução Industrial teve início?", options: ["França", "Alemanha", "Estados Unidos", "Inglaterra"], correctAnswer: "Inglaterra" },
             { question: "Qual invenção foi o motor da Primeira Revolução Industrial?", options: ["O motor a combustão", "A lâmpada elétrica", "A máquina a vapor", "O telégrafo"], correctAnswer: "A máquina a vapor" },
@@ -398,6 +518,13 @@ A revolução passou por várias fases. A primeira foi a Monarquia Constituciona
 Após a queda dos jacobinos (a Reação Termidoriana), seguiu-se o Diretório (1795-1799), um governo mais conservador e instável, controlado pela alta burguesia, que enfrentou crises econômicas e ameaças tanto da esquerda (jacobinos) quanto da direita (monarquistas). A instabilidade abriu caminho para a ascensão de um jovem e popular general, Napoleão Bonaparte, que, apoiado pela burguesia, deu o Golpe de 18 de Brumário em 1799, pondo fim à revolução e iniciando uma nova era na história francesa e europeia. Apesar de suas contradições e violência, a Revolução Francesa disseminou seus ideais de "Liberdade, Igualdade, Fraternidade" por todo o mundo, inspirando movimentos de independência, a luta por direitos democráticos e a abolição da servidão.`,
         curiosity:
           'A guilhotina, símbolo do Período do Terror, foi proposta como um método de execução mais "humano" e igualitário, pois seria rápido e aplicado a todas as classes sociais, diferentemente dos métodos cruéis reservados aos pobres.',
+        timeline: [
+            { date: '14 de Julho de 1789', description: 'Queda da Bastilha, marco simbólico do início da revolução.' },
+            { date: 'Agosto de 1789', description: 'Publicação da Declaração dos Direitos do Homem e do Cidadão.' },
+            { date: '1792', description: 'Proclamação da República Francesa.' },
+            { date: '1793-1794', description: 'Período do Terror sob a liderança dos jacobinos e de Robespierre.' },
+            { date: '1799', description: 'Napoleão Bonaparte lidera o Golpe de 18 de Brumário, pondo fim à Revolução.' },
+        ],
         questions: [
             { question: "Qual evento simbólico é considerado o marco inicial da Revolução Francesa?", options: ["A coroação de Napoleão", "A Queda da Bastilha", "A execução de Luís XVI", "A Declaração dos Direitos do Homem"], correctAnswer: "A Queda da Bastilha" },
             { question: "A sociedade francesa antes da revolução era dividida em três 'Estados'. Qual deles pagava a maior parte dos impostos?", options: ["O Primeiro Estado (clero)", "O Segundo Estado (nobreza)", "O Terceiro Estado (povo)", "Todos pagavam igualmente"], correctAnswer: "O Terceiro Estado (povo)" },
@@ -417,6 +544,13 @@ Na América Espanhola, o processo foi fragmentado, longo e violento. A elite loc
 O processo de independência do Brasil foi único e comparativamente menos violento. O estopim foi a invasão de Portugal por Napoleão em 1807, que forçou a fuga da família real portuguesa para o Rio de Janeiro em 1808. A presença da corte no Brasil, que durou mais de uma década, transformou a colônia. O Rio de Janeiro se tornou a sede do império português, e medidas como a abertura dos portos às nações amigas e a criação de instituições como o Banco do Brasil e universidades elevaram o status da colônia (que se tornou Reino Unido a Portugal em 1815). Esse desenvolvimento e autonomia tornaram a volta ao status colonial anterior inaceitável para as elites brasileiras. Quando a corte foi forçada a retornar a Lisboa em 1821, o príncipe regente, D. Pedro, permaneceu no Brasil. Pressionado pelas elites locais e pelas tentativas das Cortes de Lisboa de "recolonizar" o Brasil, D. Pedro proclamou a independência em 7 de setembro de 1822. Em contraste com seus vizinhos, o Brasil se tornou uma monarquia, o Império do Brasil, mantendo a unidade territorial do antigo território colonial português e, crucialmente, o sistema escravista, que só seria abolido em 1888, uma das principais contradições de um país independente.`,
         curiosity:
           'Simón Bolívar, conhecido como "O Libertador", sonhava em criar uma grande nação unificada na América do Sul, a "Grã-Colômbia". O projeto não teve sucesso devido a disputas políticas regionais, mas ele é herói nacional em vários países.',
+        timeline: [
+            { date: '1776', description: 'Declaração de Independência dos Estados Unidos, inspirando outros movimentos.' },
+            { date: '1808', description: 'A corte portuguesa se transfere para o Brasil, fugindo de Napoleão.' },
+            { date: '1810', description: 'Início das guerras de independência na América Espanhola.' },
+            { date: '1822', description: 'D. Pedro I proclama a Independência do Brasil.' },
+            { date: '1824', description: 'Batalha de Ayacucho, que consolida a independência do Peru e encerra as grandes campanhas na América do Sul.' },
+        ],
         questions: [
             { question: "Qual evento na Europa criou a oportunidade para o início dos movimentos de independência na América Espanhola?", options: ["A Revolução Industrial na Inglaterra", "A Revolução Francesa", "As Guerras Napoleônicas e a invasão da Espanha", "A Reforma Protestante na Alemanha"], correctAnswer: "As Guerras Napoleônicas e a invasão da Espanha" },
             { question: "Quem eram os 'criollos', a elite que liderou a maioria dos movimentos de independência na América Espanhola?", options: ["Indígenas que lutavam por seus direitos", "Escravos africanos rebelados", "Descendentes de espanhóis nascidos na América", "Comerciantes vindos da Inglaterra"], correctAnswer: "Descendentes de espanhóis nascidos na América" },
@@ -436,6 +570,13 @@ Sua maior e mais persistente rival era a Grã-Bretanha, uma potência naval que,
 O ponto de virada na sorte de Napoleão foi a catastrófica invasão da Rússia em 1812. Com um "Grande Exército" de mais de 600.000 homens, ele marchou até Moscou, mas encontrou a cidade em chamas. O rigoroso inverno russo e a tática de "terra arrasada" dos russos, que destruíam tudo para não deixar suprimentos para os invasores, dizimaram seu exército durante a longa retirada. Enfraquecido, Napoleão foi derrotado por uma grande coalizão de nações (Rússia, Prússia, Áustria, Suécia) na Batalha de Leipzig em 1813. Ele foi forçado a abdicar em 1814 e exilado na pequena ilha de Elba. Ele conseguiu escapar, retornou à França para o chamado "Governo dos Cem Dias", mas foi definitivamente derrotado por uma coalizão anglo-prussiana liderada pelo Duque de Wellington na Batalha de Waterloo em 1815. Exilado na remota ilha de Santa Helena, ele morreu em 1821. Após sua queda, o Congresso de Viena tentou restaurar as antigas monarquias e apagar o legado da Revolução, mas a disseminação do nacionalismo e do liberalismo pelas tropas de Napoleão mudou a Europa para sempre.`,
         curiosity:
           'Para financiar suas guerras, Napoleão vendeu o vasto território da Louisiana para os Estados Unidos em 1803, dobrando o tamanho do país. Ele considerava o território indefensável contra os britânicos.',
+        timeline: [
+            { date: '1804', description: 'Napoleão se coroa Imperador da França.' },
+            { date: '1805', description: 'Derrota naval na Batalha de Trafalgar; vitória terrestre na Batalha de Austerlitz.' },
+            { date: '1806', description: 'Napoleão decreta o Bloqueio Continental contra a Grã-Bretanha.' },
+            { date: '1812', description: 'A desastrosa invasão da Rússia marca o início do fim do Império Napoleônico.' },
+            { date: '1815', description: 'Derrota final de Napoleão na Batalha de Waterloo e o Congresso de Viena.' },
+        ],
         questions: [
             { question: "Qual era o principal objetivo de Napoleão Bonaparte ao proibir o comércio com a Grã-Bretanha através do Bloqueio Continental?", options: ["Fortalecer a economia russa", "Enfraquecer a Grã-Bretanha economicamente", "Promover a paz na Europa", "Incentivar o livre comércio global"], correctAnswer: "Enfraquecer a Grã-Bretanha economicamente" },
             { question: "A transferência da corte portuguesa para o Brasil em 1808 foi uma consequência direta de qual evento?", options: ["A descoberta de ouro em Minas Gerais", "A recusa de Portugal em aderir ao Bloqueio Continental", "Uma guerra civil em Portugal", "Um acordo comercial com a Inglaterra"], correctAnswer: "A recusa de Portugal em aderir ao Bloqueio Continental" },
@@ -455,6 +596,13 @@ O estopim para a guerra foi o assassinato do arquiduque Francisco Ferdinando, he
 Dois eventos em 1917 mudaram o curso da guerra. A Revolução Russa levou à ascensão dos bolcheviques, que assinaram um tratado de paz em separado com a Alemanha, retirando a Rússia do conflito. No entanto, a entrada dos Estados Unidos na guerra ao lado da Entente, motivada pela guerra submarina irrestrita alemã e pelo Telegrama Zimmermann, trouxe um poder industrial e humano decisivo para o conflito. A guerra terminou em 11 de novembro de 1918 com a rendição das Potências Centrais. O conflito resultou na desintegração dos impérios Russo, Austro-Húngaro, Alemão e Otomano. O Tratado de Versalhes, imposto à Alemanha, com suas duras reparações financeiras, perdas territoriais e a "cláusula de culpa da guerra", gerou um profundo ressentimento que é considerado uma das principais causas da ascensão do nazismo e da Segunda Guerra Mundial.`,
         curiosity:
           'Na Véspera de Natal de 1914, em várias partes da Frente Ocidental, soldados alemães e britânicos espontaneamente pararam de lutar, cantaram canções natalinas, trocaram presentes e até jogaram futebol na "terra de ninguém" entre as trincheiras.',
+        timeline: [
+            { date: '28 de Junho de 1914', description: 'Assassinato do arquiduque Francisco Ferdinando em Sarajevo, o estopim da guerra.' },
+            { date: 'Agosto de 1914', description: 'Início da guerra de trincheiras na Frente Ocidental.' },
+            { date: '1917', description: 'Revolução Russa retira a Rússia da guerra; Estados Unidos entram no conflito.' },
+            { date: '11 de Novembro de 1918', description: 'Assinatura do Armistício, pondo fim aos combates.' },
+            { date: '1919', description: 'Assinatura do Tratado de Versalhes, que impõe duras condições à Alemanha.' },
+        ],
         questions: [
             { question: "Qual evento foi o estopim imediato para o início da Primeira Guerra Mundial?", options: ["A invasão da Polônia pela Alemanha", "O ataque a Pearl Harbor", "O assassinato do arquiduque Francisco Ferdinando", "A Revolução Russa"], correctAnswer: "O assassinato do arquiduque Francisco Ferdinando" },
             { question: "A Primeira Guerra Mundial foi travada entre duas grandes alianças. Quais eram elas?", options: ["Eixo e Aliados", "OTAN e Pacto de Varsóvia", "Tríplice Entente e Tríplice Aliança", "Comunistas e Capitalistas"], correctAnswer: "Tríplice Entente e Tríplice Aliança" },
@@ -474,6 +622,13 @@ A guerra começou oficialmente em 1 de setembro de 1939, com a invasão da Polô
 O curso da guerra mudou drasticamente em 1941 com dois eventos cruciais. Em junho, Hitler quebrou o pacto de não agressão e lançou a Operação Barbarossa, uma invasão massiva da União Soviética. Embora tenha tido sucessos iniciais, a invasão abriu uma frente gigantesca e sangrenta que consumiria a maior parte dos recursos militares alemães. Em dezembro, o Japão atacou a base naval americana de Pearl Harbor, no Havaí, trazendo o imenso poder industrial e militar dos Estados Unidos para a guerra ao lado dos Aliados. As batalhas de Stalingrado (onde o Exército Vermelho soviético cercou e aniquilou o 6º Exército alemão) e Midway (onde a marinha dos EUA infligiu uma derrota decisiva à frota japonesa) são consideradas os pontos de virada da guerra. Na Europa, a guerra terminou com o Dia D (o desembarque Aliado na Normandia) em 6 de junho de 1944, que abriu uma segunda frente e levou à libertação da França e à eventual rendição incondicional da Alemanha em maio de 1945. No Pacífico, a guerra continuou até agosto de 1945, quando os Estados Unidos lançaram bombas atômicas sobre as cidades de Hiroshima e Nagasaki, forçando a rendição do Japão. O conflito foi marcado por crimes de guerra e atrocidades em uma escala sem precedentes, incluindo o Holocausto, o genocídio sistemático de seis milhões de judeus, além de outras minorias, pelos nazistas. Como resultado da guerra, a Organização das Nações Unidas (ONU) foi criada para tentar prevenir futuros conflitos, a Europa foi dividida, e o mundo emergiu com duas superpotências antagônicas, EUA e URSS, dando início à Guerra Fria.`,
         curiosity:
           'Durante a guerra, os Aliados criaram um "Exército Fantasma" de tanques infláveis, aviões de borracha e efeitos sonoros para enganar os alemães sobre a localização e o tamanho de suas forças, uma tática crucial para o sucesso do desembarque do Dia D.',
+        timeline: [
+            { date: '1 de Setembro de 1939', description: 'Alemanha invade a Polônia, dando início à Segunda Guerra Mundial.' },
+            { date: '7 de Dezembro de 1941', description: 'Japão ataca Pearl Harbor, levando os EUA a entrarem na guerra.' },
+            { date: '1942-1943', description: 'Batalha de Stalingrado, a sangrenta virada na Frente Oriental.' },
+            { date: '6 de Junho de 1944', description: 'Dia D: Desembarque das forças aliadas na Normandia.' },
+            { date: 'Agosto de 1945', description: 'Lançamento das bombas atômicas sobre Hiroshima e Nagasaki, levando à rendição do Japão.' },
+        ],
         questions: [
             { question: "Qual evento é considerado o início da Segunda Guerra Mundial na Europa?", options: ["O ataque a Pearl Harbor", "A invasão da Polônia pela Alemanha", "A Batalha da Grã-Bretanha", "O Dia D"], correctAnswer: "A invasão da Polônia pela Alemanha" },
             { question: "Quais eram os três principais países que formavam a aliança do Eixo?", options: ["Alemanha, Áustria e Espanha", "Alemanha, Itália e Japão", "União Soviética, China e Polônia", "Reino Unido, França e EUA"], correctAnswer: "Alemanha, Itália e Japão" },
@@ -493,6 +648,13 @@ A disputa se manifestou de outras formas: uma massiva corrida armamentista, com 
 A rivalidade também alimentou "guerras por procuração" em várias partes do mundo, onde cada superpotência apoiava um lado em conflitos locais para expandir sua zona de influência, sem entrar em confronto direto. A Guerra da Coreia (1950-53) e a Guerra do Vietnã (1955-75) foram os exemplos mais sangrentos. A crise dos mísseis de Cuba em 1962 foi o momento em que o mundo esteve mais perto de uma guerra nuclear, quando a URSS instalou mísseis nucleares em Cuba, levando a um tenso impasse de 13 dias com os EUA. O conflito começou a arrefecer no final dos anos 1980, com a profunda crise econômica da URSS, sua desastrosa guerra no Afeganistão e as reformas de liberalização ("Glasnost" e "Perestroika") do líder soviético Mikhail Gorbachev. A queda do Muro de Berlim em 1989 foi o clímax simbólico do fim da Guerra Fria, que se formalizou com o colapso da União Soviética em 1991.`,
         curiosity:
           'Durante a Corrida Espacial, a NASA gastou milhões de dólares para desenvolver uma caneta que funcionasse no espaço (gravidade zero), enquanto os cosmonautas soviéticos usavam uma solução muito mais simples: um lápis.',
+        timeline: [
+            { date: '1949', description: 'Criação da OTAN, a aliança militar ocidental.' },
+            { date: '1957', description: 'URSS lança o Sputnik, o primeiro satélite artificial, dando início à Corrida Espacial.' },
+            { date: '1961', description: 'Construção do Muro de Berlim.' },
+            { date: '1962', description: 'Crise dos Mísseis de Cuba, o momento mais tenso da Guerra Fria.' },
+            { date: '9 de Novembro de 1989', description: 'Queda do Muro de Berlim, simbolizando o fim do conflito.' },
+        ],
         questions: [
             { question: "Quais eram as duas superpotências que lideravam os blocos opostos durante a Guerra Fria?", options: ["Reino Unido e França", "Alemanha e Japão", "Estados Unidos e União Soviética", "China e Índia"], correctAnswer: "Estados Unidos e União Soviética" },
             { question: "O Muro de Berlim foi o maior símbolo da divisão de qual país e do mundo?", options: ["Polônia", "França", "Alemanha", "Coreia"], correctAnswer: "Alemanha" },
@@ -512,6 +674,13 @@ Movimentos nacionalistas, que já existiam, ganharam força, liderados por uma n
 O processo de independência assumiu formas diversas, variando de negociações pacíficas a conflitos armados prolongados. Na Índia, Mahatma Gandhi liderou um movimento de massa baseado na desobediência civil e na não-violência, que culminou na independência do Reino Unido em 1947, embora o processo tenha sido marcado pela sangrenta partição do subcontinente em Índia (de maioria hindu) e Paquistão (de maioria muçulmana). Em outros lugares, a independência foi conquistada através de longas e sangrentas guerras de libertação, como na Argélia (contra a França), no Vietnã (primeiro contra a França, depois contra os EUA) e nas colônias portuguesas em África (Angola, Moçambique). O ano de 1960 ficou conhecido como o "Ano da África", com 17 nações africanas obtendo sua independência, a maioria de forma negociada. No entanto, o legado do colonialismo foi complexo e problemático. As fronteiras artificiais, traçadas pelas potências europeias sem levar em conta as realidades étnicas e culturais, agruparam povos rivais e dividiram grupos, tornando-se uma fonte perene de conflitos. Além disso, as economias dependentes da exportação de matérias-primas e a falta de quadros políticos e administrativos preparados resultaram em instabilidade política, golpes de estado e guerras civis em muitos dos novos países, desafios que muitos deles enfrentam até hoje.`,
         curiosity:
           'A Conferência de Bandung, em 1955 na Indonésia, reuniu líderes de 29 países recém-independentes da Ásia e da África. Foi a primeira vez que essas nações se organizaram para promover a cooperação e se opor ao colonialismo, formando o que seria conhecido como o Movimento dos Não-Alinhados.',
+        timeline: [
+            { date: '1947', description: 'Independência e Partição da Índia Britânica.' },
+            { date: '1955', description: 'Conferência de Bandung, marco do Movimento dos Não-Alinhados.' },
+            { date: '1960', description: 'O "Ano da África", com a independência de 17 nações africanas.' },
+            { date: '1954-1962', description: 'Guerra de Independência da Argélia contra a França.' },
+            { date: '1975', description: 'Independência de Angola e Moçambique, pondo fim ao império colonial português.' },
+        ],
         questions: [
             { question: "Qual evento histórico enfraqueceu as potências coloniais europeias e acelerou o processo de descolonização?", options: ["A Primeira Guerra Mundial", "A Grande Depressão de 1929", "A Segunda Guerra Mundial", "A Revolução Russa"], correctAnswer: "A Segunda Guerra Mundial" },
             { question: "A independência da Índia foi liderada por Mahatma Gandhi, que defendia qual método de luta?", options: ["A luta armada e a guerrilha", "A aliança militar com a União Soviética", "A desobediência civil e a não-violência", "A intervenção diplomática dos Estados Unidos"], correctAnswer: "A desobediência civil e a não-violência" },
@@ -529,6 +698,13 @@ O processo de independência assumiu formas diversas, variando de negociações 
 Durante a Guerra Fria, a rivalidade entre EUA e URSS fomentou a instalação de ditaduras em várias partes do mundo. Na América Latina, a Revolução Cubana de 1959 e o temor da expansão do comunismo levaram os Estados Unidos a apoiarem ativamente golpes militares que derrubaram governos democraticamente eleitos, muitos deles de esquerda ou nacionalistas. Através da Doutrina de Segurança Nacional, os EUA forneceram apoio financeiro, militar e treinamento para a instauração de ditaduras de direita em vários países. Exemplos notáveis incluem o golpe de 1964 no Brasil, que deu início a uma ditadura de 21 anos; o golpe de 1973 no Chile, que derrubou o presidente socialista Salvador Allende e instalou o regime brutal de Augusto Pinochet; e o golpe de 1976 na Argentina, que levou a uma "Guerra Suja" com dezenas de milhares de "desaparecidos". Esses regimes militares foram marcados pela suspensão das liberdades civis, fechamento do Congresso, censura à imprensa, perseguição a opositores políticos e o uso sistemático de terrorismo de Estado, incluindo prisões arbitrárias, tortura, assassinatos e desaparecimentos forçados. Em uma colaboração transnacional chamada Operação Condor, as ditaduras do Cone Sul trabalharam juntas para perseguir e eliminar exilados políticos em outros países. Esses regimes deixaram cicatrizes profundas nas sociedades latino-americanas, com legados de violência e instabilidade política que perduram até hoje.`,
         curiosity:
           'No Chile, durante a ditadura de Pinochet, rádios de oposição transmitiam mensagens codificadas em meio a programações aparentemente inofensivas, como programas de culinária, para organizar a resistência sem serem detectadas pelos censores do regime.',
+        timeline: [
+            { date: '1922', description: 'Marcha sobre Roma leva Benito Mussolini ao poder na Itália.' },
+            { date: '1933', description: 'Adolf Hitler é nomeado Chanceler da Alemanha.' },
+            { date: '1964', description: 'Golpe militar no Brasil instaura uma ditadura que duraria 21 anos.' },
+            { date: '1973', description: 'Golpe militar no Chile, liderado por Augusto Pinochet, derruba o governo de Salvador Allende.' },
+            { date: '1976', description: 'Início da ditadura militar na Argentina, marcada pela "Guerra Suja".' },
+        ],
         questions: [
             { question: "Na Europa entreguerras, o nazismo e o fascismo são exemplos de qual tipo de regime?", options: ["Democracias liberais", "Monarquias constitucionais", "Regimes totalitários de extrema-direita", "Regimes comunistas"], correctAnswer: "Regimes totalitários de extrema-direita" },
             { question: "Qual foi o principal argumento usado pelos EUA para apoiar golpes militares na América Latina durante a Guerra Fria?", options: ["Promover o desenvolvimento industrial", "Combater o avanço do comunismo", "Exportar a democracia americana", "Garantir a estabilidade econômica"], correctAnswer: "Combater o avanço do comunismo" },
@@ -548,6 +724,13 @@ No final da década de 1980, o bloco soviético enfrentava uma grave crise econ�
 Durante uma confusa conferência de imprensa em 9 de novembro, um porta-voz do governo, Günter Schabowski, ao ser perguntado por um jornalista sobre quando as novas regras de viagem entrariam em vigor, leu uma nota de forma hesitante e anunciou equivocadamente que elas valeriam "imediatamente, sem demora". A notícia se espalhou como um rastilho de pólvora pela televisão, e milhares de berlinenses orientais correram para os postos de fronteira do muro. Surpreendidos e sem ordens claras, os guardas de fronteira, diante da multidão eufórica, acabaram por abrir as barreiras. A noite se transformou em uma festa histórica, com pessoas de ambos os lados se abraçando, chorando e usando martelos e picaretas para derrubar pedaços do muro. Este evento icônico e televisionado para todo o mundo acelerou o fim dos regimes comunistas na região e levou à reunificação da Alemanha menos de um ano depois, em 3 de outubro de 1990.`,
         curiosity:
           'A queda do muro foi precipitada por um anúncio confuso e acidental de um porta-voz do governo da Alemanha Oriental, Günter Schabowski. Ao ser perguntado quando a nova lei de viagens entraria em vigor, ele respondeu "imediatamente", o que não era o plano, gerando uma corrida em massa para o muro que os guardas não conseguiram conter.',
+        timeline: [
+            { date: '13 de Agosto de 1961', description: 'Construção do Muro de Berlim, dividindo a cidade.' },
+            { date: '1985', description: 'Mikhail Gorbachev assume o poder na URSS e inicia as reformas (Glasnost e Perestroika).' },
+            { date: 'Verão de 1989', description: 'Hungria abre sua fronteira com a Áustria, criando a primeira "brecha" na Cortina de Ferro.' },
+            { date: '9 de Novembro de 1989', description: 'Queda do Muro de Berlim.' },
+            { date: '3 de Outubro de 1990', description: 'Reunificação oficial da Alemanha.' },
+        ],
         questions: [
             { question: "Qual era o principal objetivo da construção do Muro de Berlim em 1961?", options: ["Proteger Berlim Ocidental de uma invasão soviética", "Impedir a fuga de cidadãos da Alemanha Oriental para o lado Ocidental", "Marcar a fronteira oficial entre Alemanha e Polônia", "Criar uma barreira contra o comércio capitalista"], correctAnswer: "Impedir a fuga de cidadãos da Alemanha Oriental para o lado Ocidental" },
             { question: "A Queda do Muro de Berlim em 1989 é o principal evento simbólico de qual processo histórico?", options: ["O início da Segunda Guerra Mundial", "O fim da Guerra Fria", "A criação da União Europeia", "O auge do poder soviético"], correctAnswer: "O fim da Guerra Fria" },
@@ -567,6 +750,13 @@ O grande catalisador, no entanto, foi a Revolução Técnico-Científico-Informa
 Na dimensão econômica, a globalização é marcada pela atuação de empresas multinacionais, que operam e vendem em diversos países, e pela fragmentação da produção, onde cada parte de um produto (como um smartphone) pode ser projetada, fabricada e montada em diferentes países para otimizar custos. O mercado financeiro tornou-se global e funciona 24 horas por dia. Culturalmente, observa-se a difusão de uma cultura de massa global, com o predomínio de marcas, filmes, músicas e estilos de vida ocidentais (muitas vezes criticada como uma forma de "americanização" ou imperialismo cultural), mas também o aumento do acesso a diversas manifestações culturais de todo o mundo. A globalização tem efeitos contraditórios e gera debates acalorados. Por um lado, pode promover o crescimento econômico, a inovação, a difusão de tecnologias e a cooperação internacional. Por outro, é acusada de aumentar a desigualdade social (entre países ricos e pobres e dentro dos próprios países), a precarização do trabalho (com a busca por mão de obra barata), a degradação ambiental e a perda de identidades culturais locais. Além disso, ela cria desafios que transcendem fronteiras, como pandemias globais (como a COVID-19), crises financeiras, terrorismo internacional e mudanças climáticas, exigindo soluções coordenadas em nível internacional.`,
         curiosity:
           'O contêiner de transporte, padronizado na década de 1950, foi uma inovação tecnológica simples mas revolucionária. Ao permitir que mercadorias fossem facilmente transferidas entre navios, trens e caminhões, ele reduziu drasticamente os custos de transporte e foi um dos maiores impulsionadores da globalização econômica.',
+        timeline: [
+            { date: 'Década de 1970', description: 'Intensificação da Revolução Técnico-Científico-Informacional (Terceira Revolução Industrial).' },
+            { date: '1991', description: 'Fim da Guerra Fria e dissolução da URSS, acelerando a expansão do capitalismo global.' },
+            { date: 'Década de 1990', description: 'Popularização da World Wide Web, conectando o mundo de forma inédita.' },
+            { date: '1995', description: 'Criação da Organização Mundial do Comércio (OMC) para regular o comércio global.' },
+            { date: '2001', description: 'Ataques de 11 de Setembro, evidenciando os desafios da globalização, como o terrorismo internacional.' },
+        ],
         questions: [
             { question: "Qual é a principal força por trás da aceleração da globalização no final do século XX?", options: ["As descobertas de novas rotas marítimas", "A Revolução Tecnológica na comunicação e nos transportes", "O fim do Império Romano", "A criação do sistema feudal"], correctAnswer: "A Revolução Tecnológica na comunicação e nos transportes" },
             { question: "Na dimensão econômica, a globalização é caracterizada pela:", options: ["Criação de economias autossuficientes e isoladas", "Atuação de empresas multinacionais e livre fluxo de capitais", "Proibição do comércio entre países", "Valorização exclusiva de produtos locais"], correctAnswer: "Atuação de empresas multinacionais e livre fluxo de capitais" },
@@ -589,6 +779,13 @@ Com o tempo, o sistema evoluiu para se tornar mais complexo e abstrato. Os sinai
 
 A escrita foi uma ferramenta revolucionária com consequências profundas. Ela permitiu a comunicação à distância e através do tempo, a acumulação e transmissão precisa do conhecimento de uma geração para outra, e a administração eficiente de grandes estados e impérios. Ao libertar a memória humana da necessidade de reter toda a informação, a escrita abriu caminho para o desenvolvimento do pensamento abstrato, da ciência, da filosofia e do direito. Ela criou uma nova classe de especialistas, os escribas, que detinham grande poder e prestígio na sociedade. A invenção posterior do alfabeto pelos fenícios, um sistema muito mais simples com um número limitado de letras representando sons, democratizou ainda mais a escrita, tornando-a acessível a um número maior de pessoas e servindo de base para a maioria dos sistemas de escrita ocidentais.`,
         curiosity: 'A Pedra de Roseta, descoberta em 1799, foi a chave para decifrar os hieróglifos egípcios. Ela continha o mesmo texto escrito em três sistemas: hieróglifos, demótico (outra escrita egípcia) e grego antigo.',
+        timeline: [
+            { date: 'Cerca de 3.500 a.C.', description: 'Invenção da escrita cuneiforme pelos sumérios na Mesopotâmia.' },
+            { date: 'Cerca de 3.200 a.C.', description: 'Desenvolvimento da escrita hieroglífica no Egito.' },
+            { date: 'Cerca de 1.200 a.C.', description: 'Desenvolvimento da escrita chinesa em ossos oraculares.' },
+            { date: 'Cerca de 1.100 a.C.', description: 'Os fenícios desenvolvem o primeiro alfabeto fonético.' },
+            { date: '1799', description: 'Descoberta da Pedra de Roseta, que permite a decifração dos hieróglifos.' },
+        ],
         questions: [
             { question: "Onde e quando a escrita foi inventada pela primeira vez?", options: ["Na Grécia, em 500 a.C.", "Na China, em 1.200 a.C.", "Na Mesopotâmia, por volta de 4.000 a.C.", "Em Roma, em 100 d.C."], correctAnswer: "Na Mesopotâmia, por volta de 4.000 a.C." },
             { question: "Qual foi a principal função inicial da escrita cuneiforme suméria?", options: ["Escrever poemas épicos", "Registrar leis e decretos reais", "Registrar transações comerciais e administrativas", "Comunicar-se com os deuses"], correctAnswer: "Registrar transações comerciais e administrativas" },
@@ -606,6 +803,13 @@ A aplicação da roda no transporte só ocorreu séculos depois e representou um
 
 Com o tempo, a roda foi sendo aperfeiçoada, com a introdução de raios para torná-la mais leve e resistente. A roda é a base de inúmeras outras tecnologias que se seguiram ao longo da história, de engrenagens e polias em máquinas complexas a motores e turbinas que movem o mundo moderno. Sua invenção é um exemplo clássico de como uma tecnologia pode surgir para um propósito específico (oleiro) e depois ser adaptada para transformar radicalmente outras áreas da vida humana, tornando-se um dos pilares da engenharia mecânica.`,
         curiosity: 'As civilizações pré-colombianas, como os Astecas e os Incas, apesar de suas impressionantes realizações em engenharia, não usavam a roda para transporte. Eles a conheciam, como evidenciado por brinquedos de animais com rodas, mas não a aplicavam em veículos, possivelmente devido ao terreno montanhoso e à falta de animais de tração adequados.',
+        timeline: [
+            { date: 'Cerca de 3.500 a.C.', description: 'Invenção da roda na Mesopotâmia, usada inicialmente para olaria.' },
+            { date: 'Cerca de 3.200 a.C.', description: 'Primeiro uso documentado da roda para transporte em carroças.' },
+            { date: 'Cerca de 2.000 a.C.', description: 'Desenvolvimento da roda com raios, tornando os veículos mais leves e rápidos.' },
+            { date: 'Cerca de 1.800 a.C.', description: 'Uso generalizado de bigas de guerra, que revolucionam as táticas militares.' },
+            { date: 'Século XIX', description: 'Invenção do pneu de borracha, melhorando drasticamente o conforto e a eficiência dos veículos com rodas.' },
+        ],
         questions: [
             { question: "Em qual região a roda foi inventada?", options: ["Egito", "China", "Mesopotâmia", "Vale do Indo"], correctAnswer: "Mesopotâmia" },
             { question: "Qual foi uma das primeiras aplicações da roda, antes mesmo do transporte?", options: ["Moinhos de vento", "Roda de oleiro para cerâmica", "Engrenagens de relógio", "Armas de cerco"], correctAnswer: "Roda de oleiro para cerâmica" },
@@ -623,6 +827,13 @@ A inovação de Johannes Gutenberg, um ourives de Mainz, na Alemanha, foi combin
 
 O impacto da imprensa foi imenso e imediato. Ela reduziu drasticamente o custo dos livros e permitiu sua produção em massa, levando a uma "explosão da informação" na Europa. O conhecimento, antes restrito a poucos, tornou-se muito mais acessível, estimulando a alfabetização e o pensamento crítico. A imprensa foi um motor fundamental para os grandes movimentos que definiram a Idade Moderna. Ela permitiu que as ideias humanistas do Renascimento se espalhassem rapidamente por todo o continente. Foi crucial para a Reforma Protestante, pois as "95 Teses" de Martinho Lutero e suas outras obras puderam ser impressas e distribuídas em milhares de cópias, levando suas críticas à Igreja Católica a um público vasto e incendiando o movimento. Além disso, a imprensa permitiu que os novos conhecimentos da Revolução Científica, como as descobertas de Copérnico e Galileu, fossem compartilhados e debatidos pela comunidade acadêmica, acelerando o avanço da ciência e pavimentando o caminho para o Iluminismo e a era moderna.`,
         curiosity: 'Gutenberg faliu antes que pudesse lucrar com sua invenção. Seu sócio, Johann Fust, processou-o pela devolução do dinheiro que havia investido e assumiu a oficina de impressão, incluindo os equipamentos e as Bíblias já impressas.',
+        timeline: [
+            { date: 'Cerca de 105 d.C.', description: 'Invenção do papel por Cai Lun na China.' },
+            { date: 'Século VIII', description: 'O segredo da fabricação de papel chega ao mundo islâmico e, posteriormente, à Europa.' },
+            { date: 'Cerca de 1450', description: 'Johannes Gutenberg inventa a prensa de tipos móveis na Alemanha.' },
+            { date: '1455', description: 'Impressão da Bíblia de Gutenberg, o primeiro grande livro impresso na Europa.' },
+            { date: '1517', description: 'As 95 Teses de Lutero são rapidamente impressas e distribuídas, impulsionando a Reforma Protestante.' },
+        ],
         questions: [
             { question: "Quem é creditado pela invenção da prensa de tipos móveis na Europa?", options: ["Leonardo da Vinci", "Johannes Gutenberg", "Martin Lutero", "Marco Polo"], correctAnswer: "Johannes Gutenberg" },
             { question: "Qual foi o principal impacto da invenção da imprensa?", options: ["Tornou os livros mais caros e raros", "Democratizou o acesso à informação e ao conhecimento", "Diminuiu as taxas de alfabetização", "Fortaleceu o controle da Igreja sobre o conhecimento"], correctAnswer: "Democratizou o acesso à informação e ao conhecimento" },
@@ -642,6 +853,13 @@ Após testar milhares de materiais, desde fibras de plantas a fios de platina, a
 A iluminação elétrica transformou radicalmente a sociedade. Ela estendeu o dia de trabalho e de lazer, permitindo que fábricas operassem 24 horas por dia com maior segurança e que a vida noturna nas cidades florescesse, com teatros, lojas e restaurantes abertos até mais tarde. Tornou as ruas e as casas mais seguras, reduzindo o risco de incêndios causados por lamparinas a gás e querosene. A eletricidade, inicialmente introduzida para a iluminação, pavimentou o caminho para uma infinidade de outras aplicações que viriam a definir o século XX, como motores elétricos, eletrodomésticos e equipamentos de comunicação, mudando para sempre a forma como vivemos e trabalhamos.`,
         curiosity:
           'A Lâmpada Centenária (Centennial Light), localizada em um corpo de bombeiros em Livermore, Califórnia, está acesa quase continuamente desde 1901. Ela é a prova viva da durabilidade das primeiras lâmpadas de filamento de carbono e se tornou uma atração turística.',
+        timeline: [
+            { date: '1802', description: 'Humphry Davy inventa a lâmpada de arco elétrico, a primeira forma de iluminação elétrica.' },
+            { date: '1879', description: 'Thomas Edison desenvolve a primeira lâmpada incandescente comercialmente viável e duradoura.' },
+            { date: '1882', description: 'Edison inaugura a primeira central elétrica em Pearl Street, Nova York.' },
+            { date: 'Final da década de 1880', description: 'A "Guerra das Correntes" entre a corrente contínua (DC) de Edison e a corrente alternada (AC) de Tesla e Westinghouse.' },
+            { date: '1906', description: 'Desenvolvimento do filamento de tungstênio, que torna as lâmpadas mais eficientes e duradouras.' },
+        ],
         questions: [
           { question: "Qual foi o principal desafio que os primeiros inventores de lâmpadas incandescentes enfrentaram?", options: ["Gerar eletricidade suficiente", "Encontrar um material para o filamento que não queimasse rapidamente", "Criar um vácuo perfeito dentro do bulbo", "Fazer a luz ser brilhante o suficiente"], correctAnswer: "Encontrar um material para o filamento que não queimasse rapidamente" },
           { question: "O grande mérito de Thomas Edison, além de criar uma lâmpada duradoura, foi:", options: ["Descobrir a eletricidade", "Inventar o primeiro motor elétrico", "Desenvolver um sistema completo de geração e distribuição de energia", "Usar gás nobre dentro da lâmpada"], correctAnswer: "Desenvolver um sistema completo de geração e distribuição de energia" },
@@ -661,6 +879,13 @@ Vários inventores contribuíram para seu desenvolvimento ao longo do século XI
 Na década de 1890, outro engenheiro alemão, Rudolf Diesel, desenvolveu um tipo diferente de motor de combustão interna. O motor a diesel não precisa de uma vela de ignição. Em vez disso, ele comprime o ar no cilindro a uma pressão tão alta que sua temperatura sobe drasticamente; quando o combustível diesel é injetado, ele se inflama espontaneamente. O motor a diesel é mais eficiente em termos de consumo de combustível e produz mais torque (força), sendo ideal para aplicações pesadas como caminhões, ônibus, navios, locomotivas e maquinário agrícola e industrial. A invenção e o aperfeiçoamento do motor de combustão interna criaram uma fonte de energia portátil, potente e relativamente barata, que libertou a indústria e os transportes da dependência de ferrovias e rios. No entanto, essa revolução também criou uma profunda dependência de combustíveis fósseis, como a gasolina e o diesel, com significativas consequências ambientais, como a poluição do ar e a emissão de gases de efeito estufa, que são desafios centrais no século XXI.`,
         curiosity:
           'Os primeiros motores de combustão interna não usavam gasolina. O motor de Nicolaus Otto de 1876, por exemplo, foi projetado para funcionar com gás de iluminação, o mesmo gás que era canalizado para as casas e ruas para a iluminação pública na época.',
+        timeline: [
+            { date: '1876', description: 'Nicolaus Otto patenteia o motor de quatro tempos a gasolina.' },
+            { date: '1886', description: 'Karl Benz usa um motor de combustão interna para criar o primeiro automóvel.' },
+            { date: '1892', description: 'Rudolf Diesel desenvolve o motor a diesel, que não necessita de vela de ignição.' },
+            { date: '1903', description: 'Os irmãos Wright usam um motor de combustão interna leve para realizar o primeiro voo motorizado.' },
+            { date: '1908', description: 'O Ford Modelo T populariza o carro com motor a combustão.' },
+        ],
         questions: [
           { question: "Qual é a principal diferença entre um motor de combustão interna e um motor a vapor?", options: ["O motor a vapor não usa combustível", "A queima do combustível no motor de combustão interna ocorre dentro do próprio motor", "O motor de combustão interna usa água em vez de combustível", "O motor a vapor é mais silencioso"], correctAnswer: "A queima do combustível no motor de combustão interna ocorre dentro do próprio motor" },
           { question: "Quem é creditado por construir o primeiro motor de quatro tempos eficiente, cujo ciclo é usado até hoje?", options: ["Karl Benz", "Henry Ford", "Rudolf Diesel", "Nicolaus Otto"], correctAnswer: "Nicolaus Otto" },
@@ -680,6 +905,13 @@ A grande revolução que transformou o automóvel em um produto de massa veio co
 O impacto do automóvel na sociedade do século XX foi profundo e multifacetado. Ele ofereceu uma liberdade de mobilidade pessoal sem precedentes, libertando as pessoas da dependência de horários de trens e bondes. Remodelou completamente o desenho das cidades, dando origem à cultura dos subúrbios, pois as pessoas podiam morar longe de seus locais de trabalho. Impulsionou a construção de uma vasta rede de estradas, pontes e túneis. Criou indústrias inteiras, como a do petróleo, borracha, aço e vidro, e gerou milhões de empregos em postos de gasolina, oficinas e motéis. O automóvel tornou-se um dos símbolos mais poderosos da cultura, do individualismo e do estilo de vida do século XX, especialmente nos Estados Unidos, mas também trouxe consigo problemas como congestionamentos, poluição e acidentes.`,
         curiosity:
           'A primeira viagem de longa distância de carro foi feita em 1888 por Bertha Benz, esposa de Karl Benz. Sem o conhecimento do marido, ela pegou o Patent-Motorwagen e viajou 106 km com seus dois filhos para visitar a mãe, realizando reparos no caminho e usando uma farmácia como o primeiro "posto de gasolina" para comprar o solvente que alimentava o motor.',
+        timeline: [
+            { date: '1886', description: 'Karl Benz patenteia o Motorwagen, considerado o primeiro automóvel prático.' },
+            { date: '1908', description: 'Henry Ford lança o Modelo T.' },
+            { date: '1913', description: 'Ford implementa a primeira linha de montagem móvel, revolucionando a produção industrial.' },
+            { date: '1914', description: 'Ford introduz o salário de 5 dólares por dia, permitindo que seus trabalhadores comprem carros.' },
+            { date: 'Década de 1950', description: 'O automóvel se torna central para a cultura do subúrbio e o "Sonho Americano" no pós-guerra.' },
+        ],
         questions: [
           { question: "Quem é creditado por criar o primeiro automóvel prático movido por um motor de combustão interna?", options: ["Henry Ford", "Gottlieb Daimler", "Karl Benz", "Rudolf Diesel"], correctAnswer: "Karl Benz" },
           { question: "Qual inovação de Henry Ford permitiu a produção em massa do Modelo T e o tornou acessível?", options: ["O motor elétrico", "Os pneus de borracha", "A linha de montagem móvel", "A carroceria de aço"], correctAnswer: "A linha de montagem móvel" },
@@ -697,6 +929,13 @@ A primeira grande revolução tecnológica que permitiu a miniaturização foi a
 
 O microprocessador tornou possível a revolução do computador pessoal (PC) nas décadas de 1970 e 1980. Empresas como a Apple, com o Apple II, e a IBM, com o IBM PC (que utilizava o sistema operacional da Microsoft, o MS-DOS), foram pioneiras em popularizar o computador, tirando-o dos grandes laboratórios e empresas e colocando-o nas mesas de escritórios e residências. Isso transformou fundamentalmente o trabalho, a educação e o entretenimento. O desenvolvimento de interfaces gráficas de usuário (GUI), popularizadas pelo Apple Macintosh e depois pelo Microsoft Windows, tornou os computadores muito mais fáceis e intuitivos de usar, abrindo caminho para a sua adoção em massa e para a subsequente revolução da internet.`,
         curiosity: 'O primeiro "bug" de computador foi, literalmente, um inseto. Em 1947, técnicos trabalhando no computador Mark II da Universidade de Harvard encontraram uma mariposa presa em um relé, causando um mau funcionamento. Eles removeram o inseto e colaram-no no diário de bordo com a anotação: "Primeiro caso real de bug sendo encontrado".',
+        timeline: [
+            { date: '1946', description: 'Apresentação do ENIAC, o primeiro computador eletrônico de grande escala.' },
+            { date: '1947', description: 'Invenção do transistor, que substitui as válvulas a vácuo.' },
+            { date: '1958', description: 'Invenção do circuito integrado (microchip).' },
+            { date: '1971', description: 'Intel lança o 4004, o primeiro microprocessador comercial.' },
+            { date: '1977', description: 'Lançamento do Apple II, um dos primeiros computadores pessoais de sucesso.' },
+        ],
         questions: [
             { question: "A invenção do transistor e do microchip levaram diretamente a qual grande desenvolvimento?", options: ["A máquina a vapor", "A revolução do computador pessoal", "O telégrafo", "A lâmpada incandescente"], correctAnswer: "A revolução do computador pessoal" },
             { question: "Qual máquina é considerada o primeiro computador eletrônico de grande escala de propósito geral?", options: ["A Máquina Analítica", "O Colossus", "O ENIAC", "O Apple I"], correctAnswer: "O ENIAC" },
@@ -714,6 +953,13 @@ A grande virada para o público em geral ocorreu no início dos anos 1990 com du
 
 A partir de meados da década de 1990, com a combinação da Web e dos navegadores, a internet explodiu em popularidade, deixando de ser um projeto acadêmico/militar para se tornar um fenômeno comercial e social global. Ela revolucionou a comunicação (e-mail, mensagens instantâneas, redes sociais), o acesso à informação (buscadores como o Google), o comércio (e-commerce), a educação, o entretenimento e a política, conectando bilhões de pessoas e redefinindo a sociedade de uma forma que poucas tecnologias fizeram na história.`,
         curiosity: 'O primeiro e-mail foi enviado em 1971 por Ray Tomlinson. Ele também foi quem escolheu o símbolo "@" para separar o nome do usuário do nome do computador, um padrão que usamos até hoje.',
+        timeline: [
+            { date: '1969', description: 'A ARPANET, precursora da internet, entra em operação.' },
+            { date: '1983', description: 'Adoção do protocolo TCP/IP como padrão, permitindo a comunicação entre diferentes redes.' },
+            { date: '1990', description: 'Tim Berners-Lee cria a World Wide Web (WWW).' },
+            { date: '1993', description: 'Lançamento do Mosaic, o primeiro navegador gráfico popular, que facilita o acesso à web.' },
+            { date: '1998', description: 'Fundação do Google, que revoluciona a forma como as pessoas encontram informação online.' },
+        ],
         questions: [
             { question: "Qual foi a precursora da internet, criada durante a Guerra Fria com propósitos militares?", options: ["A World Wide Web", "A NASA", "A ARPANET", "A Microsoft Network"], correctAnswer: "A ARPANET" },
             { question: "Quem é creditado pela invenção da World Wide Web (WWW), que tornou a informação na internet facilmente acessível?", options: ["Bill Gates", "Steve Jobs", "Tim Berners-Lee", "Ray Tomlinson"], correctAnswer: "Tim Berners-Lee" },
@@ -731,6 +977,13 @@ Nas últimas duas décadas, a IA experimentou um renascimento explosivo, impulsi
 
 Um subcampo particularmente poderoso do machine learning é o aprendizado profundo (deep learning), que utiliza redes neurais artificiais com muitas camadas (inspiradas vagamente na estrutura do cérebro humano). O deep learning permitiu avanços notáveis e superou o desempenho humano em áreas como reconhecimento de imagem e voz, tradução automática e jogos complexos, como o xadrez e o Go. Hoje, a IA já está integrada em nosso cotidiano, muitas vezes de forma invisível: nos sistemas de recomendação da Netflix e Amazon, nos assistentes virtuais como Siri e Alexa, nos filtros de spam do e-mail, nos algoritmos de feed das redes sociais e em aplicações mais complexas como diagnósticos médicos por imagem e o desenvolvimento de carros autônomos. A ascensão recente de modelos de linguagem generativos, como o ChatGPT, demonstrou a capacidade da IA de criar conteúdo coerente e criativo, abrindo novas fronteiras e debates sobre o futuro do trabalho, da criatividade e da própria inteligência. A IA promete ser uma das tecnologias mais transformadoras do século XXI, com potencial para revolucionar quase todos os aspectos da vida humana.`,
         curiosity: 'Em 1997, o supercomputador da IBM, Deep Blue, derrotou o campeão mundial de xadrez Garry Kasparov em uma partida histórica, um marco que demonstrou o poder crescente da IA em tarefas de raciocínio complexo.',
+        timeline: [
+            { date: '1950', description: 'Alan Turing propõe o "Teste de Turing" para avaliar a inteligência de uma máquina.' },
+            { date: '1956', description: 'A Conferência de Dartmouth estabelece o campo da Inteligência Artificial.' },
+            { date: '1997', description: 'O supercomputador Deep Blue da IBM derrota o campeão mundial de xadrez Garry Kasparov.' },
+            { date: '2012', description: 'Redes neurais profundas (deep learning) alcançam um avanço significativo no reconhecimento de imagens.' },
+            { date: '2022', description: 'Lançamento de modelos de IA generativa como o ChatGPT, popularizando a tecnologia para o grande público.' },
+        ],
         questions: [
             { question: "Qual evento é considerado o nascimento do campo moderno de pesquisa em IA?", options: ["A invenção do computador", "A Conferência de Dartmouth", "A derrota de Kasparov para o Deep Blue", "O teste de Turing"], correctAnswer: "A Conferência de Dartmouth" },
             { question: "Quais dois fatores foram cruciais para o recente avanço explosivo da IA?", options: ["A invenção da internet e do e-mail", "Aumento do poder de processamento dos computadores e a disponibilidade de Big Data", "A filosofia e a psicologia", "A Guerra Fria e a corrida espacial"], correctAnswer: "Aumento do poder de processamento dos computadores e a disponibilidade de Big Data" },
@@ -755,6 +1008,13 @@ O grande divisor de águas da filosofia grega foi Sócrates, que viveu em Atenas
 Seu discípulo mais famoso, Platão, sistematizou e aprofundou as ideias socráticas, desenvolvendo uma filosofia própria de grande influência. A Teoria das Formas (ou Ideias) de Platão postula a existência de dois mundos: o mundo sensível, que percebemos com nossos sentidos, que é mutável e imperfeito; e o mundo inteligível, acessível apenas pela razão, que contém as Formas perfeitas, eternas e imutáveis de todas as coisas (a justiça em si, a beleza em si, etc.). Nosso mundo seria apenas uma cópia imperfeita desse mundo das Formas. Aristóteles, discípulo de Platão, tomou um caminho mais empírico e científico. Ele rejeitou a separação dos mundos de Platão e argumentou que a essência das coisas se encontra nelas mesmas, no mundo sensível. Aristóteles foi um grande sistematizador do conhecimento, fundando a lógica formal (com o silogismo) e fazendo contribuições vastas e duradouras para a ética (a busca da felicidade como a "vida boa"), a política (análise das formas de governo), a biologia, a física e a metafísica. Após as conquistas de Alexandre, o Grande, no período Helenístico, a filosofia se voltou para a busca da ataraxia (paz de espírito) e da felicidade individual, com escolas como o Estoicismo (que pregava a virtude e a aceitação do destino), o Epicurismo (que defendia a busca do prazer moderado e a ausência de dor) e o Ceticismo.`,
         curiosity:
           'Diógenes, um filósofo cínico, vivia em um barril e desprezava bens materiais. A lenda diz que Alexandre, o Grande, foi visitá-lo e ofereceu realizar qualquer desejo seu. Diógenes respondeu: "Não me faças sombra" (Saia da frente do meu sol).',
+        timeline: [
+            { date: 'Século VI a.C.', description: 'Nascimento da filosofia com os pré-socráticos como Tales de Mileto.' },
+            { date: '399 a.C.', description: 'Morte de Sócrates em Atenas.' },
+            { date: 'Cerca de 387 a.C.', description: 'Platão funda a Academia em Atenas.' },
+            { date: '335 a.C.', description: 'Aristóteles funda o Liceu em Atenas.' },
+            { date: 'Cerca de 300 a.C.', description: 'Início do período Helenístico, com o surgimento do Estoicismo e Epicurismo.' },
+        ],
         questions: [
             { question: "Qual foi a principal mudança que marcou o nascimento da filosofia na Grécia Antiga?", options: ["A transição do pensamento monoteísta para o politeísta", "A transição do pensamento mítico (mythos) para o racional (logos)", "A criação das primeiras leis escritas", "O desenvolvimento da democracia ateniense"], correctAnswer: "A transição do pensamento mítico (mythos) para o racional (logos)" },
             { question: "Os filósofos pré-socráticos, como Tales de Mileto, investigavam principalmente o quê?", options: ["A ética e a política", "A natureza e o princípio fundamental de todas as coisas (arché)", "A existência de Deus", "A melhor forma de governo"], correctAnswer: "A natureza e o princípio fundamental de todas as coisas (arché)" },
@@ -772,6 +1032,13 @@ A primeira grande corrente foi a Patrística, desenvolvida pelos "Padres da Igre
 
 A segunda e mais influente corrente foi a Escolástica, que floresceu nas universidades medievais que surgiram a partir do século XI. A Escolástica era um método de pensamento crítico que buscava usar a lógica para resolver contradições teológicas. Seu maior representante foi São Tomás de Aquino (1225-1274). Fortemente influenciado pela redescoberta das obras de Aristóteles no Ocidente (muitas delas preservadas e traduzidas por estudiosos islâmicos), Tomás de Aquino buscou uma síntese harmoniosa entre fé e razão. Diferente de Agostinho, ele acreditava que fé e razão são caminhos distintos, mas complementares, que levam à mesma verdade: Deus. A razão pode conhecer verdades sobre o mundo natural, enquanto a fé é necessária para conhecer as verdades reveladas (como a Trindade). Em sua obra monumental, a "Suma Teológica", ele apresentou as "Cinco Vias", que são cinco argumentos racionais para provar a existência de Deus a partir da observação do mundo natural (por exemplo, o argumento do movimento e da causa primeira). O trabalho de Tomás de Aquino se tornou a base da filosofia católica por séculos.`,
         curiosity: 'Tomás de Aquino era apelidado de "Boi Mudo" por seus colegas estudantes por ser grande, quieto e calado. Seu professor, Santo Alberto Magno, teria profetizado: "Vocês o chamam de Boi Mudo, mas eu lhes digo que este boi um dia mugirá tão alto que o seu som será ouvido em todo o mundo".',
+        timeline: [
+            { date: 'Cerca de 400', description: 'Santo Agostinho escreve "Confissões", um marco da filosofia patrística.' },
+            { date: 'Cerca de 800', description: 'O Renascimento Carolíngio promove um breve ressurgimento do estudo clássico.' },
+            { date: 'Século XI', description: 'Santo Anselmo propõe o argumento ontológico para a existência de Deus.' },
+            { date: 'Século XII', description: 'Redescoberta das obras de Aristóteles no Ocidente, impulsionando a Escolástica.' },
+            { date: '1265-1274', description: 'São Tomás de Aquino escreve a "Suma Teológica", a grande síntese da Escolástica.' },
+        ],
         questions: [
             { question: "Qual era a principal preocupação da filosofia medieval?", options: ["A natureza da matéria", "A melhor forma de governo", "Conciliar a fé cristã com a razão filosófica", "A exploração do universo"], correctAnswer: "Conciliar a fé cristã com a razão filosófica" },
             { question: "Qual filósofo medieval, influenciado por Platão, afirmou 'Crê para que possas entender'?", options: ["São Tomás de Aquino", "Guilherme de Ockham", "Santo Agostinho", "Duns Escoto"], correctAnswer: "Santo Agostinho" },
@@ -793,6 +1060,13 @@ Em oposição, o Empirismo, liderado por filósofos britânicos como John Locke,
 No século XVIII, o filósofo alemão Immanuel Kant procurou superar essa dicotomia entre racionalismo e empirismo. Em sua "Crítica da Razão Pura", ele propôs uma "revolução copernicana" na filosofia: o conhecimento não é nem puramente racional nem puramente empírico, mas uma síntese de ambos. Ele argumentou que, embora todo conhecimento comece com a experiência, a mente humana não é passiva; ela ativamente estrutura a experiência através de categorias a priori, como espaço, tempo e causalidade. Na filosofia política, os filósofos contratualistas debateram a origem e a legitimidade do Estado. Thomas Hobbes argumentou que, para escapar de um "estado de natureza" violento, os homens cedem sua liberdade a um soberano absoluto (o Leviatã). John Locke, o pai do liberalismo, defendeu que o governo existe para proteger os direitos naturais inalienáveis do indivíduo (vida, liberdade e propriedade). Jean-Jacques Rousseau, por sua vez, propôs um contrato social baseado na "vontade geral" do povo, defendendo a soberania popular e influenciando a Revolução Francesa.`,
         curiosity:
           'René Descartes costumava passar as manhãs na cama, pensando. Ele acreditava que esse era seu momento mais produtivo, e foi em uma dessas manhãs que ele teve a intuição de sua famosa máxima "Penso, logo existo".',
+        timeline: [
+            { date: '1637', description: 'René Descartes publica o "Discurso do Método", fundando o racionalismo moderno.' },
+            { date: '1689', description: 'John Locke publica "Ensaio sobre o Entendimento Humano", um marco do empirismo.' },
+            { date: '1781', description: 'Immanuel Kant publica a "Crítica da Razão Pura", buscando sintetizar racionalismo e empirismo.' },
+            { date: '1762', description: 'Jean-Jacques Rousseau publica "O Contrato Social".' },
+            { date: '1807', description: 'Hegel publica a "Fenomenologia do Espírito", um ponto culminante do idealismo alemão.' },
+        ],
         questions: [
             { question: "Quais foram as duas principais correntes de pensamento que debateram a origem do conhecimento na Filosofia Moderna?", options: ["Estoicismo e Epicurismo", "Racionalismo e Empirismo", "Existencialismo e Fenomenologia", "Idealismo e Materialismo"], correctAnswer: "Racionalismo e Empirismo" },
             { question: "A frase 'Penso, logo existo' é a máxima central do pensamento de qual filósofo racionalista?", options: ["John Locke", "David Hume", "René Descartes", "Immanuel Kant"], correctAnswer: "René Descartes" },
@@ -812,6 +1086,13 @@ No século XX, o Existencialismo tornou-se uma corrente influente, especialmente
 Outra vertente importante foi a Escola de Frankfurt, com pensadores como Theodor Adorno, Max Horkheimer e Herbert Marcuse. Eles desenvolveram a Teoria Crítica, uma análise de inspiração marxista da sociedade de consumo e da "indústria cultural". Eles argumentavam que a cultura de massa (cinema, música popular, etc.) serve para padronizar o pensamento, pacificar as massas e manter o status quo capitalista, transformando a arte em mercadoria e alienando os indivíduos. O Pós-estruturalismo, representado por figuras como Michel Foucault e Jacques Derrida, levou a uma crítica radical da linguagem e do poder. Foucault investigou como o poder opera na sociedade de formas sutis e produtivas, não apenas através da repressão, mas também através do conhecimento, do discurso e de instituições como escolas, hospitais e prisões, que moldam, classificam e disciplinam os indivíduos. A filosofia contemporânea continua a evoluir, abordando questões urgentes como a bioética, o meio ambiente, a globalização e o impacto da inteligência artificial.`,
         curiosity:
           'Jean-Paul Sartre recusou o Prêmio Nobel de Literatura em 1964. Ele afirmou que não queria ser "transformado" por tal prêmio e que um escritor não deveria se deixar transformar em uma instituição.',
+        timeline: [
+            { date: '1882', description: 'Friedrich Nietzsche proclama a "Morte de Deus" em "A Gaia Ciência".' },
+            { date: '1943', description: 'Jean-Paul Sartre publica "O Ser e o Nada", texto fundamental do existencialismo.' },
+            { date: '1949', description: 'Simone de Beauvoir publica "O Segundo Sexo", um marco da filosofia feminista.' },
+            { date: '1961', description: 'Michel Foucault publica "História da Loucura".' },
+            { date: '1971', description: 'John Rawls publica "Uma Teoria da Justiça", revigorando a filosofia política.' },
+        ],
         questions: [
             { question: "A tese existencialista de que 'a existência precede a essência' foi formulada por qual filósofo?", options: ["Michel Foucault", "Edmund Husserl", "Jean-Paul Sartre", "Theodor Adorno"], correctAnswer: "Jean-Paul Sartre" },
             { question: "A Escola de Frankfurt, através de sua Teoria Crítica, analisou e criticou o conceito de:", options: ["Indústria Cultural", "Mundo das Ideias", "Contrato Social", "Vontade de Poder"], correctAnswer: "Indústria Cultural" },

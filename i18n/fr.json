@@ -1,0 +1,16 @@
+{
+  "app_title": "Compagnon d'Histoire",
+  "select_topic": "Sélectionnez un sujet pour commencer.",
+  "summary": "Résumé",
+  "curiosity": "Curiosité",
+  "review_quiz": "Quiz de révision",
+  "listen_summary": "Écouter le résumé",
+  "continue": "Continuer",
+  "pause": "Pause",
+  "stop": "Arrêter",
+  "quiz_finished": "Quiz terminé !",
+  "correct_answers": "Vous avez répondu correctement à {{score}} questions sur {{total}}.",
+  "try_again": "Réessayer",
+  "question": "Question {{current}} sur {{total}}",
+  "history_topics": "Sujets d'Histoire"
+}
